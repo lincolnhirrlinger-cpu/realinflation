@@ -17,15 +17,14 @@ export default function Nav() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Home</Link>
-            <Link href="/city/boise-id" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Cities</Link>
-            <Link href="/compare" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Compare</Link>
-            <Link href="/methodology" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Methodology</Link>
+            <Link href="/states/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">States</Link>
+            <Link href="/compare/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Compare</Link>
+            <Link href="/methodology/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Methodology</Link>
           </nav>
 
           {/* CTA + Mobile toggle */}
           <div className="flex items-center gap-3">
-            <Link href="/compare" className="hidden sm:inline-flex btn-secondary text-sm">Compare Cities</Link>
+            <Link href="/states/" className="hidden sm:inline-flex btn-primary text-sm">Browse States</Link>
             <button
               className="md:hidden p-2 text-text-secondary"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -44,10 +43,9 @@ export default function Nav() {
         {/* Mobile menu */}
         {menuOpen && (
           <div className="md:hidden border-t border-border py-3 flex flex-col gap-3">
-            <Link href="/" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>Home</Link>
-            <Link href="/city/boise-id" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>Cities</Link>
-            <Link href="/compare" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>Compare</Link>
-            <Link href="/methodology" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>Methodology</Link>
+            <Link href="/states/" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>States</Link>
+            <Link href="/compare/" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>Compare</Link>
+            <Link href="/methodology/" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>Methodology</Link>
           </div>
         )}
       </div>

@@ -96,6 +96,44 @@ export default function HomePage() {
 
       <AdSlot id="home-ad-1" />
 
+      {/* Browse by State */}
+      <section className="mb-12">
+        <div className="flex items-baseline justify-between mb-4">
+          <h2 className="section-title">Browse by State</h2>
+          <Link href="/states" className="text-sm text-accent hover:underline font-sans">
+            All states →
+          </Link>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-4">
+          {[
+            { name: 'California', slug: 'california', abbr: 'CA' },
+            { name: 'Texas', slug: 'texas', abbr: 'TX' },
+            { name: 'New York', slug: 'new-york', abbr: 'NY' },
+            { name: 'Florida', slug: 'florida', abbr: 'FL' },
+            { name: 'Colorado', slug: 'colorado', abbr: 'CO' },
+            { name: 'Washington', slug: 'washington', abbr: 'WA' },
+            { name: 'Tennessee', slug: 'tennessee', abbr: 'TN' },
+            { name: 'Idaho', slug: 'idaho', abbr: 'ID' },
+          ].map(state => (
+            <Link
+              key={state.slug}
+              href={`/state/${state.slug}`}
+              className="card p-3 hover:shadow-card-hover group flex items-center justify-between"
+            >
+              <span className="font-sans text-sm font-medium text-text-primary group-hover:text-accent transition-colors">
+                {state.name}
+              </span>
+              <span className="text-xs font-mono text-text-muted bg-cream border border-border px-1.5 py-0.5 rounded">
+                {state.abbr}
+              </span>
+            </Link>
+          ))}
+        </div>
+        <Link href="/states" className="text-sm text-text-secondary hover:text-accent transition-colors font-sans">
+          View all 50 states →
+        </Link>
+      </section>
+
       {/* City grid */}
       <section className="mb-12">
         <div className="flex items-baseline justify-between mb-4">
