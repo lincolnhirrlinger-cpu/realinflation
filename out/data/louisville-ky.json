@@ -1,0 +1,744 @@
+{
+  "city": "Louisville",
+  "state": "Kentucky",
+  "state_abbr": "KY",
+  "slug": "louisville-ky",
+  "population": 633000,
+  "region": "East South Central",
+  "col_index": 82,
+  "last_updated": "2026-03-23",
+  "gas": {
+    "current": 3.26,
+    "diesel_current": 3.55,
+    "national_current": 3.45,
+    "history": [
+      {
+        "date": "2022-03",
+        "price": 3.58,
+        "national": 4.28
+      },
+      {
+        "date": "2023-03",
+        "price": 3.02,
+        "national": 3.42
+      },
+      {
+        "date": "2024-03",
+        "price": 2.78,
+        "national": 3.45
+      },
+      {
+        "date": "2025-03",
+        "price": 2.7,
+        "national": 3.0
+      },
+      {
+        "date": "2026-03",
+        "price": 3.26,
+        "national": 3.45
+      }
+    ]
+  },
+  "rent": {
+    "avg_all": 842.25,
+    "avg_1br": 794.58,
+    "avg_2br": 1023.29,
+    "avg_3br": 1327.73,
+    "national_avg": 1900,
+    "median_home_price": 192372.0,
+    "history": [
+      {
+        "date": "2022",
+        "avg": 669.35,
+        "onebed": 619.77,
+        "national": 1750
+      },
+      {
+        "date": "2023",
+        "avg": 703.68,
+        "onebed": 651.56,
+        "national": 1780
+      },
+      {
+        "date": "2024",
+        "avg": 755.17,
+        "onebed": 699.23,
+        "national": 1820
+      },
+      {
+        "date": "2025",
+        "avg": 815.24,
+        "onebed": 754.85,
+        "national": 1870
+      },
+      {
+        "date": "2026",
+        "avg": 858.15,
+        "onebed": 794.58,
+        "national": 1900
+      }
+    ]
+  },
+  "groceries": {
+    "items": [
+      {
+        "name": "Eggs (dozen)",
+        "slug": "eggs",
+        "unit": "dozen",
+        "current": 2.09,
+        "history": [
+          {
+            "date": "2022",
+            "price": 1.65
+          },
+          {
+            "date": "2023",
+            "price": 1.97
+          },
+          {
+            "date": "2024",
+            "price": 2.52
+          },
+          {
+            "date": "2025",
+            "price": 3.77
+          },
+          {
+            "date": "2026",
+            "price": 2.09
+          }
+        ],
+        "change_from_2022": 0.267,
+        "note": "Bird flu volatility"
+      },
+      {
+        "name": "Milk (gallon)",
+        "slug": "milk",
+        "unit": "gallon",
+        "current": 3.49,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.18
+          },
+          {
+            "date": "2023",
+            "price": 3.4
+          },
+          {
+            "date": "2024",
+            "price": 3.33
+          },
+          {
+            "date": "2025",
+            "price": 3.46
+          },
+          {
+            "date": "2026",
+            "price": 3.49
+          }
+        ],
+        "change_from_2022": 0.097
+      },
+      {
+        "name": "Ground Beef (lb)",
+        "slug": "ground-beef",
+        "unit": "lb",
+        "current": 5.31,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.7
+          },
+          {
+            "date": "2023",
+            "price": 4.63
+          },
+          {
+            "date": "2024",
+            "price": 4.86
+          },
+          {
+            "date": "2025",
+            "price": 5.1
+          },
+          {
+            "date": "2026",
+            "price": 5.31
+          }
+        ],
+        "change_from_2022": 0.435
+      },
+      {
+        "name": "Bread (loaf)",
+        "slug": "bread",
+        "unit": "loaf",
+        "current": 3.19,
+        "history": [
+          {
+            "date": "2022",
+            "price": 2.02
+          },
+          {
+            "date": "2023",
+            "price": 2.7
+          },
+          {
+            "date": "2024",
+            "price": 2.95
+          },
+          {
+            "date": "2025",
+            "price": 3.13
+          },
+          {
+            "date": "2026",
+            "price": 3.19
+          }
+        ],
+        "change_from_2022": 0.579
+      },
+      {
+        "name": "Chicken Breast (lb)",
+        "slug": "chicken",
+        "unit": "lb",
+        "current": 3.74,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.5
+          },
+          {
+            "date": "2023",
+            "price": 3.71
+          },
+          {
+            "date": "2024",
+            "price": 3.78
+          },
+          {
+            "date": "2025",
+            "price": 3.78
+          },
+          {
+            "date": "2026",
+            "price": 3.74
+          }
+        ],
+        "change_from_2022": 0.069
+      },
+      {
+        "name": "Butter (lb)",
+        "slug": "butter",
+        "unit": "lb",
+        "current": 4.86,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.94
+          },
+          {
+            "date": "2023",
+            "price": 4.37
+          },
+          {
+            "date": "2024",
+            "price": 4.54
+          },
+          {
+            "date": "2025",
+            "price": 4.67
+          },
+          {
+            "date": "2026",
+            "price": 4.86
+          }
+        ],
+        "change_from_2022": 0.234
+      },
+      {
+        "name": "Bacon (lb)",
+        "slug": "bacon",
+        "unit": "lb",
+        "current": 7.24,
+        "history": [
+          {
+            "date": "2022",
+            "price": 5.85
+          },
+          {
+            "date": "2023",
+            "price": 6.25
+          },
+          {
+            "date": "2024",
+            "price": 6.69
+          },
+          {
+            "date": "2025",
+            "price": 7.03
+          },
+          {
+            "date": "2026",
+            "price": 7.24
+          }
+        ],
+        "change_from_2022": 0.238
+      },
+      {
+        "name": "Cheddar Cheese (lb)",
+        "slug": "cheddar-cheese",
+        "unit": "lb",
+        "current": 6.27,
+        "history": [
+          {
+            "date": "2022",
+            "price": 5.38
+          },
+          {
+            "date": "2023",
+            "price": 5.86
+          },
+          {
+            "date": "2024",
+            "price": 6.03
+          },
+          {
+            "date": "2025",
+            "price": 6.27
+          },
+          {
+            "date": "2026",
+            "price": 6.27
+          }
+        ],
+        "change_from_2022": 0.165
+      },
+      {
+        "name": "Pasta (lb)",
+        "slug": "pasta",
+        "unit": "lb",
+        "current": 1.74,
+        "history": [
+          {
+            "date": "2022",
+            "price": 1.34
+          },
+          {
+            "date": "2023",
+            "price": 1.63
+          },
+          {
+            "date": "2024",
+            "price": 1.69
+          },
+          {
+            "date": "2025",
+            "price": 1.76
+          },
+          {
+            "date": "2026",
+            "price": 1.74
+          }
+        ],
+        "change_from_2022": 0.299
+      },
+      {
+        "name": "Rice (5 lb)",
+        "slug": "rice",
+        "unit": "5 lb bag",
+        "current": 4.8,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.94
+          },
+          {
+            "date": "2023",
+            "price": 4.44
+          },
+          {
+            "date": "2024",
+            "price": 4.57
+          },
+          {
+            "date": "2025",
+            "price": 4.61
+          },
+          {
+            "date": "2026",
+            "price": 4.8
+          }
+        ],
+        "change_from_2022": 0.218
+      },
+      {
+        "name": "Coffee (12 oz)",
+        "slug": "coffee",
+        "unit": "12 oz",
+        "current": 11.16,
+        "history": [
+          {
+            "date": "2022",
+            "price": 7.97
+          },
+          {
+            "date": "2023",
+            "price": 9.56
+          },
+          {
+            "date": "2024",
+            "price": 10.12
+          },
+          {
+            "date": "2025",
+            "price": 10.73
+          },
+          {
+            "date": "2026",
+            "price": 11.16
+          }
+        ],
+        "change_from_2022": 0.4
+      },
+      {
+        "name": "Orange Juice (64 oz)",
+        "slug": "orange-juice",
+        "unit": "64 oz",
+        "current": 5.0,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.46
+          },
+          {
+            "date": "2023",
+            "price": 4.0
+          },
+          {
+            "date": "2024",
+            "price": 4.4
+          },
+          {
+            "date": "2025",
+            "price": 4.76
+          },
+          {
+            "date": "2026",
+            "price": 5.0
+          }
+        ],
+        "change_from_2022": 0.445,
+        "note": "Citrus shortage"
+      },
+      {
+        "name": "Potatoes (5 lb)",
+        "slug": "potatoes",
+        "unit": "5 lb bag",
+        "current": 4.29,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.6
+          },
+          {
+            "date": "2023",
+            "price": 3.85
+          },
+          {
+            "date": "2024",
+            "price": 4.0
+          },
+          {
+            "date": "2025",
+            "price": 4.16
+          },
+          {
+            "date": "2026",
+            "price": 4.29
+          }
+        ],
+        "change_from_2022": 0.192
+      },
+      {
+        "name": "Apples (3 lb)",
+        "slug": "apples",
+        "unit": "3 lb bag",
+        "current": 4.66,
+        "history": [
+          {
+            "date": "2022",
+            "price": 4.05
+          },
+          {
+            "date": "2023",
+            "price": 4.3
+          },
+          {
+            "date": "2024",
+            "price": 4.43
+          },
+          {
+            "date": "2025",
+            "price": 4.61
+          },
+          {
+            "date": "2026",
+            "price": 4.66
+          }
+        ],
+        "change_from_2022": 0.151
+      },
+      {
+        "name": "Tomatoes (lb)",
+        "slug": "tomatoes",
+        "unit": "lb",
+        "current": 2.53,
+        "history": [
+          {
+            "date": "2022",
+            "price": 2.04
+          },
+          {
+            "date": "2023",
+            "price": 2.28
+          },
+          {
+            "date": "2024",
+            "price": 2.39
+          },
+          {
+            "date": "2025",
+            "price": 2.51
+          },
+          {
+            "date": "2026",
+            "price": 2.53
+          }
+        ],
+        "change_from_2022": 0.24
+      },
+      {
+        "name": "Lettuce (head)",
+        "slug": "lettuce",
+        "unit": "head",
+        "current": 2.11,
+        "history": [
+          {
+            "date": "2022",
+            "price": 1.64
+          },
+          {
+            "date": "2023",
+            "price": 1.82
+          },
+          {
+            "date": "2024",
+            "price": 1.97
+          },
+          {
+            "date": "2025",
+            "price": 2.07
+          },
+          {
+            "date": "2026",
+            "price": 2.11
+          }
+        ],
+        "change_from_2022": 0.287
+      },
+      {
+        "name": "Cooking Oil (48 oz)",
+        "slug": "cooking-oil",
+        "unit": "48 oz",
+        "current": 7.03,
+        "history": [
+          {
+            "date": "2022",
+            "price": 4.95
+          },
+          {
+            "date": "2023",
+            "price": 6.19
+          },
+          {
+            "date": "2024",
+            "price": 6.69
+          },
+          {
+            "date": "2025",
+            "price": 6.82
+          },
+          {
+            "date": "2026",
+            "price": 7.03
+          }
+        ],
+        "change_from_2022": 0.42
+      },
+      {
+        "name": "Yogurt (32 oz)",
+        "slug": "yogurt",
+        "unit": "32 oz",
+        "current": 4.56,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.9
+          },
+          {
+            "date": "2023",
+            "price": 4.13
+          },
+          {
+            "date": "2024",
+            "price": 4.34
+          },
+          {
+            "date": "2025",
+            "price": 4.47
+          },
+          {
+            "date": "2026",
+            "price": 4.56
+          }
+        ],
+        "change_from_2022": 0.169
+      },
+      {
+        "name": "Cereal (family size)",
+        "slug": "cereal",
+        "unit": "box",
+        "current": 6.22,
+        "history": [
+          {
+            "date": "2022",
+            "price": 4.59
+          },
+          {
+            "date": "2023",
+            "price": 5.38
+          },
+          {
+            "date": "2024",
+            "price": 5.81
+          },
+          {
+            "date": "2025",
+            "price": 6.1
+          },
+          {
+            "date": "2026",
+            "price": 6.22
+          }
+        ],
+        "change_from_2022": 0.355
+      },
+      {
+        "name": "Frozen Pizza",
+        "slug": "frozen-pizza",
+        "unit": "each",
+        "current": 7.91,
+        "history": [
+          {
+            "date": "2022",
+            "price": 5.7
+          },
+          {
+            "date": "2023",
+            "price": 6.7
+          },
+          {
+            "date": "2024",
+            "price": 7.24
+          },
+          {
+            "date": "2025",
+            "price": 7.6
+          },
+          {
+            "date": "2026",
+            "price": 7.91
+          }
+        ],
+        "change_from_2022": 0.388
+      }
+    ],
+    "inflation_rate": {
+      "current_yoy": 3.18,
+      "history": [
+        {
+          "year": "2022",
+          "rate": 11.14
+        },
+        {
+          "year": "2023",
+          "rate": 5.47
+        },
+        {
+          "year": "2024",
+          "rate": 2.06
+        },
+        {
+          "year": "2025",
+          "rate": 2.87
+        },
+        {
+          "year": "2026",
+          "rate": 3.05
+        }
+      ]
+    }
+  },
+  "dining": {
+    "fast_food_avg": 9.71,
+    "casual_dining_avg": 17.22,
+    "coffee_avg": 4.46,
+    "monthly_household_spend": 276.64,
+    "restaurant_inflation_yoy": 4.22,
+    "chains": [
+      {
+        "name": "McDonald's",
+        "price_2022": 6.02,
+        "price_current": 9.71
+      },
+      {
+        "name": "Wendy's",
+        "price_2022": 6.8,
+        "price_current": 10.49
+      },
+      {
+        "name": "Chipotle",
+        "price_2022": 7.28,
+        "price_current": 10.88
+      },
+      {
+        "name": "Starbucks",
+        "price_2022": 3.21,
+        "price_current": 4.46
+      }
+    ]
+  },
+  "utilities": {
+    "electricity_kwh": 0.11,
+    "natural_gas_therm": 0.9,
+    "internet_monthly": 59.4,
+    "phone_monthly": 78.58,
+    "national_electricity": 0.16
+  },
+  "transportation": {
+    "car_insurance_monthly": 138.54,
+    "used_car_avg": 17736.6,
+    "gas_per_month_avg": 177.51
+  },
+  "healthcare": {
+    "doctor_visit": 114.39,
+    "prescription_generic": 15.69,
+    "dental_cleaning": 91.51
+  },
+  "personal": {
+    "haircut_mens": 13.87,
+    "gym_membership": 31.0,
+    "movie_ticket": 10.45
+  }
+}

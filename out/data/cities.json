@@ -1,9 +1,875 @@
 [
-  { "name": "Boise", "state": "Idaho", "slug": "boise-id", "population": 240000, "region": "Mountain West" },
-  { "name": "Nampa", "state": "Idaho", "slug": "nampa-id", "population": 105000, "region": "Mountain West" },
-  { "name": "Meridian", "state": "Idaho", "slug": "meridian-id", "population": 130000, "region": "Mountain West" },
-  { "name": "Idaho Falls", "state": "Idaho", "slug": "idaho-falls-id", "population": 66000, "region": "Mountain West" },
-  { "name": "Pocatello", "state": "Idaho", "slug": "pocatello-id", "population": 57000, "region": "Mountain West" },
-  { "name": "Rexburg", "state": "Idaho", "slug": "rexburg-id", "population": 39000, "region": "Mountain West" },
-  { "name": "Twin Falls", "state": "Idaho", "slug": "twin-falls-id", "population": 52000, "region": "Mountain West" }
+  {
+    "name": "Phoenix",
+    "state": "Arizona",
+    "state_abbr": "AZ",
+    "slug": "phoenix-az",
+    "population": 1608000,
+    "region": "Mountain",
+    "col_index": 100
+  },
+  {
+    "name": "Tucson",
+    "state": "Arizona",
+    "state_abbr": "AZ",
+    "slug": "tucson-az",
+    "population": 545000,
+    "region": "Mountain",
+    "col_index": 85
+  },
+  {
+    "name": "Little Rock",
+    "state": "Arkansas",
+    "state_abbr": "AR",
+    "slug": "little-rock-ar",
+    "population": 202000,
+    "region": "West South Central",
+    "col_index": 72
+  },
+  {
+    "name": "Fort Smith",
+    "state": "Arkansas",
+    "state_abbr": "AR",
+    "slug": "fort-smith-ar",
+    "population": 89000,
+    "region": "West South Central",
+    "col_index": 65
+  },
+  {
+    "name": "Sacramento",
+    "state": "California",
+    "state_abbr": "CA",
+    "slug": "sacramento-ca",
+    "population": 524000,
+    "region": "Pacific",
+    "col_index": 130
+  },
+  {
+    "name": "Los Angeles",
+    "state": "California",
+    "state_abbr": "CA",
+    "slug": "los-angeles-ca",
+    "population": 3980000,
+    "region": "Pacific",
+    "col_index": 160
+  },
+  {
+    "name": "Denver",
+    "state": "Colorado",
+    "state_abbr": "CO",
+    "slug": "denver-co",
+    "population": 715000,
+    "region": "Mountain",
+    "col_index": 118
+  },
+  {
+    "name": "Colorado Springs",
+    "state": "Colorado",
+    "state_abbr": "CO",
+    "slug": "colorado-springs-co",
+    "population": 478000,
+    "region": "Mountain",
+    "col_index": 100
+  },
+  {
+    "name": "Hartford",
+    "state": "Connecticut",
+    "state_abbr": "CT",
+    "slug": "hartford-ct",
+    "population": 122000,
+    "region": "Northeast",
+    "col_index": 120
+  },
+  {
+    "name": "Bridgeport",
+    "state": "Connecticut",
+    "state_abbr": "CT",
+    "slug": "bridgeport-ct",
+    "population": 148000,
+    "region": "Northeast",
+    "col_index": 125
+  },
+  {
+    "name": "Dover",
+    "state": "Delaware",
+    "state_abbr": "DE",
+    "slug": "dover-de",
+    "population": 38000,
+    "region": "South Atlantic",
+    "col_index": 90
+  },
+  {
+    "name": "Wilmington",
+    "state": "Delaware",
+    "state_abbr": "DE",
+    "slug": "wilmington-de",
+    "population": 71000,
+    "region": "South Atlantic",
+    "col_index": 105
+  },
+  {
+    "name": "Tallahassee",
+    "state": "Florida",
+    "state_abbr": "FL",
+    "slug": "tallahassee-fl",
+    "population": 196000,
+    "region": "South Atlantic",
+    "col_index": 88
+  },
+  {
+    "name": "Miami",
+    "state": "Florida",
+    "state_abbr": "FL",
+    "slug": "miami-fl",
+    "population": 442000,
+    "region": "South Atlantic",
+    "col_index": 130
+  },
+  {
+    "name": "Atlanta",
+    "state": "Georgia",
+    "state_abbr": "GA",
+    "slug": "atlanta-ga",
+    "population": 498000,
+    "region": "South Atlantic",
+    "col_index": 110
+  },
+  {
+    "name": "Savannah",
+    "state": "Georgia",
+    "state_abbr": "GA",
+    "slug": "savannah-ga",
+    "population": 147000,
+    "region": "South Atlantic",
+    "col_index": 88
+  },
+  {
+    "name": "Honolulu",
+    "state": "Hawaii",
+    "state_abbr": "HI",
+    "slug": "honolulu-hi",
+    "population": 345000,
+    "region": "Pacific",
+    "col_index": 175
+  },
+  {
+    "name": "Hilo",
+    "state": "Hawaii",
+    "state_abbr": "HI",
+    "slug": "hilo-hi",
+    "population": 45000,
+    "region": "Pacific",
+    "col_index": 155
+  },
+  {
+    "name": "Boise",
+    "state": "Idaho",
+    "state_abbr": "ID",
+    "slug": "boise-id",
+    "population": 240000,
+    "region": "Mountain",
+    "col_index": 102
+  },
+  {
+    "name": "Idaho Falls",
+    "state": "Idaho",
+    "state_abbr": "ID",
+    "slug": "idaho-falls-id",
+    "population": 66000,
+    "region": "Mountain",
+    "col_index": 84
+  },
+  {
+    "name": "Springfield",
+    "state": "Illinois",
+    "state_abbr": "IL",
+    "slug": "springfield-il",
+    "population": 115000,
+    "region": "Midwest",
+    "col_index": 82
+  },
+  {
+    "name": "Chicago",
+    "state": "Illinois",
+    "state_abbr": "IL",
+    "slug": "chicago-il",
+    "population": 2696000,
+    "region": "Midwest",
+    "col_index": 120
+  },
+  {
+    "name": "Indianapolis",
+    "state": "Indiana",
+    "state_abbr": "IN",
+    "slug": "indianapolis-in",
+    "population": 872000,
+    "region": "Midwest",
+    "col_index": 85
+  },
+  {
+    "name": "Fort Wayne",
+    "state": "Indiana",
+    "state_abbr": "IN",
+    "slug": "fort-wayne-in",
+    "population": 265000,
+    "region": "Midwest",
+    "col_index": 78
+  },
+  {
+    "name": "Des Moines",
+    "state": "Iowa",
+    "state_abbr": "IA",
+    "slug": "des-moines-ia",
+    "population": 214000,
+    "region": "Midwest",
+    "col_index": 84
+  },
+  {
+    "name": "Cedar Rapids",
+    "state": "Iowa",
+    "state_abbr": "IA",
+    "slug": "cedar-rapids-ia",
+    "population": 133000,
+    "region": "Midwest",
+    "col_index": 80
+  },
+  {
+    "name": "Topeka",
+    "state": "Kansas",
+    "state_abbr": "KS",
+    "slug": "topeka-ks",
+    "population": 126000,
+    "region": "Midwest",
+    "col_index": 75
+  },
+  {
+    "name": "Wichita",
+    "state": "Kansas",
+    "state_abbr": "KS",
+    "slug": "wichita-ks",
+    "population": 390000,
+    "region": "Midwest",
+    "col_index": 80
+  },
+  {
+    "name": "Frankfort",
+    "state": "Kentucky",
+    "state_abbr": "KY",
+    "slug": "frankfort-ky",
+    "population": 27000,
+    "region": "East South Central",
+    "col_index": 72
+  },
+  {
+    "name": "Louisville",
+    "state": "Kentucky",
+    "state_abbr": "KY",
+    "slug": "louisville-ky",
+    "population": 633000,
+    "region": "East South Central",
+    "col_index": 82
+  },
+  {
+    "name": "Baton Rouge",
+    "state": "Louisiana",
+    "state_abbr": "LA",
+    "slug": "baton-rouge-la",
+    "population": 220000,
+    "region": "West South Central",
+    "col_index": 82
+  },
+  {
+    "name": "New Orleans",
+    "state": "Louisiana",
+    "state_abbr": "LA",
+    "slug": "new-orleans-la",
+    "population": 383000,
+    "region": "West South Central",
+    "col_index": 90
+  },
+  {
+    "name": "Augusta",
+    "state": "Maine",
+    "state_abbr": "ME",
+    "slug": "augusta-me",
+    "population": 18000,
+    "region": "Northeast",
+    "col_index": 88
+  },
+  {
+    "name": "Portland",
+    "state": "Maine",
+    "state_abbr": "ME",
+    "slug": "portland-me",
+    "population": 68000,
+    "region": "Northeast",
+    "col_index": 105
+  },
+  {
+    "name": "Annapolis",
+    "state": "Maryland",
+    "state_abbr": "MD",
+    "slug": "annapolis-md",
+    "population": 40000,
+    "region": "South Atlantic",
+    "col_index": 120
+  },
+  {
+    "name": "Baltimore",
+    "state": "Maryland",
+    "state_abbr": "MD",
+    "slug": "baltimore-md",
+    "population": 585000,
+    "region": "South Atlantic",
+    "col_index": 108
+  },
+  {
+    "name": "Boston",
+    "state": "Massachusetts",
+    "state_abbr": "MA",
+    "slug": "boston-ma",
+    "population": 675000,
+    "region": "Northeast",
+    "col_index": 155
+  },
+  {
+    "name": "Worcester",
+    "state": "Massachusetts",
+    "state_abbr": "MA",
+    "slug": "worcester-ma",
+    "population": 206000,
+    "region": "Northeast",
+    "col_index": 118
+  },
+  {
+    "name": "Lansing",
+    "state": "Michigan",
+    "state_abbr": "MI",
+    "slug": "lansing-mi",
+    "population": 112000,
+    "region": "Midwest",
+    "col_index": 80
+  },
+  {
+    "name": "Detroit",
+    "state": "Michigan",
+    "state_abbr": "MI",
+    "slug": "detroit-mi",
+    "population": 640000,
+    "region": "Midwest",
+    "col_index": 82
+  },
+  {
+    "name": "Saint Paul",
+    "state": "Minnesota",
+    "state_abbr": "MN",
+    "slug": "saint-paul-mn",
+    "population": 308000,
+    "region": "Midwest",
+    "col_index": 100
+  },
+  {
+    "name": "Minneapolis",
+    "state": "Minnesota",
+    "state_abbr": "MN",
+    "slug": "minneapolis-mn",
+    "population": 429000,
+    "region": "Midwest",
+    "col_index": 108
+  },
+  {
+    "name": "Jackson",
+    "state": "Mississippi",
+    "state_abbr": "MS",
+    "slug": "jackson-ms",
+    "population": 153000,
+    "region": "East South Central",
+    "col_index": 65
+  },
+  {
+    "name": "Biloxi",
+    "state": "Mississippi",
+    "state_abbr": "MS",
+    "slug": "biloxi-ms",
+    "population": 44000,
+    "region": "East South Central",
+    "col_index": 70
+  },
+  {
+    "name": "Jefferson City",
+    "state": "Missouri",
+    "state_abbr": "MO",
+    "slug": "jefferson-city-mo",
+    "population": 43000,
+    "region": "Midwest",
+    "col_index": 72
+  },
+  {
+    "name": "Kansas City",
+    "state": "Missouri",
+    "state_abbr": "MO",
+    "slug": "kansas-city-mo",
+    "population": 495000,
+    "region": "Midwest",
+    "col_index": 85
+  },
+  {
+    "name": "Helena",
+    "state": "Montana",
+    "state_abbr": "MT",
+    "slug": "helena-mt",
+    "population": 32000,
+    "region": "Mountain",
+    "col_index": 85
+  },
+  {
+    "name": "Billings",
+    "state": "Montana",
+    "state_abbr": "MT",
+    "slug": "billings-mt",
+    "population": 113000,
+    "region": "Mountain",
+    "col_index": 88
+  },
+  {
+    "name": "Lincoln",
+    "state": "Nebraska",
+    "state_abbr": "NE",
+    "slug": "lincoln-ne",
+    "population": 289000,
+    "region": "Midwest",
+    "col_index": 78
+  },
+  {
+    "name": "Omaha",
+    "state": "Nebraska",
+    "state_abbr": "NE",
+    "slug": "omaha-ne",
+    "population": 478000,
+    "region": "Midwest",
+    "col_index": 82
+  },
+  {
+    "name": "Carson City",
+    "state": "Nevada",
+    "state_abbr": "NV",
+    "slug": "carson-city-nv",
+    "population": 55000,
+    "region": "Mountain",
+    "col_index": 92
+  },
+  {
+    "name": "Las Vegas",
+    "state": "Nevada",
+    "state_abbr": "NV",
+    "slug": "las-vegas-nv",
+    "population": 641000,
+    "region": "Mountain",
+    "col_index": 98
+  },
+  {
+    "name": "Concord",
+    "state": "New Hampshire",
+    "state_abbr": "NH",
+    "slug": "concord-nh",
+    "population": 44000,
+    "region": "Northeast",
+    "col_index": 108
+  },
+  {
+    "name": "Manchester",
+    "state": "New Hampshire",
+    "state_abbr": "NH",
+    "slug": "manchester-nh",
+    "population": 115000,
+    "region": "Northeast",
+    "col_index": 112
+  },
+  {
+    "name": "Trenton",
+    "state": "New Jersey",
+    "state_abbr": "NJ",
+    "slug": "trenton-nj",
+    "population": 90000,
+    "region": "Northeast",
+    "col_index": 118
+  },
+  {
+    "name": "Newark",
+    "state": "New Jersey",
+    "state_abbr": "NJ",
+    "slug": "newark-nj",
+    "population": 311000,
+    "region": "Northeast",
+    "col_index": 125
+  },
+  {
+    "name": "Santa Fe",
+    "state": "New Mexico",
+    "state_abbr": "NM",
+    "slug": "santa-fe-nm",
+    "population": 84000,
+    "region": "Mountain",
+    "col_index": 95
+  },
+  {
+    "name": "Albuquerque",
+    "state": "New Mexico",
+    "state_abbr": "NM",
+    "slug": "albuquerque-nm",
+    "population": 564000,
+    "region": "Mountain",
+    "col_index": 85
+  },
+  {
+    "name": "Albany",
+    "state": "New York",
+    "state_abbr": "NY",
+    "slug": "albany-ny",
+    "population": 100000,
+    "region": "Northeast",
+    "col_index": 108
+  },
+  {
+    "name": "New York",
+    "state": "New York",
+    "state_abbr": "NY",
+    "slug": "new-york-ny",
+    "population": 8336000,
+    "region": "Northeast",
+    "col_index": 170
+  },
+  {
+    "name": "Raleigh",
+    "state": "North Carolina",
+    "state_abbr": "NC",
+    "slug": "raleigh-nc",
+    "population": 467000,
+    "region": "South Atlantic",
+    "col_index": 100
+  },
+  {
+    "name": "Charlotte",
+    "state": "North Carolina",
+    "state_abbr": "NC",
+    "slug": "charlotte-nc",
+    "population": 874000,
+    "region": "South Atlantic",
+    "col_index": 102
+  },
+  {
+    "name": "Bismarck",
+    "state": "North Dakota",
+    "state_abbr": "ND",
+    "slug": "bismarck-nd",
+    "population": 74000,
+    "region": "Midwest",
+    "col_index": 75
+  },
+  {
+    "name": "Fargo",
+    "state": "North Dakota",
+    "state_abbr": "ND",
+    "slug": "fargo-nd",
+    "population": 125000,
+    "region": "Midwest",
+    "col_index": 80
+  },
+  {
+    "name": "Columbus",
+    "state": "Ohio",
+    "state_abbr": "OH",
+    "slug": "columbus-oh",
+    "population": 905000,
+    "region": "Midwest",
+    "col_index": 85
+  },
+  {
+    "name": "Cleveland",
+    "state": "Ohio",
+    "state_abbr": "OH",
+    "slug": "cleveland-oh",
+    "population": 383000,
+    "region": "Midwest",
+    "col_index": 78
+  },
+  {
+    "name": "Oklahoma City",
+    "state": "Oklahoma",
+    "state_abbr": "OK",
+    "slug": "oklahoma-city-ok",
+    "population": 649000,
+    "region": "West South Central",
+    "col_index": 78
+  },
+  {
+    "name": "Tulsa",
+    "state": "Oklahoma",
+    "state_abbr": "OK",
+    "slug": "tulsa-ok",
+    "population": 413000,
+    "region": "West South Central",
+    "col_index": 75
+  },
+  {
+    "name": "Salem",
+    "state": "Oregon",
+    "state_abbr": "OR",
+    "slug": "salem-or",
+    "population": 175000,
+    "region": "Pacific",
+    "col_index": 105
+  },
+  {
+    "name": "Portland",
+    "state": "Oregon",
+    "state_abbr": "OR",
+    "slug": "portland-or",
+    "population": 652000,
+    "region": "Pacific",
+    "col_index": 128
+  },
+  {
+    "name": "Harrisburg",
+    "state": "Pennsylvania",
+    "state_abbr": "PA",
+    "slug": "harrisburg-pa",
+    "population": 50000,
+    "region": "Northeast",
+    "col_index": 88
+  },
+  {
+    "name": "Philadelphia",
+    "state": "Pennsylvania",
+    "state_abbr": "PA",
+    "slug": "philadelphia-pa",
+    "population": 1584000,
+    "region": "Northeast",
+    "col_index": 115
+  },
+  {
+    "name": "Providence",
+    "state": "Rhode Island",
+    "state_abbr": "RI",
+    "slug": "providence-ri",
+    "population": 190000,
+    "region": "Northeast",
+    "col_index": 118
+  },
+  {
+    "name": "Cranston",
+    "state": "Rhode Island",
+    "state_abbr": "RI",
+    "slug": "cranston-ri",
+    "population": 82000,
+    "region": "Northeast",
+    "col_index": 112
+  },
+  {
+    "name": "Columbia",
+    "state": "South Carolina",
+    "state_abbr": "SC",
+    "slug": "columbia-sc",
+    "population": 133000,
+    "region": "South Atlantic",
+    "col_index": 82
+  },
+  {
+    "name": "Charleston",
+    "state": "South Carolina",
+    "state_abbr": "SC",
+    "slug": "charleston-sc",
+    "population": 150000,
+    "region": "South Atlantic",
+    "col_index": 98
+  },
+  {
+    "name": "Pierre",
+    "state": "South Dakota",
+    "state_abbr": "SD",
+    "slug": "pierre-sd",
+    "population": 14000,
+    "region": "Midwest",
+    "col_index": 70
+  },
+  {
+    "name": "Sioux Falls",
+    "state": "South Dakota",
+    "state_abbr": "SD",
+    "slug": "sioux-falls-sd",
+    "population": 192000,
+    "region": "Midwest",
+    "col_index": 78
+  },
+  {
+    "name": "Nashville",
+    "state": "Tennessee",
+    "state_abbr": "TN",
+    "slug": "nashville-tn",
+    "population": 689000,
+    "region": "East South Central",
+    "col_index": 100
+  },
+  {
+    "name": "Memphis",
+    "state": "Tennessee",
+    "state_abbr": "TN",
+    "slug": "memphis-tn",
+    "population": 633000,
+    "region": "East South Central",
+    "col_index": 78
+  },
+  {
+    "name": "Austin",
+    "state": "Texas",
+    "state_abbr": "TX",
+    "slug": "austin-tx",
+    "population": 961000,
+    "region": "West South Central",
+    "col_index": 108
+  },
+  {
+    "name": "Houston",
+    "state": "Texas",
+    "state_abbr": "TX",
+    "slug": "houston-tx",
+    "population": 2304000,
+    "region": "West South Central",
+    "col_index": 95
+  },
+  {
+    "name": "Salt Lake City",
+    "state": "Utah",
+    "state_abbr": "UT",
+    "slug": "salt-lake-city-ut",
+    "population": 200000,
+    "region": "Mountain",
+    "col_index": 108
+  },
+  {
+    "name": "Provo",
+    "state": "Utah",
+    "state_abbr": "UT",
+    "slug": "provo-ut",
+    "population": 115000,
+    "region": "Mountain",
+    "col_index": 95
+  },
+  {
+    "name": "Montpelier",
+    "state": "Vermont",
+    "state_abbr": "VT",
+    "slug": "montpelier-vt",
+    "population": 8000,
+    "region": "Northeast",
+    "col_index": 98
+  },
+  {
+    "name": "Burlington",
+    "state": "Vermont",
+    "state_abbr": "VT",
+    "slug": "burlington-vt",
+    "population": 45000,
+    "region": "Northeast",
+    "col_index": 112
+  },
+  {
+    "name": "Richmond",
+    "state": "Virginia",
+    "state_abbr": "VA",
+    "slug": "richmond-va",
+    "population": 226000,
+    "region": "South Atlantic",
+    "col_index": 102
+  },
+  {
+    "name": "Virginia Beach",
+    "state": "Virginia",
+    "state_abbr": "VA",
+    "slug": "virginia-beach-va",
+    "population": 459000,
+    "region": "South Atlantic",
+    "col_index": 98
+  },
+  {
+    "name": "Olympia",
+    "state": "Washington",
+    "state_abbr": "WA",
+    "slug": "olympia-wa",
+    "population": 53000,
+    "region": "Pacific",
+    "col_index": 118
+  },
+  {
+    "name": "Seattle",
+    "state": "Washington",
+    "state_abbr": "WA",
+    "slug": "seattle-wa",
+    "population": 737000,
+    "region": "Pacific",
+    "col_index": 158
+  },
+  {
+    "name": "Charleston",
+    "state": "West Virginia",
+    "state_abbr": "WV",
+    "slug": "charleston-wv",
+    "population": 48000,
+    "region": "South Atlantic",
+    "col_index": 68
+  },
+  {
+    "name": "Huntington",
+    "state": "West Virginia",
+    "state_abbr": "WV",
+    "slug": "huntington-wv",
+    "population": 46000,
+    "region": "South Atlantic",
+    "col_index": 65
+  },
+  {
+    "name": "Madison",
+    "state": "Wisconsin",
+    "state_abbr": "WI",
+    "slug": "madison-wi",
+    "population": 259000,
+    "region": "Midwest",
+    "col_index": 100
+  },
+  {
+    "name": "Milwaukee",
+    "state": "Wisconsin",
+    "state_abbr": "WI",
+    "slug": "milwaukee-wi",
+    "population": 577000,
+    "region": "Midwest",
+    "col_index": 88
+  },
+  {
+    "name": "Cheyenne",
+    "state": "Wyoming",
+    "state_abbr": "WY",
+    "slug": "cheyenne-wy",
+    "population": 63000,
+    "region": "Mountain",
+    "col_index": 82
+  },
+  {
+    "name": "Casper",
+    "state": "Wyoming",
+    "state_abbr": "WY",
+    "slug": "casper-wy",
+    "population": 58000,
+    "region": "Mountain",
+    "col_index": 78
+  },
+  {
+    "name": "Washington",
+    "state": "District of Columbia",
+    "state_abbr": "DC",
+    "slug": "washington-dc",
+    "population": 689000,
+    "region": "South Atlantic",
+    "col_index": 155
+  }
 ]
