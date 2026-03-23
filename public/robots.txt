@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://realinflation.co/sitemap.xml

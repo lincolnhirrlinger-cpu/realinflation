@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #faf9f7;
+  --border: #e8e4df;
+  --accent: #c23616;
+  --text-primary: #1a1a18;
+  --text-secondary: #6b6860;
+}
+
+body {
+  background-color: #faf9f7;
+  color: #1a1a18;
+  font-family: 'Outfit', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-border rounded-card shadow-card transition-shadow duration-200;
+  }
+  .card:hover {
+    @apply shadow-card-hover;
+  }
+  .stat-stripe-red {
+    border-top: 3px solid #c23616;
+  }
+  .stat-stripe-blue {
+    border-top: 3px solid #2563eb;
+  }
+  .stat-stripe-green {
+    border-top: 3px solid #16a34a;
+  }
+  .stat-stripe-orange {
+    border-top: 3px solid #ea580c;
+  }
+  .label-caps {
+    @apply text-xs font-semibold uppercase tracking-widest text-text-secondary font-sans;
+  }
+  .mono-stat {
+    @apply font-mono font-bold tabular-nums;
+  }
+  .btn-primary {
+    @apply bg-accent text-white px-5 py-2.5 rounded-lg font-sans font-semibold text-sm hover:bg-accent-dark transition-colors duration-150;
+  }
+  .btn-secondary {
+    @apply bg-white border border-border text-text-primary px-5 py-2.5 rounded-lg font-sans font-semibold text-sm hover:bg-cream transition-colors duration-150;
+  }
+  .section-title {
+    @apply font-serif text-2xl md:text-3xl text-text-primary;
+  }
+}

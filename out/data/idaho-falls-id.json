@@ -1,0 +1,67 @@
+{
+  "city": "Idaho Falls",
+  "state": "Idaho",
+  "slug": "idaho-falls-id",
+  "population": 66000,
+  "region": "Mountain West",
+  "col_index": 90,
+  "last_updated": "2026-03-22",
+  "gas": {
+    "current": 3.85,
+    "national_current": 3.88,
+    "history": [
+      { "date": "2022-03", "price": 4.22, "national": 4.29 },
+      { "date": "2023-03", "price": 3.59, "national": 3.43 },
+      { "date": "2024-03", "price": 3.18, "national": 3.45 },
+      { "date": "2025-03", "price": 2.95, "national": 3.02 },
+      { "date": "2026-03", "price": 3.85, "national": 3.88 }
+    ]
+  },
+  "rent": {
+    "avg_all": 1098,
+    "avg_1br": 989,
+    "avg_2br": 1199,
+    "national_avg": 1900,
+    "history": [
+      { "date": "2022", "avg": 925, "onebed": 820, "national": 1750 },
+      { "date": "2023", "avg": 942, "onebed": 838, "national": 1730 },
+      { "date": "2024", "avg": 990, "onebed": 882, "national": 1740 },
+      { "date": "2025", "avg": 1045, "onebed": 940, "national": 1800 },
+      { "date": "2026", "avg": 1098, "onebed": 989, "national": 1900 }
+    ]
+  },
+  "groceries": {
+    "items": [
+      { "name": "Eggs (dozen)", "slug": "eggs", "current": 2.35,
+        "history": [{"date":"2022","price":2.72},{"date":"2023","price":2.38},{"date":"2024","price":3.01},{"date":"2025","price":4.78},{"date":"2026","price":2.35}],
+        "change_from_2022": -0.136, "note": "Bird flu volatility" },
+      { "name": "Ground Beef (lb)", "slug": "ground-beef", "current": 5.09,
+        "history": [{"date":"2022","price":3.72},{"date":"2023","price":4.58},{"date":"2024","price":4.80},{"date":"2025","price":4.98},{"date":"2026","price":5.09}],
+        "change_from_2022": 0.369 },
+      { "name": "Milk (gallon)", "slug": "milk", "current": 3.65,
+        "history": [{"date":"2022","price":3.28},{"date":"2023","price":3.52},{"date":"2024","price":3.48},{"date":"2025","price":3.59},{"date":"2026","price":3.65}],
+        "change_from_2022": 0.113 },
+      { "name": "Bread (lb)", "slug": "bread", "current": 3.19,
+        "history": [{"date":"2022","price":2.02},{"date":"2023","price":2.74},{"date":"2024","price":2.99},{"date":"2025","price":3.12},{"date":"2026","price":3.19}],
+        "change_from_2022": 0.580 },
+      { "name": "Chicken Breast (lb)", "slug": "chicken", "current": 3.85,
+        "history": [{"date":"2022","price":3.50},{"date":"2023","price":3.68},{"date":"2024","price":3.78},{"date":"2025","price":3.82},{"date":"2026","price":3.85}],
+        "change_from_2022": 0.100 }
+    ],
+    "inflation_rate": {
+      "current_yoy": 2.0,
+      "history": [{"year":"2022","rate":10.8},{"year":"2023","rate":4.5},{"year":"2024","rate":0.9},{"year":"2025","rate":1.9},{"year":"2026","rate":2.0}]
+    }
+  },
+  "dining": {
+    "fast_food_avg": 11.25,
+    "casual_dining_avg": 18.75,
+    "monthly_household_spend": 455,
+    "restaurant_inflation_yoy": 3.2,
+    "chains": [
+      { "name": "McDonalds", "price_2022": 5.85, "price_current": 7.75 },
+      { "name": "Wendys", "price_2022": 8.90, "price_current": 12.50 },
+      { "name": "Five Guys", "price_2022": 17.10, "price_current": 20.50 }
+    ]
+  }
+}
