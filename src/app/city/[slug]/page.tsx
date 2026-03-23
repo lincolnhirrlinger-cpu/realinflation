@@ -1,15 +1,24 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { getCityDataServer } from '@/lib/data.server'
 import { CITIES, getAllSlugs } from '@/lib/cities'
 import StatCard from '@/components/StatCard'
-import GasChart from '@/components/GasChart'
-import RentChart from '@/components/RentChart'
 import GroceryTable from '@/components/GroceryTable'
 import DiningSection from '@/components/DiningSection'
 import AdSlot from '@/components/AdSlot'
 import Newsletter from '@/components/Newsletter'
+
+// Load charts client-side only — Recharts uses browser APIs (window/ResizeObserver)
+const GasChart = dynamic(() => import('@/components/GasChart'), {
+  ssr: false,
+  loading: () => <div className="card p-5 h-[300px] animate-pulse bg-surface2" />,
+})
+const RentChart = dynamic(() => import('@/components/RentChart'), {
+  ssr: false,
+  loading: () => <div className="card p-5 h-[300px] animate-pulse bg-surface2" />,
+})
 
 interface Props {
   params: { slug: string }
