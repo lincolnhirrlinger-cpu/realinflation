@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" fill="none">
+  <!-- Red accent bar -->
+  <rect x="0" y="8" width="4" height="24" rx="2" fill="#c23616"/>
+  <!-- RI monogram circle -->
+  <circle cx="22" cy="20" r="14" fill="#c23616"/>
+  <text x="22" y="25" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-weight="700" font-size="13" fill="white">RI</text>
+  <!-- Wordmark -->
+  <text x="44" y="16" font-family="Georgia,serif" font-weight="700" font-size="14" fill="#1a1a18">Real</text>
+  <text x="44" y="31" font-family="Georgia,serif" font-weight="700" font-size="14" fill="#c23616">Inflation</text>
+</svg>
