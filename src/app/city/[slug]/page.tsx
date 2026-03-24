@@ -209,9 +209,9 @@ export default async function CityPage({ params }: Props) {
               <StatCard
                 label="Electricity"
                 value={`${data.electricity?.cents_per_kwh ?? '—'}¢/kWh`}
-                subvalue={`~$${data.electricity?.monthly_avg_bill?.toFixed(0) ?? '—'}/mo avg bill`}
-                change={((data.electricity?.cents_per_kwh ?? 16.2) - 16.2) / 16.2}
-                changeLabel="vs national avg"
+                subvalue={`~$${data.electricity?.avg_monthly_bill ?? data.electricity?.monthly_avg_bill ?? '—'}/mo`}
+                change={((data.electricity?.cents_per_kwh ?? 17.38) - (data.electricity?.national_avg_cents ?? 17.38)) / (data.electricity?.national_avg_cents ?? 17.38)}
+                changeLabel="vs US avg"
                 stripe="orange"
               />
               <div className="mt-1"><SourceBadge source="EIA Residential" /></div>
@@ -220,7 +220,7 @@ export default async function CityPage({ params }: Props) {
               <StatCard
                 label="Car Insurance"
                 value={`$${data.car_insurance?.monthly_avg?.toFixed(0) ?? '—'}/mo`}
-                subvalue={`$${data.car_insurance?.annual_avg?.toLocaleString() ?? '—'}/yr state avg`}
+                subvalue={`$${data.car_insurance?.annual_avg?.toLocaleString() ?? '—'}/yr`}
                 change={((data.car_insurance?.annual_avg ?? 2150) - 2150) / 2150}
                 changeLabel="vs national avg"
                 stripe="red"

@@ -38,10 +38,10 @@ export default function StatCard({
         <p className="text-sm text-text-secondary font-sans mb-2">{subvalue}</p>
       )}
       {change !== undefined && (
-        <div className="flex items-center gap-2 mt-2">
+        <div className="flex flex-wrap items-center gap-1.5 mt-2">
           <span
             className={clsx(
-              'inline-flex items-center gap-0.5 text-xs font-mono font-semibold px-2 py-0.5 rounded-full',
+              'inline-flex items-center gap-0.5 text-xs font-mono font-semibold px-2 py-0.5 rounded-full shrink-0',
               isUp && 'bg-red-50 text-accent',
               isDown && 'bg-green-50 text-green-700',
               isNeutral && 'bg-gray-100 text-text-secondary'
@@ -52,7 +52,7 @@ export default function StatCard({
             {Math.abs(change * 100).toFixed(1)}%
           </span>
           {changeLabel && (
-            <span className="text-xs text-text-muted font-sans">{changeLabel}</span>
+            <span className="text-xs text-text-muted font-sans leading-tight">{changeLabel}</span>
           )}
         </div>
       )}

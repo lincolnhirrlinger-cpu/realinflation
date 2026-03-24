@@ -11,7 +11,9 @@ export interface GroceryItem {
 export interface ElectricityData {
   cents_per_kwh: number
   monthly_avg_bill: number
+  avg_monthly_bill?: number
   national_avg_cents: number
+  national_avg_rate?: number
   national_avg_bill: number
   source: string
 }
