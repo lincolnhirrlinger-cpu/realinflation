@@ -41,7 +41,7 @@ export default function AirdropModal({ userUuid, totalPoints, cityName, onClose 
       email,
       options: {
         shouldCreateUser: true,
-        emailRedirectTo: `${window.location.origin}/submit/`,
+        emailRedirectTo: `https://www.realinflation.co/submit/`,
         data: { user_uuid: userUuid },
       },
     })
