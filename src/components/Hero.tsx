@@ -3,9 +3,13 @@ import Link from 'next/link'
 
 const QUICK_CITIES = [
   { name: 'Boise', slug: 'boise-id' },
-  { name: 'Meridian', slug: 'meridian-id' },
-  { name: 'Idaho Falls', slug: 'idaho-falls-id' },
-  { name: 'Twin Falls', slug: 'twin-falls-id' },
+  { name: 'Los Angeles', slug: 'los-angeles-ca' },
+  { name: 'Dallas', slug: 'dallas-tx' },
+  { name: 'New York', slug: 'new-york-ny' },
+  { name: 'Miami', slug: 'miami-fl' },
+  { name: 'Chicago', slug: 'chicago-il' },
+  { name: 'Seattle', slug: 'seattle-wa' },
+  { name: 'Houston', slug: 'houston-tx' },
 ]
 
 export default function Hero() {
