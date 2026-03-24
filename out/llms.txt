@@ -1,0 +1,47 @@
+# RealInflation
+
+> Real consumer price tracker across 115 US cities. Gas, rent, groceries, electricity, and car insurance — real prices vs. government CPI.
+
+## What this site does
+
+RealInflation tracks what Americans actually pay for everyday expenses, city by city, vs. what the government CPI reports. Data is sourced from BLS/FRED, AAA, Zillow ZORI, EIA, and Bankrate — plus community-submitted receipts.
+
+## Data sources
+
+- **Gas prices**: AAA state averages (scraped monthly)
+- **Rent**: Zillow ZORI Metro Index (updated monthly, Feb 2026 latest)
+- **Groceries**: BLS APU series via FRED API — eggs, milk, bread, ground beef, chicken
+- **Electricity**: EIA Residential Electric Power state averages (2025)
+- **Car insurance**: Bankrate/NAIC state averages (2025)
+- **Fast food**: Community-submitted prices via /submit
+
+## Coverage
+
+115 US cities across all 50 states + DC. Includes all state capitals plus major metros.
+
+## Key pages
+
+- `/` — Homepage with interactive USA inflation map
+- `/city/[slug]/` — City detail page (gas, rent, groceries, electricity, insurance, charts)
+- `/states/` — Browse all 50 states
+- `/state/[slug]/` — State hub with all cities
+- `/compare/` — Side-by-side city comparison
+- `/submit/` — Community price submission
+- `/leaderboard/` — Top contributors
+- `/methodology/` — Data methodology and sources
+
+## City data format
+
+Each city JSON is available at `/data/[city-slug].json` and includes:
+- Gas: current price, history (60 months), vs-national comparison
+- Rent: avg 1br/2br/all, YoY change, Zillow ZORI sourced
+- Groceries: eggs, milk, bread, ground beef, chicken — all BLS national series
+- Electricity: cents/kWh, monthly bill estimate, vs national avg
+- Car insurance: annual/monthly premium, vs national avg
+- Cost of living index (national avg = 100)
+
+## Contact
+
+Site: https://realinflation.co
+Twitter/X: @realinflationco
+Submit data: https://realinflation.co/submit/
