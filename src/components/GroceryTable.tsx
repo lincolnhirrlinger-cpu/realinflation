@@ -37,8 +37,10 @@ export default function GroceryTable({ items }: GroceryTableProps) {
           </thead>
           <tbody className="divide-y divide-border">
             {items.map(item => {
-              const isUp = item.change_from_2022 > 0.05
-              const isDown = item.change_from_2022 < -0.05
+              // change_from_2022 is stored as a percentage value (e.g. 29.6 = 29.6%)
+              const changePct = Math.abs(item.change_from_2022) > 2 ? item.change_from_2022 : item.change_from_2022 * 100
+              const isUp = changePct > 5
+              const isDown = changePct < -5
               return (
                 <tr key={item.slug} className="hover:bg-cream/60 transition-colors">
                   <td className="px-5 py-3 font-sans text-text-primary font-medium">
@@ -64,8 +66,8 @@ export default function GroceryTable({ items }: GroceryTableProps) {
                         !isUp && !isDown && 'bg-gray-100 text-text-secondary'
                       )}
                     >
-                      {item.change_from_2022 >= 0 ? '+' : ''}
-                      {(item.change_from_2022 * 100).toFixed(1)}%
+                      {changePct >= 0 ? '+' : ''}
+                      {changePct.toFixed(1)}%
                     </span>
                   </td>
                 </tr>

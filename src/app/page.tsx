@@ -45,7 +45,7 @@ function HomeJsonLd() {
         {
           '@type': 'Question',
           name: 'How much is gas in the US right now?',
-          acceptedAnswer: { '@type': 'Answer', text: 'The national average gas price is around $3.15-$3.40/gallon in 2025, but varies significantly by city. California cities like San Francisco pay $4.50+, while Midwest cities like Kansas City pay closer to $2.90.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'The national average gas price is around $3.98/gallon in 2026, but varies significantly by city. California cities like San Francisco pay $5.82, while Midwest cities like Kansas City pay closer to $2.90.' },
         },
         {
           '@type': 'Question',
@@ -161,7 +161,7 @@ export default async function HomePage() {
           />
           <StatCard
             label="Avg Gas Price"
-            value="$3.45"
+            value="$3.98"
             subvalue="Regular unleaded"
             change={-0.095}
             changeLabel="vs. 2022 peak"
