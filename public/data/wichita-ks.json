@@ -1340,7 +1340,7 @@
       {
         "date": "2022-02",
         "price": 3.843,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 3.772,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,11 +1591,11 @@
   },
   "rent": {
     "avg_all": 1000,
-    "avg_1br": 780.0,
-    "avg_2br": 1180.0,
+    "avg_1br": 780,
+    "avg_2br": 1180,
     "avg_3br": 1426.58,
     "national_avg": 1900,
-    "median_home_price": 200000.0,
+    "median_home_price": 200000,
     "history": [
       {
         "date": "2000-01",
@@ -1822,7 +1822,7 @@
       {
         "date": "2003-02",
         "avg": 527.5,
-        "onebed": 422.0,
+        "onebed": 422,
         "national": 715
       },
       {
@@ -2043,8 +2043,8 @@
       },
       {
         "date": "2006-03",
-        "avg": 615.0,
-        "onebed": 492.0,
+        "avg": 615,
+        "onebed": 492,
         "national": 790
       },
       {
@@ -2194,7 +2194,7 @@
       {
         "date": "2008-04",
         "avg": 647.5,
-        "onebed": 518.0,
+        "onebed": 518,
         "national": 860
       },
       {
@@ -2319,7 +2319,7 @@
       },
       {
         "date": "2010-01",
-        "avg": 625.0,
+        "avg": 625,
         "onebed": 487.5,
         "national": 880
       },
@@ -2379,8 +2379,8 @@
       },
       {
         "date": "2010-11",
-        "avg": 685.0,
-        "onebed": 548.0,
+        "avg": 685,
+        "onebed": 548,
         "national": 880
       },
       {
@@ -2409,8 +2409,8 @@
       },
       {
         "date": "2011-04",
-        "avg": 685.0,
-        "onebed": 548.0,
+        "avg": 685,
+        "onebed": 548,
         "national": 900
       },
       {
@@ -2517,7 +2517,7 @@
       },
       {
         "date": "2012-10",
-        "avg": 711.0,
+        "avg": 711,
         "onebed": 568.8,
         "national": 940
       },
@@ -2728,7 +2728,7 @@
       {
         "date": "2015-09",
         "avg": 827.5,
-        "onebed": 662.0,
+        "onebed": 662,
         "national": 1080
       },
       {
@@ -2872,7 +2872,7 @@
       {
         "date": "2017-09",
         "avg": 902.5,
-        "onebed": 722.0,
+        "onebed": 722,
         "national": 1195
       },
       {
@@ -2937,7 +2937,7 @@
       },
       {
         "date": "2018-08",
-        "avg": 971.0,
+        "avg": 971,
         "onebed": 776.8,
         "national": 1250
       },
@@ -2979,7 +2979,7 @@
       },
       {
         "date": "2019-03",
-        "avg": 993.0,
+        "avg": 993,
         "onebed": 794.4,
         "national": 1310
       },
@@ -3039,8 +3039,8 @@
       },
       {
         "date": "2020-01",
-        "avg": 800.0,
-        "onebed": 624.0,
+        "avg": 800,
+        "onebed": 624,
         "national": 1340
       },
       {
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 1000,
-        "onebed": 780.0,
+        "onebed": 780,
         "national": 1900
       }
     ]
@@ -3610,7 +3610,7 @@
             "price": 3.37
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -4142,12 +4142,12 @@
     "electricity_kwh": 0.13,
     "natural_gas_therm": 1.01,
     "internet_monthly": 63.86,
-    "phone_monthly": 79.0,
+    "phone_monthly": 79,
     "national_electricity": 0.16
   },
   "transportation": {
     "car_insurance_monthly": 117.6,
-    "used_car_avg": 16720.0,
+    "used_car_avg": 16720,
     "gas_per_month_avg": 155.63
   },
   "healthcare": {
@@ -4161,7 +4161,20 @@
     "movie_ticket": 11.65
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 13.5,
+    "monthly_avg_bill": 121.5,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 2080,
+    "monthly_avg": 173.33,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }

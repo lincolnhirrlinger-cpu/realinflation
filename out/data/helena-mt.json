@@ -1340,7 +1340,7 @@
       {
         "date": "2022-02",
         "price": 4.286,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 4.285,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,11 +1591,11 @@
   },
   "rent": {
     "avg_all": 1200,
-    "avg_1br": 936.0,
-    "avg_2br": 1416.0,
+    "avg_1br": 936,
+    "avg_2br": 1416,
     "avg_3br": 1985.15,
     "national_avg": 1900,
-    "median_home_price": 357000.0,
+    "median_home_price": 357000,
     "history": [
       {
         "date": "2000-01",
@@ -1899,8 +1899,8 @@
       },
       {
         "date": "2004-03",
-        "avg": 820.0,
-        "onebed": 656.0,
+        "avg": 820,
+        "onebed": 656,
         "national": 730
       },
       {
@@ -2044,7 +2044,7 @@
       {
         "date": "2006-03",
         "avg": 866.25,
-        "onebed": 693.0,
+        "onebed": 693,
         "national": 790
       },
       {
@@ -2319,8 +2319,8 @@
       },
       {
         "date": "2010-01",
-        "avg": 750.0,
-        "onebed": 585.0,
+        "avg": 750,
+        "onebed": 585,
         "national": 880
       },
       {
@@ -2590,7 +2590,7 @@
       {
         "date": "2013-10",
         "avg": 1077.5,
-        "onebed": 862.0,
+        "onebed": 862,
         "national": 975
       },
       {
@@ -2943,7 +2943,7 @@
       },
       {
         "date": "2018-09",
-        "avg": 1386.0,
+        "avg": 1386,
         "onebed": 1108.8,
         "national": 1250
       },
@@ -3039,7 +3039,7 @@
       },
       {
         "date": "2020-01",
-        "avg": 960.0,
+        "avg": 960,
         "onebed": 748.8,
         "national": 1340
       },
@@ -3160,7 +3160,7 @@
       {
         "date": "2021-09",
         "avg": 1577.5,
-        "onebed": 1262.0,
+        "onebed": 1262,
         "national": 1430
       },
       {
@@ -3243,7 +3243,7 @@
       },
       {
         "date": "2022-11",
-        "avg": 1823.0,
+        "avg": 1823,
         "onebed": 1458.4,
         "national": 1640
       },
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 1200,
-        "onebed": 936.0,
+        "onebed": 936,
         "national": 1900
       }
     ]
@@ -3610,7 +3610,7 @@
             "price": 3.26
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -3690,7 +3690,7 @@
           },
           {
             "date": "2024",
-            "price": 7.0
+            "price": 7
           },
           {
             "date": "2025",
@@ -4056,7 +4056,7 @@
         "name": "Frozen Pizza",
         "slug": "frozen-pizza",
         "unit": "each",
-        "current": 8.0,
+        "current": 8,
         "history": [
           {
             "date": "2022",
@@ -4076,7 +4076,7 @@
           },
           {
             "date": "2026",
-            "price": 8.0
+            "price": 8
           }
         ],
         "change_from_2022": 0.386
@@ -4147,7 +4147,7 @@
   },
   "transportation": {
     "car_insurance_monthly": 123.25,
-    "used_car_avg": 20808.0,
+    "used_car_avg": 20808,
     "gas_per_month_avg": 175.25
   },
   "healthcare": {
@@ -4161,7 +4161,20 @@
     "movie_ticket": 12.11
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 11.9,
+    "monthly_avg_bill": 107.1,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 1980,
+    "monthly_avg": 165,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }

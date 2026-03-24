@@ -1340,7 +1340,7 @@
       {
         "date": "2022-02",
         "price": 3.956,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 3.959,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,11 +1591,11 @@
   },
   "rent": {
     "avg_all": 950,
-    "avg_1br": 741.0,
-    "avg_2br": 1121.0,
+    "avg_1br": 741,
+    "avg_2br": 1121,
     "avg_3br": 1377.09,
     "national_avg": 1900,
-    "median_home_price": 221400.0,
+    "median_home_price": 221400,
     "history": [
       {
         "date": "2000-01",
@@ -1959,8 +1959,8 @@
       },
       {
         "date": "2005-01",
-        "avg": 500.0,
-        "onebed": 390.0,
+        "avg": 500,
+        "onebed": 390,
         "national": 755
       },
       {
@@ -2631,8 +2631,8 @@
       },
       {
         "date": "2014-05",
-        "avg": 775.0,
-        "onebed": 620.0,
+        "avg": 775,
+        "onebed": 620,
         "national": 1020
       },
       {
@@ -2764,7 +2764,7 @@
       {
         "date": "2016-03",
         "avg": 897.5,
-        "onebed": 718.0,
+        "onebed": 718,
         "national": 1140
       },
       {
@@ -2974,7 +2974,7 @@
       {
         "date": "2019-02",
         "avg": 1027.5,
-        "onebed": 822.0,
+        "onebed": 822,
         "national": 1310
       },
       {
@@ -3039,7 +3039,7 @@
       },
       {
         "date": "2020-01",
-        "avg": 760.0,
+        "avg": 760,
         "onebed": 592.8,
         "national": 1340
       },
@@ -3099,7 +3099,7 @@
       },
       {
         "date": "2020-11",
-        "avg": 1023.0,
+        "avg": 1023,
         "onebed": 818.4,
         "national": 1340
       },
@@ -3184,7 +3184,7 @@
       {
         "date": "2022-01",
         "avg": 833.33,
-        "onebed": 650.0,
+        "onebed": 650,
         "national": 1640
       },
       {
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 950,
-        "onebed": 741.0,
+        "onebed": 741,
         "national": 1900
       }
     ]
@@ -3610,7 +3610,7 @@
             "price": 3.31
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -3823,7 +3823,7 @@
         "name": "Orange Juice (64 oz)",
         "slug": "orange-juice",
         "unit": "64 oz",
-        "current": 5.0,
+        "current": 5,
         "history": [
           {
             "date": "2022",
@@ -3843,7 +3843,7 @@
           },
           {
             "date": "2026",
-            "price": 5.0
+            "price": 5
           }
         ],
         "change_from_2022": 0.475,
@@ -3952,7 +3952,7 @@
           },
           {
             "date": "2024",
-            "price": 2.0
+            "price": 2
           },
           {
             "date": "2025",
@@ -3973,7 +3973,7 @@
         "history": [
           {
             "date": "2022",
-            "price": 5.0
+            "price": 5
           },
           {
             "date": "2023",
@@ -4140,7 +4140,7 @@
   },
   "utilities": {
     "electricity_kwh": 0.14,
-    "natural_gas_therm": 1.0,
+    "natural_gas_therm": 1,
     "internet_monthly": 65.1,
     "phone_monthly": 80.44,
     "national_electricity": 0.16
@@ -4161,7 +4161,20 @@
     "movie_ticket": 11.14
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 15.8,
+    "monthly_avg_bill": 142.2,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 1980,
+    "monthly_avg": 165,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }

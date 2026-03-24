@@ -264,7 +264,7 @@
       },
       {
         "date": "2004-03",
-        "price": 2.0,
+        "price": 2,
         "national": 1.967
       },
       {
@@ -1340,7 +1340,7 @@
       {
         "date": "2022-02",
         "price": 3.988,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 4.037,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,11 +1591,11 @@
   },
   "rent": {
     "avg_all": 2000,
-    "avg_1br": 1560.0,
-    "avg_2br": 2360.0,
+    "avg_1br": 1560,
+    "avg_2br": 2360,
     "avg_3br": 2746.92,
     "national_avg": 1900,
-    "median_home_price": 399840.0,
+    "median_home_price": 399840,
     "history": [
       {
         "date": "2000-01",
@@ -1671,7 +1671,7 @@
       },
       {
         "date": "2001-01",
-        "avg": 996.0,
+        "avg": 996,
         "onebed": 796.8,
         "national": 680
       },
@@ -1971,7 +1971,7 @@
       },
       {
         "date": "2005-03",
-        "avg": 1119.0,
+        "avg": 1119,
         "onebed": 895.2,
         "national": 755
       },
@@ -2008,7 +2008,7 @@
       {
         "date": "2005-09",
         "avg": 1132.5,
-        "onebed": 906.0,
+        "onebed": 906,
         "national": 755
       },
       {
@@ -2283,8 +2283,8 @@
       },
       {
         "date": "2009-07",
-        "avg": 1310.0,
-        "onebed": 1048.0,
+        "avg": 1310,
+        "onebed": 1048,
         "national": 875
       },
       {
@@ -2319,8 +2319,8 @@
       },
       {
         "date": "2010-01",
-        "avg": 1250.0,
-        "onebed": 975.0,
+        "avg": 1250,
+        "onebed": 975,
         "national": 880
       },
       {
@@ -2661,7 +2661,7 @@
       },
       {
         "date": "2014-10",
-        "avg": 1504.0,
+        "avg": 1504,
         "onebed": 1203.2,
         "national": 1020
       },
@@ -3039,8 +3039,8 @@
       },
       {
         "date": "2020-01",
-        "avg": 1600.0,
-        "onebed": 1248.0,
+        "avg": 1600,
+        "onebed": 1248,
         "national": 1340
       },
       {
@@ -3129,7 +3129,7 @@
       },
       {
         "date": "2021-04",
-        "avg": 2138.0,
+        "avg": 2138,
         "onebed": 1710.4,
         "national": 1430
       },
@@ -3231,7 +3231,7 @@
       },
       {
         "date": "2022-09",
-        "avg": 2444.0,
+        "avg": 2444,
         "onebed": 1955.2,
         "national": 1640
       },
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 2000,
-        "onebed": 1560.0,
+        "onebed": 1560,
         "national": 1900
       }
     ]
@@ -3610,7 +3610,7 @@
             "price": 3.68
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -3911,7 +3911,7 @@
         "name": "Tomatoes (lb)",
         "slug": "tomatoes",
         "unit": "lb",
-        "current": 3.0,
+        "current": 3,
         "history": [
           {
             "date": "2022",
@@ -3931,7 +3931,7 @@
           },
           {
             "date": "2026",
-            "price": 3.0
+            "price": 3
           }
         ],
         "change_from_2022": 0.261
@@ -4147,7 +4147,7 @@
   },
   "transportation": {
     "car_insurance_monthly": 197.76,
-    "used_car_avg": 29256.0,
+    "used_car_avg": 29256,
     "gas_per_month_avg": 158.03
   },
   "healthcare": {
@@ -4161,7 +4161,20 @@
     "movie_ticket": 17.64
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 16.2,
+    "monthly_avg_bill": 145.8,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 2480,
+    "monthly_avg": 206.67,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }

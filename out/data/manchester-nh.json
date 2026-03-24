@@ -1340,7 +1340,7 @@
       {
         "date": "2022-02",
         "price": 3.963,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1349,7 +1349,7 @@
       },
       {
         "date": "2022-04",
-        "price": 4.0,
+        "price": 4,
         "national": 4.05
       },
       {
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 4.035,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,11 +1591,11 @@
   },
   "rent": {
     "avg_all": 1700,
-    "avg_1br": 1326.0,
-    "avg_2br": 2006.0,
+    "avg_1br": 1326,
+    "avg_2br": 2006,
     "avg_3br": 3174.09,
     "national_avg": 1900,
-    "median_home_price": 559104.0,
+    "median_home_price": 559104,
     "history": [
       {
         "date": "2000-01",
@@ -1816,7 +1816,7 @@
       {
         "date": "2003-01",
         "avg": 1316.25,
-        "onebed": 1053.0,
+        "onebed": 1053,
         "national": 715
       },
       {
@@ -2343,7 +2343,7 @@
       },
       {
         "date": "2010-05",
-        "avg": 1613.0,
+        "avg": 1613,
         "onebed": 1290.4,
         "national": 880
       },
@@ -2416,7 +2416,7 @@
       {
         "date": "2011-05",
         "avg": 1642.5,
-        "onebed": 1314.0,
+        "onebed": 1314,
         "national": 900
       },
       {
@@ -2511,7 +2511,7 @@
       },
       {
         "date": "2012-09",
-        "avg": 1712.0,
+        "avg": 1712,
         "onebed": 1369.6,
         "national": 940
       },
@@ -3039,7 +3039,7 @@
       },
       {
         "date": "2020-01",
-        "avg": 1360.0,
+        "avg": 1360,
         "onebed": 1060.8,
         "national": 1340
       },
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 1700,
-        "onebed": 1326.0,
+        "onebed": 1326,
         "national": 1900
       }
     ]
@@ -3610,7 +3610,7 @@
             "price": 3.53
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -3794,7 +3794,7 @@
         "name": "Coffee (12 oz)",
         "slug": "coffee",
         "unit": "12 oz",
-        "current": 13.0,
+        "current": 13,
         "history": [
           {
             "date": "2022",
@@ -3814,7 +3814,7 @@
           },
           {
             "date": "2026",
-            "price": 13.0
+            "price": 13
           }
         ],
         "change_from_2022": 0.416
@@ -3985,7 +3985,7 @@
           },
           {
             "date": "2025",
-            "price": 8.0
+            "price": 8
           },
           {
             "date": "2026",
@@ -4161,7 +4161,20 @@
     "movie_ticket": 18.47
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 25.8,
+    "monthly_avg_bill": 232.2,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 1380,
+    "monthly_avg": 115,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }

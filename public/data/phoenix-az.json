@@ -1340,7 +1340,7 @@
       {
         "date": "2022-02",
         "price": 4.007,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 4.03,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,16 +1591,16 @@
   },
   "rent": {
     "avg_all": 1650,
-    "avg_1br": 1287.0,
-    "avg_2br": 1947.0,
+    "avg_1br": 1287,
+    "avg_2br": 1947,
     "avg_3br": 2335.45,
     "national_avg": 1900,
-    "median_home_price": 436800.0,
+    "median_home_price": 436800,
     "history": [
       {
         "date": "2000-01",
-        "avg": 750.0,
-        "onebed": 585.0,
+        "avg": 750,
+        "onebed": 585,
         "national": 650
       },
       {
@@ -1929,7 +1929,7 @@
       },
       {
         "date": "2004-08",
-        "avg": 909.0,
+        "avg": 909,
         "onebed": 727.2,
         "national": 730
       },
@@ -2643,8 +2643,8 @@
       },
       {
         "date": "2014-07",
-        "avg": 1295.0,
-        "onebed": 1036.0,
+        "avg": 1295,
+        "onebed": 1036,
         "national": 1020
       },
       {
@@ -2889,8 +2889,8 @@
       },
       {
         "date": "2017-12",
-        "avg": 1530.0,
-        "onebed": 1224.0,
+        "avg": 1530,
+        "onebed": 1224,
         "national": 1195
       },
       {
@@ -3039,7 +3039,7 @@
       },
       {
         "date": "2020-01",
-        "avg": 1320.0,
+        "avg": 1320,
         "onebed": 1029.6,
         "national": 1340
       },
@@ -3118,7 +3118,7 @@
       {
         "date": "2021-02",
         "avg": 1802.5,
-        "onebed": 1442.0,
+        "onebed": 1442,
         "national": 1430
       },
       {
@@ -3285,8 +3285,8 @@
       },
       {
         "date": "2023-06",
-        "avg": 2300.0,
-        "onebed": 1840.0,
+        "avg": 2300,
+        "onebed": 1840,
         "national": 1820
       },
       {
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 1650,
-        "onebed": 1287.0,
+        "onebed": 1287,
         "national": 1900
       }
     ]
@@ -3610,7 +3610,7 @@
             "price": 3.18
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -4110,7 +4110,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 13.0,
+    "fast_food_avg": 13,
     "casual_dining_avg": 26.52,
     "coffee_avg": 6.5,
     "monthly_household_spend": 396.06,
@@ -4124,7 +4124,7 @@
       {
         "name": "Wendy's",
         "price_2022": 9.07,
-        "price_current": 14.0
+        "price_current": 14
       },
       {
         "name": "Chipotle",
@@ -4147,11 +4147,11 @@
   },
   "transportation": {
     "car_insurance_monthly": 136.3,
-    "used_car_avg": 24000.0,
+    "used_car_avg": 24000,
     "gas_per_month_avg": 174.18
   },
   "healthcare": {
-    "doctor_visit": 189.0,
+    "doctor_visit": 189,
     "prescription_generic": 12.06,
     "dental_cleaning": 152.25
   },
@@ -4161,7 +4161,20 @@
     "movie_ticket": 14.4
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 13.8,
+    "monthly_avg_bill": 124.2,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 2420,
+    "monthly_avg": 201.67,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }

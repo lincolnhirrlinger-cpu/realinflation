@@ -1340,7 +1340,7 @@
       {
         "date": "2022-02",
         "price": 4.045,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 3.972,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,11 +1591,11 @@
   },
   "rent": {
     "avg_all": 1150,
-    "avg_1br": 897.0,
-    "avg_2br": 1357.0,
+    "avg_1br": 897,
+    "avg_2br": 1357,
     "avg_3br": 1327.73,
     "national_avg": 1900,
-    "median_home_price": 192372.0,
+    "median_home_price": 192372,
     "history": [
       {
         "date": "2000-01",
@@ -1635,7 +1635,7 @@
       },
       {
         "date": "2000-07",
-        "avg": 463.0,
+        "avg": 463,
         "onebed": 370.4,
         "national": 650
       },
@@ -1666,7 +1666,7 @@
       {
         "date": "2000-12",
         "avg": 458.75,
-        "onebed": 367.0,
+        "onebed": 367,
         "national": 650
       },
       {
@@ -2026,7 +2026,7 @@
       {
         "date": "2005-12",
         "avg": 526.25,
-        "onebed": 421.0,
+        "onebed": 421,
         "national": 755
       },
       {
@@ -3016,7 +3016,7 @@
       {
         "date": "2019-09",
         "avg": 922.5,
-        "onebed": 738.0,
+        "onebed": 738,
         "national": 1310
       },
       {
@@ -3039,7 +3039,7 @@
       },
       {
         "date": "2020-01",
-        "avg": 920.0,
+        "avg": 920,
         "onebed": 717.6,
         "national": 1340
       },
@@ -3129,7 +3129,7 @@
       },
       {
         "date": "2021-04",
-        "avg": 1018.0,
+        "avg": 1018,
         "onebed": 814.4,
         "national": 1430
       },
@@ -3400,7 +3400,7 @@
       {
         "date": "2025-01",
         "avg": 1328.75,
-        "onebed": 1063.0,
+        "onebed": 1063,
         "national": 1900
       },
       {
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 1150,
-        "onebed": 897.0,
+        "onebed": 897,
         "national": 1900
       }
     ]
@@ -3610,7 +3610,7 @@
             "price": 3.19
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -3823,7 +3823,7 @@
         "name": "Orange Juice (64 oz)",
         "slug": "orange-juice",
         "unit": "64 oz",
-        "current": 5.0,
+        "current": 5,
         "history": [
           {
             "date": "2022",
@@ -3831,7 +3831,7 @@
           },
           {
             "date": "2023",
-            "price": 4.0
+            "price": 4
           },
           {
             "date": "2024",
@@ -3843,7 +3843,7 @@
           },
           {
             "date": "2026",
-            "price": 5.0
+            "price": 5
           }
         ],
         "change_from_2022": 0.445,
@@ -3865,7 +3865,7 @@
           },
           {
             "date": "2024",
-            "price": 4.0
+            "price": 4
           },
           {
             "date": "2025",
@@ -4157,11 +4157,24 @@
   },
   "personal": {
     "haircut_mens": 13.87,
-    "gym_membership": 31.0,
+    "gym_membership": 31,
     "movie_ticket": 10.45
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 11.8,
+    "monthly_avg_bill": 106.2,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 2280,
+    "monthly_avg": 190,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }

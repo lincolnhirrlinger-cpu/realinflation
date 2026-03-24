@@ -1329,7 +1329,7 @@
       },
       {
         "date": "2021-12",
-        "price": 3.0,
+        "price": 3,
         "national": 2.96
       },
       {
@@ -1340,7 +1340,7 @@
       {
         "date": "2022-02",
         "price": 4.033,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 4.024,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,11 +1591,11 @@
   },
   "rent": {
     "avg_all": 1850,
-    "avg_1br": 1443.0,
-    "avg_2br": 2183.0,
-    "avg_3br": 3573.0,
+    "avg_1br": 1443,
+    "avg_2br": 2183,
+    "avg_3br": 3573,
     "national_avg": 1900,
-    "median_home_price": 600000.0,
+    "median_home_price": 600000,
     "history": [
       {
         "date": "2000-01",
@@ -2325,8 +2325,8 @@
       },
       {
         "date": "2010-02",
-        "avg": 1805.0,
-        "onebed": 1444.0,
+        "avg": 1805,
+        "onebed": 1444,
         "national": 880
       },
       {
@@ -2452,7 +2452,7 @@
       {
         "date": "2011-11",
         "avg": 1877.5,
-        "onebed": 1502.0,
+        "onebed": 1502,
         "national": 900
       },
       {
@@ -2506,13 +2506,13 @@
       {
         "date": "2012-08",
         "avg": 1958.75,
-        "onebed": 1567.0,
+        "onebed": 1567,
         "national": 940
       },
       {
         "date": "2012-09",
         "avg": 1941.25,
-        "onebed": 1553.0,
+        "onebed": 1553,
         "national": 940
       },
       {
@@ -3003,7 +3003,7 @@
       },
       {
         "date": "2019-07",
-        "avg": 2702.0,
+        "avg": 2702,
         "onebed": 2161.6,
         "national": 1310
       },
@@ -3039,7 +3039,7 @@
       },
       {
         "date": "2020-01",
-        "avg": 1480.0,
+        "avg": 1480,
         "onebed": 1154.4,
         "national": 1340
       },
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 1850,
-        "onebed": 1443.0,
+        "onebed": 1443,
         "national": 1900
       }
     ]
@@ -3499,7 +3499,7 @@
         "history": [
           {
             "date": "2022",
-            "price": 2.0
+            "price": 2
           },
           {
             "date": "2023",
@@ -3610,7 +3610,7 @@
             "price": 3.85
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -3869,7 +3869,7 @@
           },
           {
             "date": "2025",
-            "price": 5.0
+            "price": 5
           },
           {
             "date": "2026",
@@ -4110,7 +4110,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 18.0,
+    "fast_food_avg": 18,
     "casual_dining_avg": 37.88,
     "coffee_avg": 9.01,
     "monthly_household_spend": 609.42,
@@ -4119,7 +4119,7 @@
       {
         "name": "McDonald's",
         "price_2022": 11.16,
-        "price_current": 18.0
+        "price_current": 18
       },
       {
         "name": "Wendy's",
@@ -4147,11 +4147,11 @@
   },
   "transportation": {
     "car_insurance_monthly": 231.88,
-    "used_car_avg": 31200.0,
+    "used_car_avg": 31200,
     "gas_per_month_avg": 176.94
   },
   "healthcare": {
-    "doctor_visit": 273.0,
+    "doctor_visit": 273,
     "prescription_generic": 16.94,
     "dental_cleaning": 214.5
   },
@@ -4161,7 +4161,20 @@
     "movie_ticket": 22.31
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 28.4,
+    "monthly_avg_bill": 255.6,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 1980,
+    "monthly_avg": 165,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }

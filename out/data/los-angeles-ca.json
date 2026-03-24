@@ -744,7 +744,7 @@
       },
       {
         "date": "2012-03",
-        "price": 5.0,
+        "price": 5,
         "national": 3.717
       },
       {
@@ -1340,7 +1340,7 @@
       {
         "date": "2022-02",
         "price": 5.346,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 5.432,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,11 +1591,11 @@
   },
   "rent": {
     "avg_all": 2500,
-    "avg_1br": 1950.0,
-    "avg_2br": 2950.0,
+    "avg_1br": 1950,
+    "avg_2br": 2950,
     "avg_3br": 6130.94,
     "national_avg": 1900,
-    "median_home_price": 1224000.0,
+    "median_home_price": 1224000,
     "history": [
       {
         "date": "2000-01",
@@ -3039,8 +3039,8 @@
       },
       {
         "date": "2020-01",
-        "avg": 2000.0,
-        "onebed": 1560.0,
+        "avg": 2000,
+        "onebed": 1560,
         "national": 1340
       },
       {
@@ -3375,7 +3375,7 @@
       },
       {
         "date": "2024-09",
-        "avg": 6463.0,
+        "avg": 6463,
         "onebed": 5170.4,
         "national": 1890
       },
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 2500,
-        "onebed": 1950.0,
+        "onebed": 1950,
         "national": 1900
       }
     ]
@@ -3610,7 +3610,7 @@
             "price": 4.09
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -4110,9 +4110,9 @@
     }
   },
   "dining": {
-    "fast_food_avg": 15.0,
+    "fast_food_avg": 15,
     "casual_dining_avg": 48.13,
-    "coffee_avg": 12.0,
+    "coffee_avg": 12,
     "monthly_household_spend": 801.07,
     "restaurant_inflation_yoy": 3.73,
     "chains": [
@@ -4134,7 +4134,7 @@
       {
         "name": "Starbucks",
         "price_2022": 8.64,
-        "price_current": 12.0
+        "price_current": 12
       }
     ]
   },
@@ -4147,7 +4147,7 @@
   },
   "transportation": {
     "car_insurance_monthly": 304.88,
-    "used_car_avg": 42560.0,
+    "used_car_avg": 42560,
     "gas_per_month_avg": 261.29
   },
   "healthcare": {
@@ -4161,7 +4161,20 @@
     "movie_ticket": 30.24
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 30.5,
+    "monthly_avg_bill": 274.5,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 2520,
+    "monthly_avg": 210,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }

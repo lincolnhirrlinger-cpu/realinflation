@@ -136,7 +136,7 @@ export default async function CityPage({ params }: Props) {
         {/* Stat cards */}
         <section className="mb-8">
           <h2 className="section-title mb-4">Key Numbers</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <StatCard
               label="Gas (Regular)"
               value={`$${data.gas.current.toFixed(2)}`}
@@ -166,6 +166,22 @@ export default async function CityPage({ params }: Props) {
               change={data.dining.restaurant_inflation_yoy / 100}
               changeLabel="YoY"
               stripe="orange"
+            />
+            <StatCard
+              label="Electricity"
+              value={`${data.electricity?.cents_per_kwh ?? '—'}¢/kWh`}
+              subvalue={`~$${data.electricity?.monthly_avg_bill?.toFixed(0) ?? '—'}/mo avg bill`}
+              change={((data.electricity?.cents_per_kwh ?? 16.2) - 16.2) / 16.2}
+              changeLabel="vs national avg"
+              stripe="orange"
+            />
+            <StatCard
+              label="Car Insurance"
+              value={`$${data.car_insurance?.monthly_avg?.toFixed(0) ?? '—'}/mo`}
+              subvalue={`$${data.car_insurance?.annual_avg?.toLocaleString() ?? '—'}/yr state avg`}
+              change={((data.car_insurance?.annual_avg ?? 2150) - 2150) / 2150}
+              changeLabel="vs national avg"
+              stripe="red"
             />
           </div>
         </section>

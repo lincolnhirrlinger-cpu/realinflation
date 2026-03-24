@@ -54,6 +54,33 @@
     "col_index": 130
   },
   {
+    "name": "San Diego",
+    "state": "California",
+    "state_abbr": "CA",
+    "slug": "san-diego-ca",
+    "population": 1386932,
+    "region": "Pacific",
+    "col_index": 128
+  },
+  {
+    "name": "San Francisco",
+    "state": "California",
+    "state_abbr": "CA",
+    "slug": "san-francisco-ca",
+    "population": 873965,
+    "region": "Pacific",
+    "col_index": 145
+  },
+  {
+    "name": "San Jose",
+    "state": "California",
+    "state_abbr": "CA",
+    "slug": "san-jose-ca",
+    "population": 1013240,
+    "region": "Pacific",
+    "col_index": 138
+  },
+  {
     "name": "Colorado Springs",
     "state": "Colorado",
     "state_abbr": "CO",
@@ -117,6 +144,15 @@
     "col_index": 132
   },
   {
+    "name": "Jacksonville",
+    "state": "Florida",
+    "state_abbr": "FL",
+    "slug": "jacksonville-fl",
+    "population": 949611,
+    "region": "South",
+    "col_index": 92
+  },
+  {
     "name": "Miami",
     "state": "Florida",
     "state_abbr": "FL",
@@ -126,6 +162,15 @@
     "col_index": 118
   },
   {
+    "name": "Orlando",
+    "state": "Florida",
+    "state_abbr": "FL",
+    "slug": "orlando-fl",
+    "population": 307573,
+    "region": "South",
+    "col_index": 98
+  },
+  {
     "name": "Tallahassee",
     "state": "Florida",
     "state_abbr": "FL",
@@ -133,6 +178,15 @@
     "population": 196000,
     "region": "South Atlantic",
     "col_index": 88
+  },
+  {
+    "name": "Tampa",
+    "state": "Florida",
+    "state_abbr": "FL",
+    "slug": "tampa-fl",
+    "population": 399700,
+    "region": "South",
+    "col_index": 100
   },
   {
     "name": "Atlanta",
@@ -295,6 +349,15 @@
     "population": 214000,
     "region": "Midwest",
     "col_index": 84
+  },
+  {
+    "name": "Kansas City",
+    "state": "Kansas",
+    "state_abbr": "KS",
+    "slug": "kansas-city-ks",
+    "population": 156607,
+    "region": "Midwest",
+    "col_index": 88
   },
   {
     "name": "Topeka",
@@ -907,6 +970,15 @@
     "population": 737000,
     "region": "Pacific",
     "col_index": 122
+  },
+  {
+    "name": "Spokane",
+    "state": "Washington",
+    "state_abbr": "WA",
+    "slug": "spokane-wa",
+    "population": 228989,
+    "region": "Pacific",
+    "col_index": 102
   },
   {
     "name": "Charleston",

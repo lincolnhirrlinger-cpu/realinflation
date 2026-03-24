@@ -8,6 +8,21 @@ export interface GroceryItem {
   unit: string
 }
 
+export interface ElectricityData {
+  cents_per_kwh: number
+  monthly_avg_bill: number
+  national_avg_cents: number
+  national_avg_bill: number
+  source: string
+}
+
+export interface CarInsuranceData {
+  annual_avg: number
+  monthly_avg: number
+  national_avg_annual: number
+  source: string
+}
+
 export interface CityData {
   city: string
   state: string
@@ -69,6 +84,8 @@ export interface CityData {
     gym_membership: number
     movie_ticket: number
   }
+  electricity?: ElectricityData
+  car_insurance?: CarInsuranceData
 }
 
 export interface CityMeta {

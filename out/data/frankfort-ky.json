@@ -1334,13 +1334,13 @@
       },
       {
         "date": "2022-01",
-        "price": 4.0,
+        "price": 4,
         "national": 3.95
       },
       {
         "date": "2022-02",
         "price": 3.954,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-03",
@@ -1360,7 +1360,7 @@
       {
         "date": "2022-06",
         "price": 3.972,
-        "national": 4.0
+        "national": 4
       },
       {
         "date": "2022-07",
@@ -1591,11 +1591,11 @@
   },
   "rent": {
     "avg_all": 900,
-    "avg_1br": 702.0,
-    "avg_2br": 1062.0,
+    "avg_1br": 702,
+    "avg_2br": 1062,
     "avg_3br": 1069.18,
     "national_avg": 1900,
-    "median_home_price": 150696.0,
+    "median_home_price": 150696,
     "history": [
       {
         "date": "2000-01",
@@ -1948,7 +1948,7 @@
       {
         "date": "2004-11",
         "avg": 433.75,
-        "onebed": 347.0,
+        "onebed": 347,
         "national": 730
       },
       {
@@ -2854,7 +2854,7 @@
       {
         "date": "2017-06",
         "avg": 707.5,
-        "onebed": 566.0,
+        "onebed": 566,
         "national": 1195
       },
       {
@@ -3039,7 +3039,7 @@
       },
       {
         "date": "2020-01",
-        "avg": 720.0,
+        "avg": 720,
         "onebed": 561.6,
         "national": 1340
       },
@@ -3436,7 +3436,7 @@
       {
         "date": "2025-07",
         "avg": 1156.25,
-        "onebed": 925.0,
+        "onebed": 925,
         "national": 1900
       },
       {
@@ -3484,7 +3484,7 @@
       {
         "date": "2026-03",
         "avg": 900,
-        "onebed": 702.0,
+        "onebed": 702,
         "national": 1900
       }
     ]
@@ -3610,7 +3610,7 @@
             "price": 3.13
           }
         ],
-        "change_from_2022": 19.0,
+        "change_from_2022": 19,
         "source": "BLS/FRED APU0000702111",
         "price_2022": 1.555
       },
@@ -3853,7 +3853,7 @@
         "name": "Potatoes (5 lb)",
         "slug": "potatoes",
         "unit": "5 lb bag",
-        "current": 4.0,
+        "current": 4,
         "history": [
           {
             "date": "2022",
@@ -3869,11 +3869,11 @@
           },
           {
             "date": "2025",
-            "price": 4.0
+            "price": 4
           },
           {
             "date": "2026",
-            "price": 4.0
+            "price": 4
           }
         ],
         "change_from_2022": 0.114
@@ -4110,7 +4110,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 11.0,
+    "fast_food_avg": 11,
     "casual_dining_avg": 14.21,
     "coffee_avg": 4.04,
     "monthly_household_spend": 246.59,
@@ -4161,7 +4161,20 @@
     "movie_ticket": 9.83
   },
   "data_sources": {
-    "groceries": "BLS/FRED APU series \u2014 national avg prices",
-    "gas": "AAA Gas Prices \u2014 state-level avg"
+    "groceries": "BLS/FRED APU series — national avg prices",
+    "gas": "AAA Gas Prices — state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 11.8,
+    "monthly_avg_bill": 106.2,
+    "national_avg_cents": 16.2,
+    "national_avg_bill": 145.8,
+    "source": "EIA Residential Electric Power (2025)"
+  },
+  "car_insurance": {
+    "annual_avg": 2280,
+    "monthly_avg": 190,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
   }
 }
