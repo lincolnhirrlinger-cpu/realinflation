@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import { submitPrice, getUserPoints } from '@/lib/supabase'
 import { Suspense } from 'react'
+import AirdropModal from '@/components/AirdropModal'
 
 const CATEGORIES = ['Gas', 'Groceries', 'Dining', 'Rent', 'Electricity', 'Other']
 
@@ -30,12 +31,15 @@ function SubmitForm() {
   const [pointsEarned, setPointsEarned] = useState(0)
   const [totalPoints, setTotalPoints] = useState(0)
   const [errorMsg, setErrorMsg] = useState('')
+  const [showAirdrop, setShowAirdrop] = useState(false)
+  const [userUuid, setUserUuid] = useState('')
 
   useEffect(() => {
     fetch('/data/cities.json')
       .then(r => r.json())
       .then(data => setCities(data.sort((a: any, b: any) => a.name.localeCompare(b.name))))
     const uuid = getOrCreateUUID()
+    setUserUuid(uuid)
     if (uuid) getUserPoints(uuid).then(setTotalPoints)
   }, [])
 
@@ -65,6 +69,8 @@ function SubmitForm() {
       localStorage.setItem('ri_submissions', JSON.stringify(stored))
       localStorage.setItem('ri_points', String(totalPoints + result.points))
       setStatus('success')
+      // Show airdrop modal after short delay
+      setTimeout(() => setShowAirdrop(true), 1200)
     }
   }
 
@@ -75,7 +81,17 @@ function SubmitForm() {
   }
 
   if (status === 'success') {
+    const successCityName = citySlug.split('-').slice(0,-1).map((w:string)=>w[0].toUpperCase()+w.slice(1)).join(' ')
     return (
+      <>
+      {showAirdrop && (
+        <AirdropModal
+          userUuid={userUuid}
+          totalPoints={totalPoints}
+          cityName={successCityName}
+          onClose={() => setShowAirdrop(false)}
+        />
+      )}
       <div className="text-center py-12">
         <div className="text-5xl mb-4">🎉</div>
         <h2 className="font-serif text-3xl text-text-primary mb-2">Thanks for contributing!</h2>
@@ -101,6 +117,7 @@ function SubmitForm() {
           </Link>
         </div>
       </div>
+      </>
     )
   }
 
