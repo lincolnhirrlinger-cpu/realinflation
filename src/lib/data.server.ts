@@ -35,3 +35,14 @@ export function getAllCitiesData(): CityData[] {
   }
   return cities
 }
+
+/** Load cities.json meta list (lightweight, no full city data) */
+export function getCitiesServer(): any[] {
+  try {
+    const filePath = path.join(process.cwd(), 'public', 'data', 'cities.json')
+    const raw = fs.readFileSync(filePath, 'utf-8')
+    return JSON.parse(raw)
+  } catch {
+    return []
+  }
+}
