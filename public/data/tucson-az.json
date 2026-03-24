@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 5.9,
+        "current": 2.5,
         "history": [
           {
             "date": "2022",
@@ -3518,14 +3518,16 @@
             "price": 2.05
           }
         ],
-        "change_from_2022": 231.5,
-        "note": "Bird flu volatility"
+        "change_from_2022": 29.6,
+        "note": "Bird flu volatility",
+        "source": "BLS/FRED APU0000708111",
+        "price_2022": 1.929
       },
       {
         "name": "Milk (gallon)",
         "slug": "milk",
         "unit": "gallon",
-        "current": 3.69,
+        "current": 4.026,
         "history": [
           {
             "date": "2022",
@@ -3548,7 +3550,9 @@
             "price": 3.69
           }
         ],
-        "change_from_2022": 0.111
+        "change_from_2022": 6.3,
+        "source": "BLS/FRED APU0000709112",
+        "price_2022": 3.787
       },
       {
         "name": "Ground Beef (lb)",
@@ -3583,7 +3587,7 @@
         "name": "Bread (loaf)",
         "slug": "bread",
         "unit": "loaf",
-        "current": 3.27,
+        "current": 1.85,
         "history": [
           {
             "date": "2022",
@@ -3606,13 +3610,15 @@
             "price": 3.27
           }
         ],
-        "change_from_2022": 0.611
+        "change_from_2022": 19.0,
+        "source": "BLS/FRED APU0000702111",
+        "price_2022": 1.555
       },
       {
         "name": "Chicken Breast (lb)",
         "slug": "chicken",
         "unit": "lb",
-        "current": 3.98,
+        "current": 2.049,
         "history": [
           {
             "date": "2022",
@@ -3635,7 +3641,9 @@
             "price": 3.98
           }
         ],
-        "change_from_2022": 0.09
+        "change_from_2022": 26.3,
+        "source": "BLS/FRED APU0000706111",
+        "price_2022": 1.622
       },
       {
         "name": "Butter (lb)",
@@ -4075,7 +4083,7 @@
       }
     ],
     "inflation_rate": {
-      "current_yoy": 2.55,
+      "current_yoy": 2.58,
       "history": [
         {
           "year": "2022",
@@ -4097,7 +4105,8 @@
           "year": "2026",
           "rate": 3.48
         }
-      ]
+      ],
+      "source": "BLS CPI Food at Home (CUSR0000SAF11)"
     }
   },
   "dining": {
@@ -4150,5 +4159,9 @@
     "haircut_mens": 19.18,
     "gym_membership": 34.63,
     "movie_ticket": 12.88
+  },
+  "data_sources": {
+    "groceries": "BLS/FRED APU series \u2014 national avg prices",
+    "gas": "AAA Gas Prices \u2014 state-level avg"
   }
 }
