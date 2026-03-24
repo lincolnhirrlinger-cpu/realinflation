@@ -34,9 +34,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const year = new Date().getFullYear()
   return {
     title: `Cost of Living in ${data.city}, ${data.state} (${year}) — Real Prices | RealInflation`,
-    description: `Gas is $${data.gas.current.toFixed(2)}/gal, average rent is $${data.rent.avg_all.toLocaleString()}/mo in ${data.city}, Idaho. Track real inflation vs. CPI with monthly price data.`,
+    description: `Gas is $${data.gas.current.toFixed(2)}/gal, average rent is $${data.rent.avg_all.toLocaleString()}/mo in ${data.city}, ${data.state}. Track real inflation vs. CPI with monthly price data.`,
     openGraph: {
-      title: `Cost of Living in ${data.city}, Idaho — RealInflation`,
+      title: `Cost of Living in ${data.city}, ${data.state} — RealInflation`,
       description: `Gas $${data.gas.current.toFixed(2)} · Rent $${data.rent.avg_all.toLocaleString()}/mo · Groceries up ${(data.groceries.inflation_rate.current_yoy)}% YoY`,
     },
   }
@@ -47,7 +47,7 @@ function JsonLd({ data }: { data: NonNullable<Awaited<ReturnType<typeof getCityD
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: `Cost of Living in ${data.city}, ${data.state}`,
-    description: `Real consumer prices in ${data.city}, Idaho including gas, rent, groceries, and dining.`,
+    description: `Real consumer prices in ${data.city}, ${data.state} including gas, rent, groceries, and dining.`,
     url: `https://realinflation.co/city/${data.slug}`,
     dateModified: data.last_updated,
     publisher: {
@@ -73,7 +73,7 @@ export default async function CityPage({ params }: Props) {
   const groceryYoy = data.groceries.inflation_rate.current_yoy
 
   // SEO paragraph
-  const seoText = `In ${data.city}, Idaho, a gallon of regular gas costs $${data.gas.current.toFixed(2)} as of ${data.last_updated} — ${
+  const seoText = `In ${data.city}, ${data.state}, a gallon of regular gas costs $${data.gas.current.toFixed(2)} as of ${data.last_updated} — ${
     data.gas.current > data.gas.national_current
       ? `$${(data.gas.current - data.gas.national_current).toFixed(2)} above the national average of $${data.gas.national_current.toFixed(2)}`
       : `$${(data.gas.national_current - data.gas.current).toFixed(2)} below the national average of $${data.gas.national_current.toFixed(2)}`
@@ -99,7 +99,7 @@ export default async function CityPage({ params }: Props) {
             </span>
           </div>
           <h1 className="font-serif text-4xl md:text-5xl text-text-primary mb-3">
-            {data.city}, Idaho
+            {data.city}, {data.state}
           </h1>
           <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl">
             {seoText}
@@ -228,7 +228,7 @@ export default async function CityPage({ params }: Props) {
 
         {/* Compare CTA */}
         <section className="text-center py-6">
-          <p className="font-sans text-text-secondary mb-3">How does {data.city} compare to other Idaho cities?</p>
+          <p className="font-sans text-text-secondary mb-3">How does {data.city} compare to other {data.state} cities?</p>
           <Link href="/compare" className="btn-primary">Compare Cities Side by Side →</Link>
         </section>
       </div>
