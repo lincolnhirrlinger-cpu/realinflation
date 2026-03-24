@@ -180,6 +180,15 @@
     "col_index": 102
   },
   {
+    "name": "Coeur d'Alene",
+    "state": "Idaho",
+    "state_abbr": "ID",
+    "slug": "coeur-dalene-id",
+    "population": 56236,
+    "region": "Mountain",
+    "col_index": 105
+  },
+  {
     "name": "Idaho Falls",
     "state": "Idaho",
     "state_abbr": "ID",
@@ -783,6 +792,33 @@
     "col_index": 108
   },
   {
+    "name": "Dallas",
+    "state": "Texas",
+    "state_abbr": "TX",
+    "slug": "dallas-tx",
+    "population": 1288000,
+    "region": "South",
+    "col_index": 102
+  },
+  {
+    "name": "El Paso",
+    "state": "Texas",
+    "state_abbr": "TX",
+    "slug": "el-paso-tx",
+    "population": 678000,
+    "region": "South",
+    "col_index": 82
+  },
+  {
+    "name": "Fort Worth",
+    "state": "Texas",
+    "state_abbr": "TX",
+    "slug": "fort-worth-tx",
+    "population": 918000,
+    "region": "South",
+    "col_index": 96
+  },
+  {
     "name": "Houston",
     "state": "Texas",
     "state_abbr": "TX",
@@ -790,6 +826,15 @@
     "population": 2304000,
     "region": "West South Central",
     "col_index": 95
+  },
+  {
+    "name": "San Antonio",
+    "state": "Texas",
+    "state_abbr": "TX",
+    "slug": "san-antonio-tx",
+    "population": 1434000,
+    "region": "South",
+    "col_index": 92
   },
   {
     "name": "Provo",

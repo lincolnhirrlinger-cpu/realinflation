@@ -10,12 +10,8 @@ import DiningSection from '@/components/DiningSection'
 import AdSlot from '@/components/AdSlot'
 import Newsletter from '@/components/Newsletter'
 
-// Load charts client-side only — Recharts uses browser APIs (window/ResizeObserver)
-const GasChart = dynamic(() => import('@/components/GasChart'), {
-  ssr: false,
-  loading: () => <div className="card p-5 h-[300px] animate-pulse bg-surface2" />,
-})
-const RentChart = dynamic(() => import('@/components/RentChart'), {
+// CityCharts: client component with date range filter — wraps GasChart + RentChart
+const CityCharts = dynamic(() => import('@/components/CityCharts'), {
   ssr: false,
   loading: () => <div className="card p-5 h-[300px] animate-pulse bg-surface2" />,
 })
@@ -173,13 +169,13 @@ export default async function CityPage({ params }: Props) {
 
         <AdSlot id="city-ad-1" />
 
-        {/* Charts row */}
+        {/* Charts row with date range filter */}
         <section className="mb-8">
-          <h2 className="section-title mb-4">Price History</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <GasChart history={data.gas.history} cityName={data.city} />
-            <RentChart history={data.rent.history} cityName={data.city} />
-          </div>
+          <CityCharts
+            gasHistory={data.gas.history}
+            rentHistory={data.rent.history}
+            cityName={data.city}
+          />
           {/* Gas affiliate CTA */}
           <div className="mt-3 text-xs text-text-muted font-sans">
             Spending too much on gas?{' '}

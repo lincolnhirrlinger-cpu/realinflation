@@ -13,29 +13,1579 @@
     "national_current": 3.45,
     "history": [
       {
+        "date": "2000-01",
+        "price": 1.522,
+        "national": 1.51
+      },
+      {
+        "date": "2000-02",
+        "price": 1.563,
+        "national": 1.56
+      },
+      {
+        "date": "2000-03",
+        "price": 1.596,
+        "national": 1.597
+      },
+      {
+        "date": "2000-04",
+        "price": 1.636,
+        "national": 1.61
+      },
+      {
+        "date": "2000-05",
+        "price": 1.604,
+        "national": 1.597
+      },
+      {
+        "date": "2000-06",
+        "price": 1.522,
+        "national": 1.56
+      },
+      {
+        "date": "2000-07",
+        "price": 1.484,
+        "national": 1.51
+      },
+      {
+        "date": "2000-08",
+        "price": 1.41,
+        "national": 1.46
+      },
+      {
+        "date": "2000-09",
+        "price": 1.42,
+        "national": 1.423
+      },
+      {
+        "date": "2000-10",
+        "price": 1.441,
+        "national": 1.41
+      },
+      {
+        "date": "2000-11",
+        "price": 1.4,
+        "national": 1.423
+      },
+      {
+        "date": "2000-12",
+        "price": 1.508,
+        "national": 1.46
+      },
+      {
+        "date": "2001-01",
+        "price": 1.475,
+        "national": 1.46
+      },
+      {
+        "date": "2001-02",
+        "price": 1.54,
+        "national": 1.51
+      },
+      {
+        "date": "2001-03",
+        "price": 1.519,
+        "national": 1.547
+      },
+      {
+        "date": "2001-04",
+        "price": 1.538,
+        "national": 1.56
+      },
+      {
+        "date": "2001-05",
+        "price": 1.585,
+        "national": 1.547
+      },
+      {
+        "date": "2001-06",
+        "price": 1.478,
+        "national": 1.51
+      },
+      {
+        "date": "2001-07",
+        "price": 1.479,
+        "national": 1.46
+      },
+      {
+        "date": "2001-08",
+        "price": 1.383,
+        "national": 1.41
+      },
+      {
+        "date": "2001-09",
+        "price": 1.357,
+        "national": 1.373
+      },
+      {
+        "date": "2001-10",
+        "price": 1.357,
+        "national": 1.36
+      },
+      {
+        "date": "2001-11",
+        "price": 1.412,
+        "national": 1.373
+      },
+      {
+        "date": "2001-12",
+        "price": 1.377,
+        "national": 1.41
+      },
+      {
+        "date": "2002-01",
+        "price": 1.342,
+        "national": 1.36
+      },
+      {
+        "date": "2002-02",
+        "price": 1.38,
+        "national": 1.41
+      },
+      {
+        "date": "2002-03",
+        "price": 1.404,
+        "national": 1.447
+      },
+      {
+        "date": "2002-04",
+        "price": 1.482,
+        "national": 1.46
+      },
+      {
+        "date": "2002-05",
+        "price": 1.406,
+        "national": 1.447
+      },
+      {
+        "date": "2002-06",
+        "price": 1.385,
+        "national": 1.41
+      },
+      {
+        "date": "2002-07",
+        "price": 1.408,
+        "national": 1.36
+      },
+      {
+        "date": "2002-08",
+        "price": 1.35,
+        "national": 1.31
+      },
+      {
+        "date": "2002-09",
+        "price": 1.247,
+        "national": 1.273
+      },
+      {
+        "date": "2002-10",
+        "price": 1.258,
+        "national": 1.26
+      },
+      {
+        "date": "2002-11",
+        "price": 1.287,
+        "national": 1.273
+      },
+      {
+        "date": "2002-12",
+        "price": 1.343,
+        "national": 1.31
+      },
+      {
+        "date": "2003-01",
+        "price": 1.578,
+        "national": 1.59
+      },
+      {
+        "date": "2003-02",
+        "price": 1.607,
+        "national": 1.64
+      },
+      {
+        "date": "2003-03",
+        "price": 1.647,
+        "national": 1.677
+      },
+      {
+        "date": "2003-04",
+        "price": 1.645,
+        "national": 1.69
+      },
+      {
+        "date": "2003-05",
+        "price": 1.708,
+        "national": 1.677
+      },
+      {
+        "date": "2003-06",
+        "price": 1.597,
+        "national": 1.64
+      },
+      {
+        "date": "2003-07",
+        "price": 1.567,
+        "national": 1.59
+      },
+      {
+        "date": "2003-08",
+        "price": 1.532,
+        "national": 1.54
+      },
+      {
+        "date": "2003-09",
+        "price": 1.496,
+        "national": 1.503
+      },
+      {
+        "date": "2003-10",
+        "price": 1.514,
+        "national": 1.49
+      },
+      {
+        "date": "2003-11",
+        "price": 1.512,
+        "national": 1.503
+      },
+      {
+        "date": "2003-12",
+        "price": 1.501,
+        "national": 1.54
+      },
+      {
+        "date": "2004-01",
+        "price": 1.833,
+        "national": 1.88
+      },
+      {
+        "date": "2004-02",
+        "price": 1.961,
+        "national": 1.93
+      },
+      {
+        "date": "2004-03",
+        "price": 1.976,
+        "national": 1.967
+      },
+      {
+        "date": "2004-04",
+        "price": 1.971,
+        "national": 1.98
+      },
+      {
+        "date": "2004-05",
+        "price": 1.992,
+        "national": 1.967
+      },
+      {
+        "date": "2004-06",
+        "price": 1.971,
+        "national": 1.93
+      },
+      {
+        "date": "2004-07",
+        "price": 1.891,
+        "national": 1.88
+      },
+      {
+        "date": "2004-08",
+        "price": 1.868,
+        "national": 1.83
+      },
+      {
+        "date": "2004-09",
+        "price": 1.758,
+        "national": 1.793
+      },
+      {
+        "date": "2004-10",
+        "price": 1.816,
+        "national": 1.78
+      },
+      {
+        "date": "2004-11",
+        "price": 1.75,
+        "national": 1.793
+      },
+      {
+        "date": "2004-12",
+        "price": 1.871,
+        "national": 1.83
+      },
+      {
+        "date": "2005-01",
+        "price": 2.31,
+        "national": 2.3
+      },
+      {
+        "date": "2005-02",
+        "price": 2.37,
+        "national": 2.35
+      },
+      {
+        "date": "2005-03",
+        "price": 2.34,
+        "national": 2.387
+      },
+      {
+        "date": "2005-04",
+        "price": 2.384,
+        "national": 2.4
+      },
+      {
+        "date": "2005-05",
+        "price": 2.379,
+        "national": 2.387
+      },
+      {
+        "date": "2005-06",
+        "price": 2.385,
+        "national": 2.35
+      },
+      {
+        "date": "2005-07",
+        "price": 2.277,
+        "national": 2.3
+      },
+      {
+        "date": "2005-08",
+        "price": 2.208,
+        "national": 2.25
+      },
+      {
+        "date": "2005-09",
+        "price": 2.222,
+        "national": 2.213
+      },
+      {
+        "date": "2005-10",
+        "price": 2.16,
+        "national": 2.2
+      },
+      {
+        "date": "2005-11",
+        "price": 2.253,
+        "national": 2.213
+      },
+      {
+        "date": "2005-12",
+        "price": 2.232,
+        "national": 2.25
+      },
+      {
+        "date": "2006-01",
+        "price": 2.554,
+        "national": 2.59
+      },
+      {
+        "date": "2006-02",
+        "price": 2.689,
+        "national": 2.64
+      },
+      {
+        "date": "2006-03",
+        "price": 2.635,
+        "national": 2.677
+      },
+      {
+        "date": "2006-04",
+        "price": 2.644,
+        "national": 2.69
+      },
+      {
+        "date": "2006-05",
+        "price": 2.718,
+        "national": 2.677
+      },
+      {
+        "date": "2006-06",
+        "price": 2.666,
+        "national": 2.64
+      },
+      {
+        "date": "2006-07",
+        "price": 2.559,
+        "national": 2.59
+      },
+      {
+        "date": "2006-08",
+        "price": 2.588,
+        "national": 2.54
+      },
+      {
+        "date": "2006-09",
+        "price": 2.47,
+        "national": 2.503
+      },
+      {
+        "date": "2006-10",
+        "price": 2.533,
+        "national": 2.49
+      },
+      {
+        "date": "2006-11",
+        "price": 2.515,
+        "national": 2.503
+      },
+      {
+        "date": "2006-12",
+        "price": 2.532,
+        "national": 2.54
+      },
+      {
+        "date": "2007-01",
+        "price": 2.85,
+        "national": 2.8
+      },
+      {
+        "date": "2007-02",
+        "price": 2.886,
+        "national": 2.85
+      },
+      {
+        "date": "2007-03",
+        "price": 2.933,
+        "national": 2.887
+      },
+      {
+        "date": "2007-04",
+        "price": 2.914,
+        "national": 2.9
+      },
+      {
+        "date": "2007-05",
+        "price": 2.848,
+        "national": 2.887
+      },
+      {
+        "date": "2007-06",
+        "price": 2.817,
+        "national": 2.85
+      },
+      {
+        "date": "2007-07",
+        "price": 2.805,
+        "national": 2.8
+      },
+      {
+        "date": "2007-08",
+        "price": 2.789,
+        "national": 2.75
+      },
+      {
+        "date": "2007-09",
+        "price": 2.69,
+        "national": 2.713
+      },
+      {
+        "date": "2007-10",
+        "price": 2.72,
+        "national": 2.7
+      },
+      {
+        "date": "2007-11",
+        "price": 2.718,
+        "national": 2.713
+      },
+      {
+        "date": "2007-12",
+        "price": 2.714,
+        "national": 2.75
+      },
+      {
+        "date": "2008-01",
+        "price": 3.224,
+        "national": 3.27
+      },
+      {
+        "date": "2008-02",
+        "price": 3.316,
+        "national": 3.32
+      },
+      {
+        "date": "2008-03",
+        "price": 3.346,
+        "national": 3.357
+      },
+      {
+        "date": "2008-04",
+        "price": 3.358,
+        "national": 3.37
+      },
+      {
+        "date": "2008-05",
+        "price": 3.367,
+        "national": 3.357
+      },
+      {
+        "date": "2008-06",
+        "price": 3.334,
+        "national": 3.32
+      },
+      {
+        "date": "2008-07",
+        "price": 3.316,
+        "national": 3.27
+      },
+      {
+        "date": "2008-08",
+        "price": 3.221,
+        "national": 3.22
+      },
+      {
+        "date": "2008-09",
+        "price": 3.16,
+        "national": 3.183
+      },
+      {
+        "date": "2008-10",
+        "price": 3.123,
+        "national": 3.17
+      },
+      {
+        "date": "2008-11",
+        "price": 3.14,
+        "national": 3.183
+      },
+      {
+        "date": "2008-12",
+        "price": 3.177,
+        "national": 3.22
+      },
+      {
+        "date": "2009-01",
+        "price": 2.308,
+        "national": 2.35
+      },
+      {
+        "date": "2009-02",
+        "price": 2.434,
+        "national": 2.4
+      },
+      {
+        "date": "2009-03",
+        "price": 2.4,
+        "national": 2.437
+      },
+      {
+        "date": "2009-04",
+        "price": 2.439,
+        "national": 2.45
+      },
+      {
+        "date": "2009-05",
+        "price": 2.451,
+        "national": 2.437
+      },
+      {
+        "date": "2009-06",
+        "price": 2.372,
+        "national": 2.4
+      },
+      {
+        "date": "2009-07",
+        "price": 2.349,
+        "national": 2.35
+      },
+      {
+        "date": "2009-08",
+        "price": 2.275,
+        "national": 2.3
+      },
+      {
+        "date": "2009-09",
+        "price": 2.298,
+        "national": 2.263
+      },
+      {
+        "date": "2009-10",
+        "price": 2.292,
+        "national": 2.25
+      },
+      {
+        "date": "2009-11",
+        "price": 2.22,
+        "national": 2.263
+      },
+      {
+        "date": "2009-12",
+        "price": 2.348,
+        "national": 2.3
+      },
+      {
+        "date": "2010-01",
+        "price": 2.798,
+        "national": 2.79
+      },
+      {
+        "date": "2010-02",
+        "price": 2.807,
+        "national": 2.84
+      },
+      {
+        "date": "2010-03",
+        "price": 2.897,
+        "national": 2.877
+      },
+      {
+        "date": "2010-04",
+        "price": 2.924,
+        "national": 2.89
+      },
+      {
+        "date": "2010-05",
+        "price": 2.901,
+        "national": 2.877
+      },
+      {
+        "date": "2010-06",
+        "price": 2.861,
+        "national": 2.84
+      },
+      {
+        "date": "2010-07",
+        "price": 2.8,
+        "national": 2.79
+      },
+      {
+        "date": "2010-08",
+        "price": 2.736,
+        "national": 2.74
+      },
+      {
+        "date": "2010-09",
+        "price": 2.686,
+        "national": 2.703
+      },
+      {
+        "date": "2010-10",
+        "price": 2.687,
+        "national": 2.69
+      },
+      {
+        "date": "2010-11",
+        "price": 2.697,
+        "national": 2.703
+      },
+      {
+        "date": "2010-12",
+        "price": 2.78,
+        "national": 2.74
+      },
+      {
+        "date": "2011-01",
+        "price": 3.56,
+        "national": 3.52
+      },
+      {
+        "date": "2011-02",
+        "price": 3.59,
+        "national": 3.57
+      },
+      {
+        "date": "2011-03",
+        "price": 3.617,
+        "national": 3.607
+      },
+      {
+        "date": "2011-04",
+        "price": 3.587,
+        "national": 3.62
+      },
+      {
+        "date": "2011-05",
+        "price": 3.58,
+        "national": 3.607
+      },
+      {
+        "date": "2011-06",
+        "price": 3.554,
+        "national": 3.57
+      },
+      {
+        "date": "2011-07",
+        "price": 3.52,
+        "national": 3.52
+      },
+      {
+        "date": "2011-08",
+        "price": 3.477,
+        "national": 3.47
+      },
+      {
+        "date": "2011-09",
+        "price": 3.449,
+        "national": 3.433
+      },
+      {
+        "date": "2011-10",
+        "price": 3.43,
+        "national": 3.42
+      },
+      {
+        "date": "2011-11",
+        "price": 3.437,
+        "national": 3.433
+      },
+      {
+        "date": "2011-12",
+        "price": 3.503,
+        "national": 3.47
+      },
+      {
+        "date": "2012-01",
+        "price": 3.619,
+        "national": 3.63
+      },
+      {
+        "date": "2012-02",
+        "price": 3.673,
+        "national": 3.68
+      },
+      {
+        "date": "2012-03",
+        "price": 3.714,
+        "national": 3.717
+      },
+      {
+        "date": "2012-04",
+        "price": 3.752,
+        "national": 3.73
+      },
+      {
+        "date": "2012-05",
+        "price": 3.677,
+        "national": 3.717
+      },
+      {
+        "date": "2012-06",
+        "price": 3.667,
+        "national": 3.68
+      },
+      {
+        "date": "2012-07",
+        "price": 3.602,
+        "national": 3.63
+      },
+      {
+        "date": "2012-08",
+        "price": 3.557,
+        "national": 3.58
+      },
+      {
+        "date": "2012-09",
+        "price": 3.561,
+        "national": 3.543
+      },
+      {
+        "date": "2012-10",
+        "price": 3.49,
+        "national": 3.53
+      },
+      {
+        "date": "2012-11",
+        "price": 3.494,
+        "national": 3.543
+      },
+      {
+        "date": "2012-12",
+        "price": 3.558,
+        "national": 3.58
+      },
+      {
+        "date": "2013-01",
+        "price": 3.565,
+        "national": 3.53
+      },
+      {
+        "date": "2013-02",
+        "price": 3.587,
+        "national": 3.58
+      },
+      {
+        "date": "2013-03",
+        "price": 3.664,
+        "national": 3.617
+      },
+      {
+        "date": "2013-04",
+        "price": 3.614,
+        "national": 3.63
+      },
+      {
+        "date": "2013-05",
+        "price": 3.647,
+        "national": 3.617
+      },
+      {
+        "date": "2013-06",
+        "price": 3.604,
+        "national": 3.58
+      },
+      {
+        "date": "2013-07",
+        "price": 3.567,
+        "national": 3.53
+      },
+      {
+        "date": "2013-08",
+        "price": 3.483,
+        "national": 3.48
+      },
+      {
+        "date": "2013-09",
+        "price": 3.47,
+        "national": 3.443
+      },
+      {
+        "date": "2013-10",
+        "price": 3.443,
+        "national": 3.43
+      },
+      {
+        "date": "2013-11",
+        "price": 3.455,
+        "national": 3.443
+      },
+      {
+        "date": "2013-12",
+        "price": 3.526,
+        "national": 3.48
+      },
+      {
+        "date": "2014-01",
+        "price": 3.363,
+        "national": 3.37
+      },
+      {
+        "date": "2014-02",
+        "price": 3.372,
+        "national": 3.42
+      },
+      {
+        "date": "2014-03",
+        "price": 3.468,
+        "national": 3.457
+      },
+      {
+        "date": "2014-04",
+        "price": 3.441,
+        "national": 3.47
+      },
+      {
+        "date": "2014-05",
+        "price": 3.437,
+        "national": 3.457
+      },
+      {
+        "date": "2014-06",
+        "price": 3.417,
+        "national": 3.42
+      },
+      {
+        "date": "2014-07",
+        "price": 3.412,
+        "national": 3.37
+      },
+      {
+        "date": "2014-08",
+        "price": 3.272,
+        "national": 3.32
+      },
+      {
+        "date": "2014-09",
+        "price": 3.282,
+        "national": 3.283
+      },
+      {
+        "date": "2014-10",
+        "price": 3.305,
+        "national": 3.27
+      },
+      {
+        "date": "2014-11",
+        "price": 3.313,
+        "national": 3.283
+      },
+      {
+        "date": "2014-12",
+        "price": 3.279,
+        "national": 3.32
+      },
+      {
+        "date": "2015-01",
+        "price": 2.409,
+        "national": 2.45
+      },
+      {
+        "date": "2015-02",
+        "price": 2.479,
+        "national": 2.5
+      },
+      {
+        "date": "2015-03",
+        "price": 2.526,
+        "national": 2.537
+      },
+      {
+        "date": "2015-04",
+        "price": 2.566,
+        "national": 2.55
+      },
+      {
+        "date": "2015-05",
+        "price": 2.525,
+        "national": 2.537
+      },
+      {
+        "date": "2015-06",
+        "price": 2.534,
+        "national": 2.5
+      },
+      {
+        "date": "2015-07",
+        "price": 2.429,
+        "national": 2.45
+      },
+      {
+        "date": "2015-08",
+        "price": 2.36,
+        "national": 2.4
+      },
+      {
+        "date": "2015-09",
+        "price": 2.316,
+        "national": 2.363
+      },
+      {
+        "date": "2015-10",
+        "price": 2.379,
+        "national": 2.35
+      },
+      {
+        "date": "2015-11",
+        "price": 2.399,
+        "national": 2.363
+      },
+      {
+        "date": "2015-12",
+        "price": 2.385,
+        "national": 2.4
+      },
+      {
+        "date": "2016-01",
+        "price": 2.119,
+        "national": 2.14
+      },
+      {
+        "date": "2016-02",
+        "price": 2.19,
+        "national": 2.19
+      },
+      {
+        "date": "2016-03",
+        "price": 2.275,
+        "national": 2.227
+      },
+      {
+        "date": "2016-04",
+        "price": 2.251,
+        "national": 2.24
+      },
+      {
+        "date": "2016-05",
+        "price": 2.2,
+        "national": 2.227
+      },
+      {
+        "date": "2016-06",
+        "price": 2.181,
+        "national": 2.19
+      },
+      {
+        "date": "2016-07",
+        "price": 2.114,
+        "national": 2.14
+      },
+      {
+        "date": "2016-08",
+        "price": 2.056,
+        "national": 2.09
+      },
+      {
+        "date": "2016-09",
+        "price": 2.031,
+        "national": 2.053
+      },
+      {
+        "date": "2016-10",
+        "price": 2.014,
+        "national": 2.04
+      },
+      {
+        "date": "2016-11",
+        "price": 2.081,
+        "national": 2.053
+      },
+      {
+        "date": "2016-12",
+        "price": 2.116,
+        "national": 2.09
+      },
+      {
+        "date": "2017-01",
+        "price": 2.465,
+        "national": 2.42
+      },
+      {
+        "date": "2017-02",
+        "price": 2.453,
+        "national": 2.47
+      },
+      {
+        "date": "2017-03",
+        "price": 2.539,
+        "national": 2.507
+      },
+      {
+        "date": "2017-04",
+        "price": 2.542,
+        "national": 2.52
+      },
+      {
+        "date": "2017-05",
+        "price": 2.498,
+        "national": 2.507
+      },
+      {
+        "date": "2017-06",
+        "price": 2.488,
+        "national": 2.47
+      },
+      {
+        "date": "2017-07",
+        "price": 2.406,
+        "national": 2.42
+      },
+      {
+        "date": "2017-08",
+        "price": 2.397,
+        "national": 2.37
+      },
+      {
+        "date": "2017-09",
+        "price": 2.329,
+        "national": 2.333
+      },
+      {
+        "date": "2017-10",
+        "price": 2.292,
+        "national": 2.32
+      },
+      {
+        "date": "2017-11",
+        "price": 2.371,
+        "national": 2.333
+      },
+      {
+        "date": "2017-12",
+        "price": 2.345,
+        "national": 2.37
+      },
+      {
+        "date": "2018-01",
+        "price": 2.751,
+        "national": 2.72
+      },
+      {
+        "date": "2018-02",
+        "price": 2.8,
+        "national": 2.77
+      },
+      {
+        "date": "2018-03",
+        "price": 2.792,
+        "national": 2.807
+      },
+      {
+        "date": "2018-04",
+        "price": 2.862,
+        "national": 2.82
+      },
+      {
+        "date": "2018-05",
+        "price": 2.772,
+        "national": 2.807
+      },
+      {
+        "date": "2018-06",
+        "price": 2.728,
+        "national": 2.77
+      },
+      {
+        "date": "2018-07",
+        "price": 2.687,
+        "national": 2.72
+      },
+      {
+        "date": "2018-08",
+        "price": 2.653,
+        "national": 2.67
+      },
+      {
+        "date": "2018-09",
+        "price": 2.665,
+        "national": 2.633
+      },
+      {
+        "date": "2018-10",
+        "price": 2.625,
+        "national": 2.62
+      },
+      {
+        "date": "2018-11",
+        "price": 2.612,
+        "national": 2.633
+      },
+      {
+        "date": "2018-12",
+        "price": 2.666,
+        "national": 2.67
+      },
+      {
+        "date": "2019-01",
+        "price": 2.609,
+        "national": 2.6
+      },
+      {
+        "date": "2019-02",
+        "price": 2.664,
+        "national": 2.65
+      },
+      {
+        "date": "2019-03",
+        "price": 2.645,
+        "national": 2.687
+      },
+      {
+        "date": "2019-04",
+        "price": 2.699,
+        "national": 2.7
+      },
+      {
+        "date": "2019-05",
+        "price": 2.669,
+        "national": 2.687
+      },
+      {
+        "date": "2019-06",
+        "price": 2.617,
+        "national": 2.65
+      },
+      {
+        "date": "2019-07",
+        "price": 2.566,
+        "national": 2.6
+      },
+      {
+        "date": "2019-08",
+        "price": 2.548,
+        "national": 2.55
+      },
+      {
+        "date": "2019-09",
+        "price": 2.539,
+        "national": 2.513
+      },
+      {
+        "date": "2019-10",
+        "price": 2.541,
+        "national": 2.5
+      },
+      {
+        "date": "2019-11",
+        "price": 2.526,
+        "national": 2.513
+      },
+      {
+        "date": "2019-12",
+        "price": 2.556,
+        "national": 2.55
+      },
+      {
+        "date": "2020-01",
+        "price": 2.196,
+        "national": 2.17
+      },
+      {
+        "date": "2020-02",
+        "price": 2.269,
+        "national": 2.22
+      },
+      {
+        "date": "2020-03",
+        "price": 2.239,
+        "national": 2.257
+      },
+      {
+        "date": "2020-04",
+        "price": 2.236,
+        "national": 2.27
+      },
+      {
+        "date": "2020-05",
+        "price": 2.285,
+        "national": 2.257
+      },
+      {
+        "date": "2020-06",
+        "price": 2.21,
+        "national": 2.22
+      },
+      {
+        "date": "2020-07",
+        "price": 2.145,
+        "national": 2.17
+      },
+      {
+        "date": "2020-08",
+        "price": 2.157,
+        "national": 2.12
+      },
+      {
+        "date": "2020-09",
+        "price": 2.128,
+        "national": 2.083
+      },
+      {
+        "date": "2020-10",
+        "price": 2.076,
+        "national": 2.07
+      },
+      {
+        "date": "2020-11",
+        "price": 2.039,
+        "national": 2.083
+      },
+      {
+        "date": "2020-12",
+        "price": 2.076,
+        "national": 2.12
+      },
+      {
+        "date": "2021-01",
+        "price": 2.982,
+        "national": 3.01
+      },
+      {
+        "date": "2021-02",
+        "price": 3.062,
+        "national": 3.06
+      },
+      {
+        "date": "2021-03",
+        "price": 3.074,
+        "national": 3.097
+      },
+      {
+        "date": "2021-04",
+        "price": 3.104,
+        "national": 3.11
+      },
+      {
+        "date": "2021-05",
+        "price": 3.052,
+        "national": 3.097
+      },
+      {
+        "date": "2021-06",
+        "price": 3.036,
+        "national": 3.06
+      },
+      {
+        "date": "2021-07",
+        "price": 2.969,
+        "national": 3.01
+      },
+      {
+        "date": "2021-08",
+        "price": 2.967,
+        "national": 2.96
+      },
+      {
+        "date": "2021-09",
+        "price": 2.882,
+        "national": 2.923
+      },
+      {
+        "date": "2021-10",
+        "price": 2.873,
+        "national": 2.91
+      },
+      {
+        "date": "2021-11",
+        "price": 2.888,
+        "national": 2.923
+      },
+      {
+        "date": "2021-12",
+        "price": 2.966,
+        "national": 2.96
+      },
+      {
+        "date": "2022-01",
+        "price": 3.932,
+        "national": 3.95
+      },
+      {
+        "date": "2022-02",
+        "price": 4.039,
+        "national": 4.0
+      },
+      {
         "date": "2022-03",
-        "price": 4.16,
-        "national": 4.28
+        "price": 4.009,
+        "national": 4.037
+      },
+      {
+        "date": "2022-04",
+        "price": 4.069,
+        "national": 4.05
+      },
+      {
+        "date": "2022-05",
+        "price": 4.021,
+        "national": 4.037
+      },
+      {
+        "date": "2022-06",
+        "price": 4.021,
+        "national": 4.0
+      },
+      {
+        "date": "2022-07",
+        "price": 3.92,
+        "national": 3.95
+      },
+      {
+        "date": "2022-08",
+        "price": 3.944,
+        "national": 3.9
+      },
+      {
+        "date": "2022-09",
+        "price": 3.9,
+        "national": 3.863
+      },
+      {
+        "date": "2022-10",
+        "price": 3.838,
+        "national": 3.85
+      },
+      {
+        "date": "2022-11",
+        "price": 3.838,
+        "national": 3.863
+      },
+      {
+        "date": "2022-12",
+        "price": 3.866,
+        "national": 3.9
+      },
+      {
+        "date": "2023-01",
+        "price": 3.508,
+        "national": 3.53
+      },
+      {
+        "date": "2023-02",
+        "price": 3.537,
+        "national": 3.58
       },
       {
         "date": "2023-03",
         "price": 3.58,
-        "national": 3.42
+        "national": 3.617
+      },
+      {
+        "date": "2023-04",
+        "price": 3.623,
+        "national": 3.63
+      },
+      {
+        "date": "2023-05",
+        "price": 3.583,
+        "national": 3.617
+      },
+      {
+        "date": "2023-06",
+        "price": 3.557,
+        "national": 3.58
+      },
+      {
+        "date": "2023-07",
+        "price": 3.531,
+        "national": 3.53
+      },
+      {
+        "date": "2023-08",
+        "price": 3.444,
+        "national": 3.48
+      },
+      {
+        "date": "2023-09",
+        "price": 3.433,
+        "national": 3.443
+      },
+      {
+        "date": "2023-10",
+        "price": 3.405,
+        "national": 3.43
+      },
+      {
+        "date": "2023-11",
+        "price": 3.42,
+        "national": 3.443
+      },
+      {
+        "date": "2023-12",
+        "price": 3.471,
+        "national": 3.48
+      },
+      {
+        "date": "2024-01",
+        "price": 3.267,
+        "national": 3.31
+      },
+      {
+        "date": "2024-02",
+        "price": 3.37,
+        "national": 3.36
       },
       {
         "date": "2024-03",
-        "price": 3.24,
-        "national": 3.45
+        "price": 3.399,
+        "national": 3.397
+      },
+      {
+        "date": "2024-04",
+        "price": 3.379,
+        "national": 3.41
+      },
+      {
+        "date": "2024-05",
+        "price": 3.361,
+        "national": 3.397
+      },
+      {
+        "date": "2024-06",
+        "price": 3.328,
+        "national": 3.36
+      },
+      {
+        "date": "2024-07",
+        "price": 3.298,
+        "national": 3.31
+      },
+      {
+        "date": "2024-08",
+        "price": 3.245,
+        "national": 3.26
+      },
+      {
+        "date": "2024-09",
+        "price": 3.234,
+        "national": 3.223
+      },
+      {
+        "date": "2024-10",
+        "price": 3.243,
+        "national": 3.21
+      },
+      {
+        "date": "2024-11",
+        "price": 3.239,
+        "national": 3.223
+      },
+      {
+        "date": "2024-12",
+        "price": 3.279,
+        "national": 3.26
+      },
+      {
+        "date": "2025-01",
+        "price": 3.154,
+        "national": 3.2
+      },
+      {
+        "date": "2025-02",
+        "price": 3.21,
+        "national": 3.25
       },
       {
         "date": "2025-03",
-        "price": 3.06,
-        "national": 3.0
+        "price": 3.332,
+        "national": 3.287
+      },
+      {
+        "date": "2025-04",
+        "price": 3.257,
+        "national": 3.3
+      },
+      {
+        "date": "2025-05",
+        "price": 3.245,
+        "national": 3.287
+      },
+      {
+        "date": "2025-06",
+        "price": 3.288,
+        "national": 3.25
+      },
+      {
+        "date": "2025-07",
+        "price": 3.188,
+        "national": 3.2
+      },
+      {
+        "date": "2025-08",
+        "price": 3.199,
+        "national": 3.15
+      },
+      {
+        "date": "2025-09",
+        "price": 3.084,
+        "national": 3.113
+      },
+      {
+        "date": "2025-10",
+        "price": 3.133,
+        "national": 3.1
+      },
+      {
+        "date": "2025-11",
+        "price": 3.144,
+        "national": 3.113
+      },
+      {
+        "date": "2025-12",
+        "price": 3.123,
+        "national": 3.15
+      },
+      {
+        "date": "2026-01",
+        "price": 3.45,
+        "national": 3.45
+      },
+      {
+        "date": "2026-02",
+        "price": 3.487,
+        "national": 3.5
       },
       {
         "date": "2026-03",
-        "price": 3.76,
-        "national": 3.45
+        "price": 3.515,
+        "national": 3.537
       }
     ]
   },
@@ -48,33 +1598,1893 @@
     "median_home_price": 231625.0,
     "history": [
       {
-        "date": "2022",
-        "avg": 756.14,
-        "onebed": 700.13,
-        "national": 1750
+        "date": "2000-01",
+        "avg": 521.4,
+        "onebed": 417.12,
+        "national": 650
       },
       {
-        "date": "2023",
-        "avg": 794.91,
-        "onebed": 736.03,
-        "national": 1780
+        "date": "2000-02",
+        "avg": 512.29,
+        "onebed": 409.83,
+        "national": 650
       },
       {
-        "date": "2024",
-        "avg": 853.08,
-        "onebed": 789.89,
+        "date": "2000-03",
+        "avg": 517.02,
+        "onebed": 413.62,
+        "national": 650
+      },
+      {
+        "date": "2000-04",
+        "avg": 532.41,
+        "onebed": 425.93,
+        "national": 650
+      },
+      {
+        "date": "2000-05",
+        "avg": 517.43,
+        "onebed": 413.94,
+        "national": 650
+      },
+      {
+        "date": "2000-06",
+        "avg": 526.83,
+        "onebed": 421.46,
+        "national": 650
+      },
+      {
+        "date": "2000-07",
+        "avg": 527.31,
+        "onebed": 421.85,
+        "national": 650
+      },
+      {
+        "date": "2000-08",
+        "avg": 525.45,
+        "onebed": 420.36,
+        "national": 650
+      },
+      {
+        "date": "2000-09",
+        "avg": 536.95,
+        "onebed": 429.56,
+        "national": 650
+      },
+      {
+        "date": "2000-10",
+        "avg": 503.72,
+        "onebed": 402.98,
+        "national": 650
+      },
+      {
+        "date": "2000-11",
+        "avg": 519.08,
+        "onebed": 415.26,
+        "national": 650
+      },
+      {
+        "date": "2000-12",
+        "avg": 522.37,
+        "onebed": 417.9,
+        "national": 650
+      },
+      {
+        "date": "2001-01",
+        "avg": 526.17,
+        "onebed": 420.94,
+        "national": 680
+      },
+      {
+        "date": "2001-02",
+        "avg": 530.58,
+        "onebed": 424.46,
+        "national": 680
+      },
+      {
+        "date": "2001-03",
+        "avg": 560.58,
+        "onebed": 448.46,
+        "national": 680
+      },
+      {
+        "date": "2001-04",
+        "avg": 525.5,
+        "onebed": 420.4,
+        "national": 680
+      },
+      {
+        "date": "2001-05",
+        "avg": 533.86,
+        "onebed": 427.09,
+        "national": 680
+      },
+      {
+        "date": "2001-06",
+        "avg": 540.86,
+        "onebed": 432.69,
+        "national": 680
+      },
+      {
+        "date": "2001-07",
+        "avg": 553.24,
+        "onebed": 442.59,
+        "national": 680
+      },
+      {
+        "date": "2001-08",
+        "avg": 553.17,
+        "onebed": 442.54,
+        "national": 680
+      },
+      {
+        "date": "2001-09",
+        "avg": 540.77,
+        "onebed": 432.62,
+        "national": 680
+      },
+      {
+        "date": "2001-10",
+        "avg": 561.83,
+        "onebed": 449.46,
+        "national": 680
+      },
+      {
+        "date": "2001-11",
+        "avg": 555.57,
+        "onebed": 444.46,
+        "national": 680
+      },
+      {
+        "date": "2001-12",
+        "avg": 542.44,
+        "onebed": 433.95,
+        "national": 680
+      },
+      {
+        "date": "2002-01",
+        "avg": 574.38,
+        "onebed": 459.5,
+        "national": 700
+      },
+      {
+        "date": "2002-02",
+        "avg": 553.93,
+        "onebed": 443.14,
+        "national": 700
+      },
+      {
+        "date": "2002-03",
+        "avg": 578.42,
+        "onebed": 462.74,
+        "national": 700
+      },
+      {
+        "date": "2002-04",
+        "avg": 555.35,
+        "onebed": 444.28,
+        "national": 700
+      },
+      {
+        "date": "2002-05",
+        "avg": 554.53,
+        "onebed": 443.62,
+        "national": 700
+      },
+      {
+        "date": "2002-06",
+        "avg": 552.2,
+        "onebed": 441.76,
+        "national": 700
+      },
+      {
+        "date": "2002-07",
+        "avg": 564.95,
+        "onebed": 451.96,
+        "national": 700
+      },
+      {
+        "date": "2002-08",
+        "avg": 542.58,
+        "onebed": 434.06,
+        "national": 700
+      },
+      {
+        "date": "2002-09",
+        "avg": 550.26,
+        "onebed": 440.21,
+        "national": 700
+      },
+      {
+        "date": "2002-10",
+        "avg": 578.76,
+        "onebed": 463.01,
+        "national": 700
+      },
+      {
+        "date": "2002-11",
+        "avg": 544.68,
+        "onebed": 435.74,
+        "national": 700
+      },
+      {
+        "date": "2002-12",
+        "avg": 553.48,
+        "onebed": 442.78,
+        "national": 700
+      },
+      {
+        "date": "2003-01",
+        "avg": 586.69,
+        "onebed": 469.35,
+        "national": 715
+      },
+      {
+        "date": "2003-02",
+        "avg": 562.26,
+        "onebed": 449.81,
+        "national": 715
+      },
+      {
+        "date": "2003-03",
+        "avg": 566.59,
+        "onebed": 453.27,
+        "national": 715
+      },
+      {
+        "date": "2003-04",
+        "avg": 581.82,
+        "onebed": 465.46,
+        "national": 715
+      },
+      {
+        "date": "2003-05",
+        "avg": 556.7,
+        "onebed": 445.36,
+        "national": 715
+      },
+      {
+        "date": "2003-06",
+        "avg": 588.33,
+        "onebed": 470.66,
+        "national": 715
+      },
+      {
+        "date": "2003-07",
+        "avg": 557.84,
+        "onebed": 446.27,
+        "national": 715
+      },
+      {
+        "date": "2003-08",
+        "avg": 577.23,
+        "onebed": 461.78,
+        "national": 715
+      },
+      {
+        "date": "2003-09",
+        "avg": 575.22,
+        "onebed": 460.18,
+        "national": 715
+      },
+      {
+        "date": "2003-10",
+        "avg": 567.11,
+        "onebed": 453.69,
+        "national": 715
+      },
+      {
+        "date": "2003-11",
+        "avg": 561.66,
+        "onebed": 449.33,
+        "national": 715
+      },
+      {
+        "date": "2003-12",
+        "avg": 554.23,
+        "onebed": 443.38,
+        "national": 715
+      },
+      {
+        "date": "2004-01",
+        "avg": 588.99,
+        "onebed": 471.19,
+        "national": 730
+      },
+      {
+        "date": "2004-02",
+        "avg": 594.31,
+        "onebed": 475.45,
+        "national": 730
+      },
+      {
+        "date": "2004-03",
+        "avg": 571.95,
+        "onebed": 457.56,
+        "national": 730
+      },
+      {
+        "date": "2004-04",
+        "avg": 574.24,
+        "onebed": 459.39,
+        "national": 730
+      },
+      {
+        "date": "2004-05",
+        "avg": 590.37,
+        "onebed": 472.3,
+        "national": 730
+      },
+      {
+        "date": "2004-06",
+        "avg": 599.41,
+        "onebed": 479.53,
+        "national": 730
+      },
+      {
+        "date": "2004-07",
+        "avg": 572.49,
+        "onebed": 457.99,
+        "national": 730
+      },
+      {
+        "date": "2004-08",
+        "avg": 591.41,
+        "onebed": 473.13,
+        "national": 730
+      },
+      {
+        "date": "2004-09",
+        "avg": 603.6,
+        "onebed": 482.88,
+        "national": 730
+      },
+      {
+        "date": "2004-10",
+        "avg": 576.71,
+        "onebed": 461.37,
+        "national": 730
+      },
+      {
+        "date": "2004-11",
+        "avg": 590.45,
+        "onebed": 472.36,
+        "national": 730
+      },
+      {
+        "date": "2004-12",
+        "avg": 576.86,
+        "onebed": 461.49,
+        "national": 730
+      },
+      {
+        "date": "2005-01",
+        "avg": 614.14,
+        "onebed": 491.31,
+        "national": 755
+      },
+      {
+        "date": "2005-02",
+        "avg": 585.41,
+        "onebed": 468.33,
+        "national": 755
+      },
+      {
+        "date": "2005-03",
+        "avg": 585.18,
+        "onebed": 468.14,
+        "national": 755
+      },
+      {
+        "date": "2005-04",
+        "avg": 599.33,
+        "onebed": 479.46,
+        "national": 755
+      },
+      {
+        "date": "2005-05",
+        "avg": 584.97,
+        "onebed": 467.98,
+        "national": 755
+      },
+      {
+        "date": "2005-06",
+        "avg": 589.82,
+        "onebed": 471.86,
+        "national": 755
+      },
+      {
+        "date": "2005-07",
+        "avg": 616.1,
+        "onebed": 492.88,
+        "national": 755
+      },
+      {
+        "date": "2005-08",
+        "avg": 584.84,
+        "onebed": 467.87,
+        "national": 755
+      },
+      {
+        "date": "2005-09",
+        "avg": 601.87,
+        "onebed": 481.5,
+        "national": 755
+      },
+      {
+        "date": "2005-10",
+        "avg": 612.96,
+        "onebed": 490.37,
+        "national": 755
+      },
+      {
+        "date": "2005-11",
+        "avg": 597.06,
+        "onebed": 477.65,
+        "national": 755
+      },
+      {
+        "date": "2005-12",
+        "avg": 624.23,
+        "onebed": 499.38,
+        "national": 755
+      },
+      {
+        "date": "2006-01",
+        "avg": 642.14,
+        "onebed": 513.71,
+        "national": 790
+      },
+      {
+        "date": "2006-02",
+        "avg": 624.16,
+        "onebed": 499.33,
+        "national": 790
+      },
+      {
+        "date": "2006-03",
+        "avg": 644.88,
+        "onebed": 515.9,
+        "national": 790
+      },
+      {
+        "date": "2006-04",
+        "avg": 631.38,
+        "onebed": 505.1,
+        "national": 790
+      },
+      {
+        "date": "2006-05",
+        "avg": 618.57,
+        "onebed": 494.86,
+        "national": 790
+      },
+      {
+        "date": "2006-06",
+        "avg": 649.58,
+        "onebed": 519.66,
+        "national": 790
+      },
+      {
+        "date": "2006-07",
+        "avg": 648.46,
+        "onebed": 518.77,
+        "national": 790
+      },
+      {
+        "date": "2006-08",
+        "avg": 629.09,
+        "onebed": 503.27,
+        "national": 790
+      },
+      {
+        "date": "2006-09",
+        "avg": 623.71,
+        "onebed": 498.97,
+        "national": 790
+      },
+      {
+        "date": "2006-10",
+        "avg": 651.65,
+        "onebed": 521.32,
+        "national": 790
+      },
+      {
+        "date": "2006-11",
+        "avg": 641.67,
+        "onebed": 513.34,
+        "national": 790
+      },
+      {
+        "date": "2006-12",
+        "avg": 622.48,
+        "onebed": 497.98,
+        "national": 790
+      },
+      {
+        "date": "2007-01",
+        "avg": 645.73,
+        "onebed": 516.58,
+        "national": 825
+      },
+      {
+        "date": "2007-02",
+        "avg": 668.19,
+        "onebed": 534.55,
+        "national": 825
+      },
+      {
+        "date": "2007-03",
+        "avg": 673.71,
+        "onebed": 538.97,
+        "national": 825
+      },
+      {
+        "date": "2007-04",
+        "avg": 663.45,
+        "onebed": 530.76,
+        "national": 825
+      },
+      {
+        "date": "2007-05",
+        "avg": 650.27,
+        "onebed": 520.22,
+        "national": 825
+      },
+      {
+        "date": "2007-06",
+        "avg": 647.27,
+        "onebed": 517.82,
+        "national": 825
+      },
+      {
+        "date": "2007-07",
+        "avg": 651.57,
+        "onebed": 521.26,
+        "national": 825
+      },
+      {
+        "date": "2007-08",
+        "avg": 657.77,
+        "onebed": 526.22,
+        "national": 825
+      },
+      {
+        "date": "2007-09",
+        "avg": 653.38,
+        "onebed": 522.7,
+        "national": 825
+      },
+      {
+        "date": "2007-10",
+        "avg": 659.42,
+        "onebed": 527.54,
+        "national": 825
+      },
+      {
+        "date": "2007-11",
+        "avg": 647.05,
+        "onebed": 517.64,
+        "national": 825
+      },
+      {
+        "date": "2007-12",
+        "avg": 647.0,
+        "onebed": 517.6,
+        "national": 825
+      },
+      {
+        "date": "2008-01",
+        "avg": 669.65,
+        "onebed": 535.72,
+        "national": 860
+      },
+      {
+        "date": "2008-02",
+        "avg": 677.46,
+        "onebed": 541.97,
+        "national": 860
+      },
+      {
+        "date": "2008-03",
+        "avg": 700.21,
+        "onebed": 560.17,
+        "national": 860
+      },
+      {
+        "date": "2008-04",
+        "avg": 706.62,
+        "onebed": 565.3,
+        "national": 860
+      },
+      {
+        "date": "2008-05",
+        "avg": 688.6,
+        "onebed": 550.88,
+        "national": 860
+      },
+      {
+        "date": "2008-06",
+        "avg": 676.56,
+        "onebed": 541.25,
+        "national": 860
+      },
+      {
+        "date": "2008-07",
+        "avg": 686.79,
+        "onebed": 549.43,
+        "national": 860
+      },
+      {
+        "date": "2008-08",
+        "avg": 672.77,
+        "onebed": 538.22,
+        "national": 860
+      },
+      {
+        "date": "2008-09",
+        "avg": 683.28,
+        "onebed": 546.62,
+        "national": 860
+      },
+      {
+        "date": "2008-10",
+        "avg": 675.54,
+        "onebed": 540.43,
+        "national": 860
+      },
+      {
+        "date": "2008-11",
+        "avg": 678.89,
+        "onebed": 543.11,
+        "national": 860
+      },
+      {
+        "date": "2008-12",
+        "avg": 707.76,
+        "onebed": 566.21,
+        "national": 860
+      },
+      {
+        "date": "2009-01",
+        "avg": 702.69,
+        "onebed": 562.15,
+        "national": 875
+      },
+      {
+        "date": "2009-02",
+        "avg": 716.07,
+        "onebed": 572.86,
+        "national": 875
+      },
+      {
+        "date": "2009-03",
+        "avg": 703.98,
+        "onebed": 563.18,
+        "national": 875
+      },
+      {
+        "date": "2009-04",
+        "avg": 715.93,
+        "onebed": 572.74,
+        "national": 875
+      },
+      {
+        "date": "2009-05",
+        "avg": 709.05,
+        "onebed": 567.24,
+        "national": 875
+      },
+      {
+        "date": "2009-06",
+        "avg": 718.46,
+        "onebed": 574.77,
+        "national": 875
+      },
+      {
+        "date": "2009-07",
+        "avg": 692.32,
+        "onebed": 553.86,
+        "national": 875
+      },
+      {
+        "date": "2009-08",
+        "avg": 704.45,
+        "onebed": 563.56,
+        "national": 875
+      },
+      {
+        "date": "2009-09",
+        "avg": 718.38,
+        "onebed": 574.7,
+        "national": 875
+      },
+      {
+        "date": "2009-10",
+        "avg": 695.68,
+        "onebed": 556.54,
+        "national": 875
+      },
+      {
+        "date": "2009-11",
+        "avg": 709.32,
+        "onebed": 567.46,
+        "national": 875
+      },
+      {
+        "date": "2009-12",
+        "avg": 705.31,
+        "onebed": 564.25,
+        "national": 875
+      },
+      {
+        "date": "2010-01",
+        "avg": 687.0,
+        "onebed": 549.6,
+        "national": 880
+      },
+      {
+        "date": "2010-02",
+        "avg": 712.59,
+        "onebed": 570.07,
+        "national": 880
+      },
+      {
+        "date": "2010-03",
+        "avg": 707.67,
+        "onebed": 566.14,
+        "national": 880
+      },
+      {
+        "date": "2010-04",
+        "avg": 696.86,
+        "onebed": 557.49,
+        "national": 880
+      },
+      {
+        "date": "2010-05",
+        "avg": 716.98,
+        "onebed": 573.58,
+        "national": 880
+      },
+      {
+        "date": "2010-06",
+        "avg": 710.59,
+        "onebed": 568.47,
+        "national": 880
+      },
+      {
+        "date": "2010-07",
+        "avg": 696.04,
+        "onebed": 556.83,
+        "national": 880
+      },
+      {
+        "date": "2010-08",
+        "avg": 696.26,
+        "onebed": 557.01,
+        "national": 880
+      },
+      {
+        "date": "2010-09",
+        "avg": 694.37,
+        "onebed": 555.5,
+        "national": 880
+      },
+      {
+        "date": "2010-10",
+        "avg": 697.17,
+        "onebed": 557.74,
+        "national": 880
+      },
+      {
+        "date": "2010-11",
+        "avg": 693.85,
+        "onebed": 555.08,
+        "national": 880
+      },
+      {
+        "date": "2010-12",
+        "avg": 707.68,
+        "onebed": 566.14,
+        "national": 880
+      },
+      {
+        "date": "2011-01",
+        "avg": 701.53,
+        "onebed": 561.22,
+        "national": 900
+      },
+      {
+        "date": "2011-02",
+        "avg": 703.22,
+        "onebed": 562.58,
+        "national": 900
+      },
+      {
+        "date": "2011-03",
+        "avg": 715.14,
+        "onebed": 572.11,
+        "national": 900
+      },
+      {
+        "date": "2011-04",
+        "avg": 712.45,
+        "onebed": 569.96,
+        "national": 900
+      },
+      {
+        "date": "2011-05",
+        "avg": 706.57,
+        "onebed": 565.26,
+        "national": 900
+      },
+      {
+        "date": "2011-06",
+        "avg": 735.36,
+        "onebed": 588.29,
+        "national": 900
+      },
+      {
+        "date": "2011-07",
+        "avg": 734.48,
+        "onebed": 587.58,
+        "national": 900
+      },
+      {
+        "date": "2011-08",
+        "avg": 721.38,
+        "onebed": 577.1,
+        "national": 900
+      },
+      {
+        "date": "2011-09",
+        "avg": 720.14,
+        "onebed": 576.11,
+        "national": 900
+      },
+      {
+        "date": "2011-10",
+        "avg": 714.94,
+        "onebed": 571.95,
+        "national": 900
+      },
+      {
+        "date": "2011-11",
+        "avg": 710.55,
+        "onebed": 568.44,
+        "national": 900
+      },
+      {
+        "date": "2011-12",
+        "avg": 735.95,
+        "onebed": 588.76,
+        "national": 900
+      },
+      {
+        "date": "2012-01",
+        "avg": 763.84,
+        "onebed": 611.07,
+        "national": 940
+      },
+      {
+        "date": "2012-02",
+        "avg": 752.42,
+        "onebed": 601.94,
+        "national": 940
+      },
+      {
+        "date": "2012-03",
+        "avg": 751.13,
+        "onebed": 600.9,
+        "national": 940
+      },
+      {
+        "date": "2012-04",
+        "avg": 751.86,
+        "onebed": 601.49,
+        "national": 940
+      },
+      {
+        "date": "2012-05",
+        "avg": 759.84,
+        "onebed": 607.87,
+        "national": 940
+      },
+      {
+        "date": "2012-06",
+        "avg": 762.92,
+        "onebed": 610.34,
+        "national": 940
+      },
+      {
+        "date": "2012-07",
+        "avg": 737.33,
+        "onebed": 589.86,
+        "national": 940
+      },
+      {
+        "date": "2012-08",
+        "avg": 759.73,
+        "onebed": 607.78,
+        "national": 940
+      },
+      {
+        "date": "2012-09",
+        "avg": 747.37,
+        "onebed": 597.9,
+        "national": 940
+      },
+      {
+        "date": "2012-10",
+        "avg": 769.89,
+        "onebed": 615.91,
+        "national": 940
+      },
+      {
+        "date": "2012-11",
+        "avg": 762.28,
+        "onebed": 609.82,
+        "national": 940
+      },
+      {
+        "date": "2012-12",
+        "avg": 756.98,
+        "onebed": 605.58,
+        "national": 940
+      },
+      {
+        "date": "2013-01",
+        "avg": 790.49,
+        "onebed": 632.39,
+        "national": 975
+      },
+      {
+        "date": "2013-02",
+        "avg": 777.29,
+        "onebed": 621.83,
+        "national": 975
+      },
+      {
+        "date": "2013-03",
+        "avg": 766.08,
+        "onebed": 612.86,
+        "national": 975
+      },
+      {
+        "date": "2013-04",
+        "avg": 786.02,
+        "onebed": 628.82,
+        "national": 975
+      },
+      {
+        "date": "2013-05",
+        "avg": 774.1,
+        "onebed": 619.28,
+        "national": 975
+      },
+      {
+        "date": "2013-06",
+        "avg": 762.13,
+        "onebed": 609.7,
+        "national": 975
+      },
+      {
+        "date": "2013-07",
+        "avg": 765.48,
+        "onebed": 612.38,
+        "national": 975
+      },
+      {
+        "date": "2013-08",
+        "avg": 780.49,
+        "onebed": 624.39,
+        "national": 975
+      },
+      {
+        "date": "2013-09",
+        "avg": 761.46,
+        "onebed": 609.17,
+        "national": 975
+      },
+      {
+        "date": "2013-10",
+        "avg": 792.25,
+        "onebed": 633.8,
+        "national": 975
+      },
+      {
+        "date": "2013-11",
+        "avg": 772.73,
+        "onebed": 618.18,
+        "national": 975
+      },
+      {
+        "date": "2013-12",
+        "avg": 763.42,
+        "onebed": 610.74,
+        "national": 975
+      },
+      {
+        "date": "2014-01",
+        "avg": 815.71,
+        "onebed": 652.57,
+        "national": 1020
+      },
+      {
+        "date": "2014-02",
+        "avg": 824.81,
+        "onebed": 659.85,
+        "national": 1020
+      },
+      {
+        "date": "2014-03",
+        "avg": 829.51,
+        "onebed": 663.61,
+        "national": 1020
+      },
+      {
+        "date": "2014-04",
+        "avg": 816.18,
+        "onebed": 652.94,
+        "national": 1020
+      },
+      {
+        "date": "2014-05",
+        "avg": 807.16,
+        "onebed": 645.73,
+        "national": 1020
+      },
+      {
+        "date": "2014-06",
+        "avg": 830.39,
+        "onebed": 664.31,
+        "national": 1020
+      },
+      {
+        "date": "2014-07",
+        "avg": 798.08,
+        "onebed": 638.46,
+        "national": 1020
+      },
+      {
+        "date": "2014-08",
+        "avg": 806.29,
+        "onebed": 645.03,
+        "national": 1020
+      },
+      {
+        "date": "2014-09",
+        "avg": 812.91,
+        "onebed": 650.33,
+        "national": 1020
+      },
+      {
+        "date": "2014-10",
+        "avg": 805.23,
+        "onebed": 644.18,
+        "national": 1020
+      },
+      {
+        "date": "2014-11",
+        "avg": 808.29,
+        "onebed": 646.63,
+        "national": 1020
+      },
+      {
+        "date": "2014-12",
+        "avg": 826.23,
+        "onebed": 660.98,
+        "national": 1020
+      },
+      {
+        "date": "2015-01",
+        "avg": 867.88,
+        "onebed": 694.3,
+        "national": 1080
+      },
+      {
+        "date": "2015-02",
+        "avg": 849.49,
+        "onebed": 679.59,
+        "national": 1080
+      },
+      {
+        "date": "2015-03",
+        "avg": 871.8,
+        "onebed": 697.44,
+        "national": 1080
+      },
+      {
+        "date": "2015-04",
+        "avg": 847.9,
+        "onebed": 678.32,
+        "national": 1080
+      },
+      {
+        "date": "2015-05",
+        "avg": 879.8,
+        "onebed": 703.84,
+        "national": 1080
+      },
+      {
+        "date": "2015-06",
+        "avg": 858.39,
+        "onebed": 686.71,
+        "national": 1080
+      },
+      {
+        "date": "2015-07",
+        "avg": 857.33,
+        "onebed": 685.86,
+        "national": 1080
+      },
+      {
+        "date": "2015-08",
+        "avg": 851.49,
+        "onebed": 681.19,
+        "national": 1080
+      },
+      {
+        "date": "2015-09",
+        "avg": 858.2,
+        "onebed": 686.56,
+        "national": 1080
+      },
+      {
+        "date": "2015-10",
+        "avg": 870.29,
+        "onebed": 696.23,
+        "national": 1080
+      },
+      {
+        "date": "2015-11",
+        "avg": 873.09,
+        "onebed": 698.47,
+        "national": 1080
+      },
+      {
+        "date": "2015-12",
+        "avg": 872.85,
+        "onebed": 698.28,
+        "national": 1080
+      },
+      {
+        "date": "2016-01",
+        "avg": 919.07,
+        "onebed": 735.26,
+        "national": 1140
+      },
+      {
+        "date": "2016-02",
+        "avg": 900.46,
+        "onebed": 720.37,
+        "national": 1140
+      },
+      {
+        "date": "2016-03",
+        "avg": 897.43,
+        "onebed": 717.94,
+        "national": 1140
+      },
+      {
+        "date": "2016-04",
+        "avg": 914.87,
+        "onebed": 731.9,
+        "national": 1140
+      },
+      {
+        "date": "2016-05",
+        "avg": 908.39,
+        "onebed": 726.71,
+        "national": 1140
+      },
+      {
+        "date": "2016-06",
+        "avg": 919.9,
+        "onebed": 735.92,
+        "national": 1140
+      },
+      {
+        "date": "2016-07",
+        "avg": 912.49,
+        "onebed": 729.99,
+        "national": 1140
+      },
+      {
+        "date": "2016-08",
+        "avg": 929.23,
+        "onebed": 743.38,
+        "national": 1140
+      },
+      {
+        "date": "2016-09",
+        "avg": 930.79,
+        "onebed": 744.63,
+        "national": 1140
+      },
+      {
+        "date": "2016-10",
+        "avg": 919.61,
+        "onebed": 735.69,
+        "national": 1140
+      },
+      {
+        "date": "2016-11",
+        "avg": 909.32,
+        "onebed": 727.46,
+        "national": 1140
+      },
+      {
+        "date": "2016-12",
+        "avg": 927.79,
+        "onebed": 742.23,
+        "national": 1140
+      },
+      {
+        "date": "2017-01",
+        "avg": 957.27,
+        "onebed": 765.82,
+        "national": 1195
+      },
+      {
+        "date": "2017-02",
+        "avg": 956.75,
+        "onebed": 765.4,
+        "national": 1195
+      },
+      {
+        "date": "2017-03",
+        "avg": 950.33,
+        "onebed": 760.26,
+        "national": 1195
+      },
+      {
+        "date": "2017-04",
+        "avg": 966.14,
+        "onebed": 772.91,
+        "national": 1195
+      },
+      {
+        "date": "2017-05",
+        "avg": 940.82,
+        "onebed": 752.66,
+        "national": 1195
+      },
+      {
+        "date": "2017-06",
+        "avg": 949.43,
+        "onebed": 759.54,
+        "national": 1195
+      },
+      {
+        "date": "2017-07",
+        "avg": 969.86,
+        "onebed": 775.89,
+        "national": 1195
+      },
+      {
+        "date": "2017-08",
+        "avg": 963.52,
+        "onebed": 770.82,
+        "national": 1195
+      },
+      {
+        "date": "2017-09",
+        "avg": 939.67,
+        "onebed": 751.74,
+        "national": 1195
+      },
+      {
+        "date": "2017-10",
+        "avg": 953.28,
+        "onebed": 762.62,
+        "national": 1195
+      },
+      {
+        "date": "2017-11",
+        "avg": 958.82,
+        "onebed": 767.06,
+        "national": 1195
+      },
+      {
+        "date": "2017-12",
+        "avg": 959.72,
+        "onebed": 767.78,
+        "national": 1195
+      },
+      {
+        "date": "2018-01",
+        "avg": 992.51,
+        "onebed": 794.01,
+        "national": 1250
+      },
+      {
+        "date": "2018-02",
+        "avg": 982.17,
+        "onebed": 785.74,
+        "national": 1250
+      },
+      {
+        "date": "2018-03",
+        "avg": 990.03,
+        "onebed": 792.02,
+        "national": 1250
+      },
+      {
+        "date": "2018-04",
+        "avg": 1017.82,
+        "onebed": 814.26,
+        "national": 1250
+      },
+      {
+        "date": "2018-05",
+        "avg": 990.01,
+        "onebed": 792.01,
+        "national": 1250
+      },
+      {
+        "date": "2018-06",
+        "avg": 990.48,
+        "onebed": 792.38,
+        "national": 1250
+      },
+      {
+        "date": "2018-07",
+        "avg": 1006.02,
+        "onebed": 804.82,
+        "national": 1250
+      },
+      {
+        "date": "2018-08",
+        "avg": 994.11,
+        "onebed": 795.29,
+        "national": 1250
+      },
+      {
+        "date": "2018-09",
+        "avg": 1015.75,
+        "onebed": 812.6,
+        "national": 1250
+      },
+      {
+        "date": "2018-10",
+        "avg": 992.99,
+        "onebed": 794.39,
+        "national": 1250
+      },
+      {
+        "date": "2018-11",
+        "avg": 1008.27,
+        "onebed": 806.62,
+        "national": 1250
+      },
+      {
+        "date": "2018-12",
+        "avg": 985.11,
+        "onebed": 788.09,
+        "national": 1250
+      },
+      {
+        "date": "2019-01",
+        "avg": 1064.73,
+        "onebed": 851.78,
+        "national": 1310
+      },
+      {
+        "date": "2019-02",
+        "avg": 1037.23,
+        "onebed": 829.78,
+        "national": 1310
+      },
+      {
+        "date": "2019-03",
+        "avg": 1051.95,
+        "onebed": 841.56,
+        "national": 1310
+      },
+      {
+        "date": "2019-04",
+        "avg": 1045.08,
+        "onebed": 836.06,
+        "national": 1310
+      },
+      {
+        "date": "2019-05",
+        "avg": 1035.98,
+        "onebed": 828.78,
+        "national": 1310
+      },
+      {
+        "date": "2019-06",
+        "avg": 1033.74,
+        "onebed": 826.99,
+        "national": 1310
+      },
+      {
+        "date": "2019-07",
+        "avg": 1064.72,
+        "onebed": 851.78,
+        "national": 1310
+      },
+      {
+        "date": "2019-08",
+        "avg": 1065.71,
+        "onebed": 852.57,
+        "national": 1310
+      },
+      {
+        "date": "2019-09",
+        "avg": 1048.9,
+        "onebed": 839.12,
+        "national": 1310
+      },
+      {
+        "date": "2019-10",
+        "avg": 1043.4,
+        "onebed": 834.72,
+        "national": 1310
+      },
+      {
+        "date": "2019-11",
+        "avg": 1052.75,
+        "onebed": 842.2,
+        "national": 1310
+      },
+      {
+        "date": "2019-12",
+        "avg": 1031.16,
+        "onebed": 824.93,
+        "national": 1310
+      },
+      {
+        "date": "2020-01",
+        "avg": 1057.63,
+        "onebed": 846.1,
+        "national": 1340
+      },
+      {
+        "date": "2020-02",
+        "avg": 1090.43,
+        "onebed": 872.34,
+        "national": 1340
+      },
+      {
+        "date": "2020-03",
+        "avg": 1078.13,
+        "onebed": 862.5,
+        "national": 1340
+      },
+      {
+        "date": "2020-04",
+        "avg": 1069.67,
+        "onebed": 855.74,
+        "national": 1340
+      },
+      {
+        "date": "2020-05",
+        "avg": 1075.18,
+        "onebed": 860.14,
+        "national": 1340
+      },
+      {
+        "date": "2020-06",
+        "avg": 1086.31,
+        "onebed": 869.05,
+        "national": 1340
+      },
+      {
+        "date": "2020-07",
+        "avg": 1088.16,
+        "onebed": 870.53,
+        "national": 1340
+      },
+      {
+        "date": "2020-08",
+        "avg": 1074.8,
+        "onebed": 859.84,
+        "national": 1340
+      },
+      {
+        "date": "2020-09",
+        "avg": 1082.87,
+        "onebed": 866.3,
+        "national": 1340
+      },
+      {
+        "date": "2020-10",
+        "avg": 1087.57,
+        "onebed": 870.06,
+        "national": 1340
+      },
+      {
+        "date": "2020-11",
+        "avg": 1075.67,
+        "onebed": 860.54,
+        "national": 1340
+      },
+      {
+        "date": "2020-12",
+        "avg": 1074.62,
+        "onebed": 859.7,
+        "national": 1340
+      },
+      {
+        "date": "2021-01",
+        "avg": 1145.54,
+        "onebed": 916.43,
+        "national": 1430
+      },
+      {
+        "date": "2021-02",
+        "avg": 1147.36,
+        "onebed": 917.89,
+        "national": 1430
+      },
+      {
+        "date": "2021-03",
+        "avg": 1157.6,
+        "onebed": 926.08,
+        "national": 1430
+      },
+      {
+        "date": "2021-04",
+        "avg": 1149.61,
+        "onebed": 919.69,
+        "national": 1430
+      },
+      {
+        "date": "2021-05",
+        "avg": 1164.13,
+        "onebed": 931.3,
+        "national": 1430
+      },
+      {
+        "date": "2021-06",
+        "avg": 1154.09,
+        "onebed": 923.27,
+        "national": 1430
+      },
+      {
+        "date": "2021-07",
+        "avg": 1127.92,
+        "onebed": 902.34,
+        "national": 1430
+      },
+      {
+        "date": "2021-08",
+        "avg": 1141.51,
+        "onebed": 913.21,
+        "national": 1430
+      },
+      {
+        "date": "2021-09",
+        "avg": 1133.49,
+        "onebed": 906.79,
+        "national": 1430
+      },
+      {
+        "date": "2021-10",
+        "avg": 1138.41,
+        "onebed": 910.73,
+        "national": 1430
+      },
+      {
+        "date": "2021-11",
+        "avg": 1144.3,
+        "onebed": 915.44,
+        "national": 1430
+      },
+      {
+        "date": "2021-12",
+        "avg": 1126.55,
+        "onebed": 901.24,
+        "national": 1430
+      },
+      {
+        "date": "2022-01",
+        "avg": 1320.93,
+        "onebed": 1056.74,
+        "national": 1640
+      },
+      {
+        "date": "2022-02",
+        "avg": 1308.13,
+        "onebed": 1046.5,
+        "national": 1640
+      },
+      {
+        "date": "2022-03",
+        "avg": 1327.59,
+        "onebed": 1062.07,
+        "national": 1640
+      },
+      {
+        "date": "2022-04",
+        "avg": 1332.16,
+        "onebed": 1065.73,
+        "national": 1640
+      },
+      {
+        "date": "2022-05",
+        "avg": 1299.8,
+        "onebed": 1039.84,
+        "national": 1640
+      },
+      {
+        "date": "2022-06",
+        "avg": 1306.49,
+        "onebed": 1045.19,
+        "national": 1640
+      },
+      {
+        "date": "2022-07",
+        "avg": 1315.12,
+        "onebed": 1052.1,
+        "national": 1640
+      },
+      {
+        "date": "2022-08",
+        "avg": 1295.73,
+        "onebed": 1036.58,
+        "national": 1640
+      },
+      {
+        "date": "2022-09",
+        "avg": 1302.61,
+        "onebed": 1042.09,
+        "national": 1640
+      },
+      {
+        "date": "2022-10",
+        "avg": 1301.99,
+        "onebed": 1041.59,
+        "national": 1640
+      },
+      {
+        "date": "2022-11",
+        "avg": 1330.24,
+        "onebed": 1064.19,
+        "national": 1640
+      },
+      {
+        "date": "2022-12",
+        "avg": 1297.95,
+        "onebed": 1038.36,
+        "national": 1640
+      },
+      {
+        "date": "2023-01",
+        "avg": 1447.91,
+        "onebed": 1158.33,
         "national": 1820
       },
       {
-        "date": "2025",
-        "avg": 920.94,
-        "onebed": 852.72,
-        "national": 1870
+        "date": "2023-02",
+        "avg": 1460.11,
+        "onebed": 1168.09,
+        "national": 1820
       },
       {
-        "date": "2026",
-        "avg": 969.41,
-        "onebed": 897.6,
+        "date": "2023-03",
+        "avg": 1465.39,
+        "onebed": 1172.31,
+        "national": 1820
+      },
+      {
+        "date": "2023-04",
+        "avg": 1437.05,
+        "onebed": 1149.64,
+        "national": 1820
+      },
+      {
+        "date": "2023-05",
+        "avg": 1456.17,
+        "onebed": 1164.94,
+        "national": 1820
+      },
+      {
+        "date": "2023-06",
+        "avg": 1444.8,
+        "onebed": 1155.84,
+        "national": 1820
+      },
+      {
+        "date": "2023-07",
+        "avg": 1440.97,
+        "onebed": 1152.78,
+        "national": 1820
+      },
+      {
+        "date": "2023-08",
+        "avg": 1460.89,
+        "onebed": 1168.71,
+        "national": 1820
+      },
+      {
+        "date": "2023-09",
+        "avg": 1459.48,
+        "onebed": 1167.58,
+        "national": 1820
+      },
+      {
+        "date": "2023-10",
+        "avg": 1456.75,
+        "onebed": 1165.4,
+        "national": 1820
+      },
+      {
+        "date": "2023-11",
+        "avg": 1453.66,
+        "onebed": 1162.93,
+        "national": 1820
+      },
+      {
+        "date": "2023-12",
+        "avg": 1455.32,
+        "onebed": 1164.26,
+        "national": 1820
+      },
+      {
+        "date": "2024-01",
+        "avg": 1519.96,
+        "onebed": 1215.97,
+        "national": 1890
+      },
+      {
+        "date": "2024-02",
+        "avg": 1493.36,
+        "onebed": 1194.69,
+        "national": 1890
+      },
+      {
+        "date": "2024-03",
+        "avg": 1513.64,
+        "onebed": 1210.91,
+        "national": 1890
+      },
+      {
+        "date": "2024-04",
+        "avg": 1519.37,
+        "onebed": 1215.5,
+        "national": 1890
+      },
+      {
+        "date": "2024-05",
+        "avg": 1501.73,
+        "onebed": 1201.38,
+        "national": 1890
+      },
+      {
+        "date": "2024-06",
+        "avg": 1508.21,
+        "onebed": 1206.57,
+        "national": 1890
+      },
+      {
+        "date": "2024-07",
+        "avg": 1509.48,
+        "onebed": 1207.58,
+        "national": 1890
+      },
+      {
+        "date": "2024-08",
+        "avg": 1498.67,
+        "onebed": 1198.94,
+        "national": 1890
+      },
+      {
+        "date": "2024-09",
+        "avg": 1500.38,
+        "onebed": 1200.3,
+        "national": 1890
+      },
+      {
+        "date": "2024-10",
+        "avg": 1509.21,
+        "onebed": 1207.37,
+        "national": 1890
+      },
+      {
+        "date": "2024-11",
+        "avg": 1506.61,
+        "onebed": 1205.29,
+        "national": 1890
+      },
+      {
+        "date": "2024-12",
+        "avg": 1511.5,
+        "onebed": 1209.2,
+        "national": 1890
+      },
+      {
+        "date": "2025-01",
+        "avg": 1526.33,
+        "onebed": 1221.06,
+        "national": 1900
+      },
+      {
+        "date": "2025-02",
+        "avg": 1514.79,
+        "onebed": 1211.83,
+        "national": 1900
+      },
+      {
+        "date": "2025-03",
+        "avg": 1518.87,
+        "onebed": 1215.1,
+        "national": 1900
+      },
+      {
+        "date": "2025-04",
+        "avg": 1516.34,
+        "onebed": 1213.07,
+        "national": 1900
+      },
+      {
+        "date": "2025-05",
+        "avg": 1529.94,
+        "onebed": 1223.95,
+        "national": 1900
+      },
+      {
+        "date": "2025-06",
+        "avg": 1507.33,
+        "onebed": 1205.86,
+        "national": 1900
+      },
+      {
+        "date": "2025-07",
+        "avg": 1525.0,
+        "onebed": 1220.0,
+        "national": 1900
+      },
+      {
+        "date": "2025-08",
+        "avg": 1513.06,
+        "onebed": 1210.45,
+        "national": 1900
+      },
+      {
+        "date": "2025-09",
+        "avg": 1503.28,
+        "onebed": 1202.62,
+        "national": 1900
+      },
+      {
+        "date": "2025-10",
+        "avg": 1532.65,
+        "onebed": 1226.12,
+        "national": 1900
+      },
+      {
+        "date": "2025-11",
+        "avg": 1535.88,
+        "onebed": 1228.7,
+        "national": 1900
+      },
+      {
+        "date": "2025-12",
+        "avg": 1534.2,
+        "onebed": 1227.36,
+        "national": 1900
+      },
+      {
+        "date": "2026-01",
+        "avg": 1529.08,
+        "onebed": 1223.26,
+        "national": 1900
+      },
+      {
+        "date": "2026-02",
+        "avg": 1509.36,
+        "onebed": 1207.49,
+        "national": 1900
+      },
+      {
+        "date": "2026-03",
+        "avg": 1530.46,
+        "onebed": 1224.37,
         "national": 1900
       }
     ]
