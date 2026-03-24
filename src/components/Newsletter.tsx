@@ -10,8 +10,7 @@ export default function Newsletter() {
     if (!email) return
     setStatus('loading')
     try {
-      // TODO: replace FORMSPREE_ID with real ID from formspree.io dashboard
-      const res = await fetch('https://formspree.io/f/FORMSPREE_ID', {
+      const res = await fetch('https://formspree.io/f/xdawqdjy', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({ email, source: 'realinflation.co newsletter' }),
