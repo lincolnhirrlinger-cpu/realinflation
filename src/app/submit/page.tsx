@@ -105,7 +105,7 @@ function SubmitForm() {
             <p className="font-sans text-sm text-text-secondary">{totalPoints} total points</p>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
           <button
             onClick={() => { setStatus('idle'); setPrice(''); setStore(''); setItem('') }}
             className="btn-secondary"
@@ -115,6 +115,17 @@ function SubmitForm() {
           <Link href={`/city/${citySlug}/`} className="btn-primary">
             View {citySlug.split('-').slice(0,-1).map(w=>w[0].toUpperCase()+w.slice(1)).join(' ')} Prices
           </Link>
+          <a
+            href={`https://x.com/intent/tweet?text=${encodeURIComponent(
+              `I just tracked ${category.toLowerCase()} prices in ${successCityName} 📊\n\nHelp make inflation data real — earn points toward a future airdrop:\nrealinflation.co/submit/\n\n@realinflationco`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border text-text-secondary hover:border-text-secondary hover:text-text-primary font-sans text-sm transition-colors"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Share on X
+          </a>
         </div>
       </div>
       </>
