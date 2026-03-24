@@ -12,12 +12,13 @@ Sources:
 Run daily via cron. Build + deploy after.
 Usage: python3 scripts/refresh_all_data.py [--gas-only] [--rent-only] [--groceries-only]
 """
-import json, sys, urllib.request, csv, io, re, time
+import json, sys, urllib.request, urllib.parse, csv, io, re, time
 from pathlib import Path
 from datetime import datetime, date
 
 DATA_DIR = Path(__file__).parent.parent / "public" / "data"
 FRED_KEY = "1d0a4dea7fae4b805a3f1eb20c48d790"
+EIA_KEY = "ah7QeFKdBjHWLGxTlcGpiV28bmxbfVyhQOsOm7aQ"
 SCRAPE_WORKER = "http://127.0.0.1:8741"
 SCRAPE_TOKEN = "u7cM6fYyU0_BHjtOz0l1PqDgKtrSupW2451L935wZoQ"
 TODAY = date.today().isoformat()
@@ -196,9 +197,62 @@ def refresh_gas() -> dict:
 
     return state_prices
 
+# ─── EIA Electricity Prices ─────────────────────────────────────────────────
+
+def refresh_electricity() -> dict:
+    """Returns dict of state_abbr -> cents_per_kwh (residential)"""
+    print("  Fetching EIA electricity prices (residential)...")
+    all_data = []
+    for offset in [0, 60, 120]:
+        params = urllib.parse.urlencode({
+            "api_key": EIA_KEY,
+            "frequency": "monthly",
+            "data[0]": "price",
+            "facets[sectorid][]": "RES",
+            "sort[0][column]": "period",
+            "sort[0][direction]": "desc",
+            "length": "60",
+            "offset": str(offset),
+        })
+        url = f"https://api.eia.gov/v2/electricity/retail-sales/data/?{params}"
+        try:
+            resp = urllib.request.urlopen(url, timeout=15)
+            batch = json.loads(resp.read()).get('response', {}).get('data', [])
+            if not batch: break
+            all_data.extend(batch)
+            time.sleep(0.2)
+        except Exception as e:
+            print(f"    EIA fetch error (offset {offset}): {e}")
+            break
+
+    if not all_data:
+        return {}
+
+    latest_period = all_data[0]['period']
+    state_prices = {}
+    national_sum = 0.0
+    national_count = 0
+    for r in all_data:
+        sid = r.get('stateid', '')
+        if r['period'] == latest_period and len(sid) == 2 and sid.isalpha() and r.get('price'):
+            state_prices[sid] = round(float(r['price']), 2)
+            if sid not in ('AK', 'HI'):  # exclude outliers from national avg
+                national_sum += float(r['price'])
+                national_count += 1
+
+    national_avg = round(national_sum / national_count, 2) if national_count else 17.0
+    state_prices['NATIONAL'] = national_avg
+
+    print(f"    Period: {latest_period} | States: {len(state_prices)-1} | National avg: {national_avg}¢/kWh")
+    # Show extremes
+    sorted_states = sorted([(k, v) for k, v in state_prices.items() if k != 'NATIONAL'], key=lambda x: x[1])
+    print(f"    Cheapest: {sorted_states[0][0]} {sorted_states[0][1]}¢ | Priciest: {sorted_states[-1][0]} {sorted_states[-1][1]}¢")
+    return state_prices
+
+
 # ─── Apply to City Files ─────────────────────────────────────────────────────
 
-def apply_updates(grocery_data: dict, rent_lookup: dict, gas_prices: dict):
+def apply_updates(grocery_data: dict, rent_lookup: dict, gas_prices: dict, elec_prices: dict = None):
     city_files = [f for f in sorted(DATA_DIR.glob("*.json")) if f.name != 'cities.json']
     national_gas = gas_prices.get('NATIONAL', 3.977)
     updated = 0
@@ -263,6 +317,26 @@ def apply_updates(grocery_data: dict, rent_lookup: dict, gas_prices: dict):
             if 'cpi_food_yoy' in grocery_data:
                 d['groceries']['inflation_rate']['current_yoy'] = grocery_data['cpi_food_yoy']
 
+        # Electricity
+        if elec_prices:
+            state_rate = elec_prices.get(state_abbr)
+            national_rate = elec_prices.get('NATIONAL', 17.0)
+            if state_rate:
+                if 'electricity' not in d:
+                    d['electricity'] = {}
+                elec = d['electricity']
+                elec['cents_per_kwh'] = state_rate
+                elec['avg_monthly_kwh_rate'] = state_rate
+                elec['national_avg_cents'] = national_rate
+                elec['national_avg_rate'] = national_rate
+                # Recalc monthly bill (avg US home uses ~900 kWh/mo)
+                usage_kwh = 900
+                elec['monthly_avg_bill'] = round(usage_kwh * state_rate / 100, 1)
+                elec['avg_monthly_bill'] = round(usage_kwh * state_rate / 100)
+                elec['national_avg_bill'] = round(usage_kwh * national_rate / 100, 1)
+                elec['source'] = f"EIA Residential ({TODAY[:7]})"
+                changed = True
+
         if changed:
             d['last_updated'] = TODAY
             f.write_text(json.dumps(d, separators=(',', ':')))
@@ -278,7 +352,8 @@ def main():
     gas_only = '--gas-only' in args
     rent_only = '--rent-only' in args
     groceries_only = '--groceries-only' in args
-    all_data = not any([gas_only, rent_only, groceries_only])
+    electricity_only = '--electricity-only' in args
+    all_data = not any([gas_only, rent_only, groceries_only, electricity_only])
 
     print(f"\n🔄 RealInflation Data Refresh — {TODAY}")
     print("=" * 50)
@@ -286,6 +361,7 @@ def main():
     grocery_data = {}
     rent_lookup = {}
     gas_prices = {}
+    elec_prices = {}
 
     if all_data or groceries_only:
         print("\n📦 Groceries (FRED/BLS):")
@@ -299,11 +375,17 @@ def main():
         print("\n⛽ Gas (AAA):")
         gas_prices = refresh_gas()
 
+    if all_data or electricity_only:
+        print("\n⚡ Electricity (EIA):")
+        elec_prices = refresh_electricity()
+
     print("\n💾 Applying to city files...")
-    apply_updates(grocery_data, rent_lookup, gas_prices)
+    apply_updates(grocery_data, rent_lookup, gas_prices, elec_prices)
 
     print(f"\n✅ Done! Run 'npm run build' then deploy.")
     print(f"   Gas national: ${gas_prices.get('NATIONAL', 'N/A')}")
+    if elec_prices:
+        print(f"   Electricity national avg: {elec_prices.get('NATIONAL', 'N/A')}¢/kWh")
 
 if __name__ == '__main__':
     main()
