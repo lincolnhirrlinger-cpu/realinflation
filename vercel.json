@@ -1,7 +1,6 @@
 {
   "outputDirectory": "out",
   "framework": null,
-  "buildCommand": "npm run build",
   "trailingSlash": true,
   "cleanUrls": true
 }
