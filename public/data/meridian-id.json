@@ -7,7 +7,7 @@
   "col_index": 108,
   "last_updated": "2026-03-22",
   "gas": {
-    "current": 4.09,
+    "current": 4.17,
     "national_current": 3.88,
     "history": [
       {
@@ -1332,7 +1332,7 @@
       },
       {
         "date": "2022-01",
-        "price": 4.292,
+        "price": 3.586,
         "national": 3.95
       },
       {

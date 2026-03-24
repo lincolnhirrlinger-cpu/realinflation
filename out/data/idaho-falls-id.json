@@ -8,7 +8,7 @@
   "col_index": 84,
   "last_updated": "2026-03-23",
   "gas": {
-    "current": 4.109,
+    "current": 4.05,
     "diesel_current": 4.73,
     "national_current": 3.45,
     "history": [
@@ -1334,7 +1334,7 @@
       },
       {
         "date": "2022-01",
-        "price": 4.285,
+        "price": 3.483,
         "national": 3.95
       },
       {
