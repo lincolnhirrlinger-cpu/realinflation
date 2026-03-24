@@ -5,7 +5,7 @@
   "slug": "seattle-wa",
   "population": 737000,
   "region": "Pacific",
-  "col_index": 158,
+  "col_index": 122,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 5.274,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.67,
+        "current": 6.0,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.67
           }
         ],
-        "change_from_2022": 0.23,
+        "change_from_2022": 237.1,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 24.77,
+    "fast_food_avg": 15.5,
     "casual_dining_avg": 53.59,
     "coffee_avg": 12.32,
     "monthly_household_spend": 798.87,

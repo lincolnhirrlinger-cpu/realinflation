@@ -5,7 +5,7 @@
   "slug": "portland-or",
   "population": 652000,
   "region": "Pacific",
-  "col_index": 128,
+  "col_index": 118,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 4.848,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.56,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.56
           }
         ],
-        "change_from_2022": 0.28,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 22.39,
+    "fast_food_avg": 13.5,
     "casual_dining_avg": 39.32,
     "coffee_avg": 9.7,
     "monthly_household_spend": 717.01,

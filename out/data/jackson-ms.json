@@ -5,7 +5,7 @@
   "slug": "jackson-ms",
   "population": 153000,
   "region": "East South Central",
-  "col_index": 65,
+  "col_index": 72,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.551,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 1.88,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 1.88
           }
         ],
-        "change_from_2022": 0.253,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 7.18,
+    "fast_food_avg": 10.5,
     "casual_dining_avg": 13.92,
     "coffee_avg": 3.4,
     "monthly_household_spend": 232.79,

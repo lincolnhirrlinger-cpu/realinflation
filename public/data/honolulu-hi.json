@@ -5,7 +5,7 @@
   "slug": "honolulu-hi",
   "population": 345000,
   "region": "Pacific",
-  "col_index": 175,
+  "col_index": 152,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 5.231,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.85,
+        "current": 7.2,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.85
           }
         ],
-        "change_from_2022": 0.267,
+        "change_from_2022": 304.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 29.74,
+    "fast_food_avg": 16.5,
     "casual_dining_avg": 56.56,
     "coffee_avg": 13.65,
     "monthly_household_spend": 853.19,

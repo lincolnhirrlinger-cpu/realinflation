@@ -5,7 +5,7 @@
   "slug": "chicago-il",
   "population": 2696000,
   "region": "Midwest",
-  "col_index": 120,
+  "col_index": 110,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 4.172,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.37,
+        "current": 5.7,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.37
           }
         ],
-        "change_from_2022": 0.185,
+        "change_from_2022": 220.2,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 15.9,
+    "fast_food_avg": 13.5,
     "casual_dining_avg": 26.5,
     "coffee_avg": 7.42,
     "monthly_household_spend": 454.48,

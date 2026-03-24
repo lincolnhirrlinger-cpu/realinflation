@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.12,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.12
           }
         ],
-        "change_from_2022": 0.233,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {

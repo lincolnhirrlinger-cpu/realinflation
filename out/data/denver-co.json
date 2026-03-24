@@ -5,7 +5,7 @@
   "slug": "denver-co",
   "population": 715000,
   "region": "Mountain",
-  "col_index": 118,
+  "col_index": 115,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.929,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.43,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.43
           }
         ],
-        "change_from_2022": 0.259,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 15.13,
+    "fast_food_avg": 13.5,
     "casual_dining_avg": 31.6,
     "coffee_avg": 7.82,
     "monthly_household_spend": 525.7,

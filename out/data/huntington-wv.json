@@ -5,7 +5,7 @@
   "slug": "huntington-wv",
   "population": 46000,
   "region": "South Atlantic",
-  "col_index": 65,
+  "col_index": 75,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.721,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 1.86,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 1.86
           }
         ],
-        "change_from_2022": 0.2,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {

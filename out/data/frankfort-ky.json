@@ -5,7 +5,7 @@
   "slug": "frankfort-ky",
   "population": 27000,
   "region": "East South Central",
-  "col_index": 72,
+  "col_index": 80,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.745,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.02,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.02
           }
         ],
-        "change_from_2022": 0.239,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 8.2,
+    "fast_food_avg": 11.0,
     "casual_dining_avg": 14.21,
     "coffee_avg": 4.04,
     "monthly_household_spend": 246.59,

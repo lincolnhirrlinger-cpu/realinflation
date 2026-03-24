@@ -3499,9 +3499,9 @@
       {
         "name": "Eggs (dozen)",
         "slug": "eggs",
-        "current": 3.63,
+        "current": 5.5,
         "history": [],
-        "change_from_2022": 85.0,
+        "change_from_2022": 209.0,
         "note": "USDA national avg"
       },
       {

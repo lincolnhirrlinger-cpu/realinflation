@@ -5,7 +5,7 @@
   "slug": "boston-ma",
   "population": 675000,
   "region": "Northeast",
-  "col_index": 155,
+  "col_index": 130,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.737,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.61,
+        "current": 6.3,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.61
           }
         ],
-        "change_from_2022": 0.203,
+        "change_from_2022": 253.9,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 23.95,
+    "fast_food_avg": 14.5,
     "casual_dining_avg": 43.71,
     "coffee_avg": 10.63,
     "monthly_household_spend": 720.13,

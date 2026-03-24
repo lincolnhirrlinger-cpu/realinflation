@@ -5,7 +5,7 @@
   "slug": "tucson-az",
   "population": 545000,
   "region": "Mountain",
-  "col_index": 85,
+  "col_index": 90,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 4.542,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.05,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.05
           }
         ],
-        "change_from_2022": 0.235,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {

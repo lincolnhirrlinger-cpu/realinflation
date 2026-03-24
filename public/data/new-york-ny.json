@@ -5,7 +5,7 @@
   "slug": "new-york-ny",
   "population": 8336000,
   "region": "Northeast",
-  "col_index": 170,
+  "col_index": 138,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.855,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.86,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.86
           }
         ],
-        "change_from_2022": 0.227,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 25.75,
+    "fast_food_avg": 15.5,
     "casual_dining_avg": 50.49,
     "coffee_avg": 11.3,
     "monthly_household_spend": 884.72,

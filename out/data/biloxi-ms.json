@@ -5,7 +5,7 @@
   "slug": "biloxi-ms",
   "population": 44000,
   "region": "East South Central",
-  "col_index": 70,
+  "col_index": 80,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.551,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 1.83,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 1.83
           }
         ],
-        "change_from_2022": 0.188,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {

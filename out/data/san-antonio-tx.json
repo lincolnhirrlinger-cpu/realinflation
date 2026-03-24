@@ -3499,9 +3499,9 @@
       {
         "name": "Eggs (dozen)",
         "slug": "eggs",
-        "current": 3.53,
+        "current": 5.5,
         "history": [],
-        "change_from_2022": 85.0,
+        "change_from_2022": 209.0,
         "note": "USDA national avg"
       },
       {
@@ -3543,7 +3543,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 13.32,
+    "fast_food_avg": 12.5,
     "casual_dining_avg": 24.4,
     "monthly_household_spend": 367.32,
     "restaurant_inflation_yoy": 5.35,

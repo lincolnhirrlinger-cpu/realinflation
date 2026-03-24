@@ -5,7 +5,7 @@
   "slug": "louisville-ky",
   "population": 633000,
   "region": "East South Central",
-  "col_index": 82,
+  "col_index": 87,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.745,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.09,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.09
           }
         ],
-        "change_from_2022": 0.267,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 9.71,
+    "fast_food_avg": 11.5,
     "casual_dining_avg": 17.22,
     "coffee_avg": 4.46,
     "monthly_household_spend": 276.64,

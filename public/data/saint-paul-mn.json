@@ -5,7 +5,7 @@
   "slug": "saint-paul-mn",
   "population": 308000,
   "region": "Midwest",
-  "col_index": 100,
+  "col_index": 104,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.444,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.29,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.29
           }
         ],
-        "change_from_2022": 0.245,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {

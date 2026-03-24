@@ -5,7 +5,7 @@
   "slug": "dallas-tx",
   "population": 1288000,
   "region": "South",
-  "col_index": 102,
+  "col_index": 104,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.624,
@@ -3499,9 +3499,9 @@
       {
         "name": "Eggs (dozen)",
         "slug": "eggs",
-        "current": 3.8,
+        "current": 5.5,
         "history": [],
-        "change_from_2022": 85.0,
+        "change_from_2022": 209.0,
         "note": "USDA national avg"
       },
       {
@@ -3543,7 +3543,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 14.06,
+    "fast_food_avg": 13.0,
     "casual_dining_avg": 18.92,
     "monthly_household_spend": 378.35,
     "restaurant_inflation_yoy": 6.21,

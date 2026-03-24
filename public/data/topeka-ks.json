@@ -5,7 +5,7 @@
   "slug": "topeka-ks",
   "population": 126000,
   "region": "Midwest",
-  "col_index": 75,
+  "col_index": 82,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.264,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 1.97,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 1.97
           }
         ],
-        "change_from_2022": 0.216,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 8.91,
+    "fast_food_avg": 11.0,
     "casual_dining_avg": 17.25,
     "coffee_avg": 4.37,
     "monthly_household_spend": 306.94,

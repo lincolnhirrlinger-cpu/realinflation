@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.02,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.02
           }
         ],
-        "change_from_2022": 0.217,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 10.31,
+    "fast_food_avg": 12.5,
     "casual_dining_avg": 19.16,
     "coffee_avg": 5.1,
     "monthly_household_spend": 318.87,

@@ -5,7 +5,7 @@
   "slug": "little-rock-ar",
   "population": 202000,
   "region": "West South Central",
-  "col_index": 72,
+  "col_index": 80,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.396,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 1.95,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 1.95
           }
         ],
-        "change_from_2022": 0.234,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 8.29,
+    "fast_food_avg": 11.0,
     "casual_dining_avg": 16.89,
     "coffee_avg": 4.09,
     "monthly_household_spend": 267.15,

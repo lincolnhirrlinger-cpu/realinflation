@@ -5,7 +5,7 @@
   "slug": "los-angeles-ca",
   "population": 3980000,
   "region": "Pacific",
-  "col_index": 160,
+  "col_index": 128,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 5.79,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.83,
+        "current": 6.5,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.83
           }
         ],
-        "change_from_2022": 0.281,
+        "change_from_2022": 265.2,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 25.08,
+    "fast_food_avg": 15.0,
     "casual_dining_avg": 48.13,
     "coffee_avg": 12.0,
     "monthly_household_spend": 801.07,

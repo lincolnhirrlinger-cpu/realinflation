@@ -5,7 +5,7 @@
   "slug": "provo-ut",
   "population": 115000,
   "region": "Mountain",
-  "col_index": 95,
+  "col_index": 96,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.941,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.19,
+        "current": 5.3,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.19
           }
         ],
-        "change_from_2022": 0.266,
+        "change_from_2022": 197.8,
         "note": "Bird flu volatility"
       },
       {

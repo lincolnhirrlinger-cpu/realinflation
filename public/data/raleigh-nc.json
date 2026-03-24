@@ -5,7 +5,7 @@
   "slug": "raleigh-nc",
   "population": 467000,
   "region": "South Atlantic",
-  "col_index": 100,
+  "col_index": 102,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.726,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 2.28,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 2.28
           }
         ],
-        "change_from_2022": 0.253,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 13.26,
+    "fast_food_avg": 13.0,
     "casual_dining_avg": 25.0,
     "coffee_avg": 6.14,
     "monthly_household_spend": 386.44,

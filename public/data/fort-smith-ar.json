@@ -5,7 +5,7 @@
   "slug": "fort-smith-ar",
   "population": 89000,
   "region": "West South Central",
-  "col_index": 65,
+  "col_index": 75,
   "last_updated": "2026-03-23",
   "gas": {
     "current": 3.396,
@@ -3495,7 +3495,7 @@
         "name": "Eggs (dozen)",
         "slug": "eggs",
         "unit": "dozen",
-        "current": 1.86,
+        "current": 5.9,
         "history": [
           {
             "date": "2022",
@@ -3518,7 +3518,7 @@
             "price": 1.86
           }
         ],
-        "change_from_2022": 0.24,
+        "change_from_2022": 231.5,
         "note": "Bird flu volatility"
       },
       {
@@ -4101,7 +4101,7 @@
     }
   },
   "dining": {
-    "fast_food_avg": 7.33,
+    "fast_food_avg": 10.75,
     "casual_dining_avg": 14.5,
     "coffee_avg": 3.77,
     "monthly_household_spend": 249.6,
