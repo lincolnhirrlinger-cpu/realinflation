@@ -31,10 +31,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const year = new Date().getFullYear()
   return {
     title: `Cost of Living in ${data.city}, ${data.state} (${year}) — Real Prices | RealInflation`,
-    description: `Gas is $${data.gas.current.toFixed(2)}/gal, average rent is $${data.rent.avg_all.toLocaleString()}/mo in ${data.city}, ${data.state}. Track real inflation vs. CPI with monthly price data.`,
+    description: `Gas is $${data.gas.current.toFixed(2)}/gal, average rent is $${data.rent.avg_all.toLocaleString()}/mo in ${data.city}, ${data.state}. Real grocery prices, electricity costs, and car insurance vs. national averages.`,
+    keywords: [
+      `cost of living ${data.city}`,
+      `${data.city} gas prices`,
+      `${data.city} rent prices ${year}`,
+      `${data.city} inflation`,
+      `${data.city} ${data.state} cost of living`,
+      `groceries ${data.city}`,
+      `is ${data.city} expensive`,
+      'real inflation tracker',
+    ],
     openGraph: {
-      title: `Cost of Living in ${data.city}, ${data.state} — RealInflation`,
-      description: `Gas $${data.gas.current.toFixed(2)} · Rent $${data.rent.avg_all.toLocaleString()}/mo · Groceries up ${(data.groceries.inflation_rate.current_yoy)}% YoY`,
+      title: `Cost of Living in ${data.city}, ${data.state} (${year}) — RealInflation`,
+      description: `Gas $${data.gas.current.toFixed(2)}/gal · Rent $${data.rent.avg_all.toLocaleString()}/mo · Groceries +${data.groceries.inflation_rate.current_yoy}% YoY. Real prices, not government averages.`,
+      url: `https://realinflation.co/city/${data.slug}/`,
+      type: 'website',
+      images: [{ url: '/og-default.png', width: 1200, height: 630, alt: `Cost of Living in ${data.city}, ${data.state}` }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@realinflationco',
+      title: `${data.city}, ${data.state} — Real Prices ${year}`,
+      description: `Gas $${data.gas.current.toFixed(2)} · Rent $${data.rent.avg_all.toLocaleString()}/mo · Track real inflation at realinflation.co`,
+    },
+    alternates: {
+      canonical: `https://realinflation.co/city/${data.slug}/`,
     },
   }
 }

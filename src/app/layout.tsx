@@ -10,17 +10,21 @@ export const metadata: Metadata = {
     template: '%s | RealInflation',
   },
   description: 'Track real consumer prices for gas, rent, groceries, and fast food in your city vs. government CPI numbers. The government says inflation is 2.4%. Here is what you are actually paying.',
-  keywords: ['inflation', 'cost of living', 'gas prices', 'rent prices', 'grocery prices', 'CPI'],
+  keywords: ['inflation', 'cost of living', 'gas prices', 'rent prices', 'grocery prices', 'CPI', 'real inflation', 'consumer prices', 'price tracker'],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://realinflation.co',
     siteName: 'RealInflation',
-    images: [{ url: '/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: '/og-default.png', width: 1200, height: 630, alt: 'RealInflation — What Things Actually Cost' }],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@realinflation',
+    site: '@realinflationco',
+    creator: '@realinflationco',
+  },
+  alternates: {
+    canonical: 'https://realinflation.co',
   },
   robots: {
     index: true,

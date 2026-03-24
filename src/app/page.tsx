@@ -9,7 +9,63 @@ import { getCitiesServer } from '@/lib/data.server'
 
 export const metadata: Metadata = {
   title: 'RealInflation — What Things Actually Cost Across America',
-  description: 'Track real consumer prices for gas, rent, groceries, and dining across 100+ US cities vs. government CPI. See an interactive inflation map by state.',
+  description: 'Track real consumer prices for gas, rent, groceries, and dining across 115 US cities vs. government CPI. See what inflation really looks like in your city.',
+  keywords: ['real inflation', 'cost of living', 'gas prices by city', 'rent prices 2025', 'grocery inflation', 'CPI vs real prices', 'inflation tracker', 'consumer price index'],
+  openGraph: {
+    title: 'RealInflation — What Things Actually Cost Across America',
+    description: 'Gas, rent, groceries, and more — tracked city by city. The government says 2.4%. See what you\'re actually paying.',
+    url: 'https://realinflation.co',
+    images: [{ url: '/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@realinflationco',
+  },
+  alternates: { canonical: 'https://realinflation.co' },
+}
+
+function HomeJsonLd() {
+  const schema = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'RealInflation',
+      url: 'https://realinflation.co',
+      description: 'Real consumer price tracker across 115 US cities',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: { '@type': 'EntryPoint', urlTemplate: 'https://realinflation.co/city/{slug}/' },
+        'query-input': 'required name=slug',
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How much is gas in the US right now?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The national average gas price is around $3.15-$3.40/gallon in 2025, but varies significantly by city. California cities like San Francisco pay $4.50+, while Midwest cities like Kansas City pay closer to $2.90.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the average rent in the US?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The national average rent for a 1-bedroom apartment is approximately $1,500-$1,700/month in 2025. NYC and SF average $3,000+, while Midwest cities average $900-$1,100.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How much has grocery inflation been?',
+          acceptedAnswer: { '@type': 'Answer', text: 'According to BLS data, grocery prices are up 2.6% year-over-year as of 2025, but specific items have risen far more. Eggs are up ~30%, ground beef up ~48%, and bread up ~19% since January 2022.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is the official CPI accurate?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The CPI measures a broad basket of goods, but individual categories like rent, gas, and groceries have often risen faster than the overall headline number. RealInflation tracks these specific categories city-by-city so you can see what you\'re actually paying.' },
+        },
+      ],
+    },
+  ]
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 }
 
 // Map is client-only (uses browser APIs for hover/routing)
@@ -86,6 +142,7 @@ export default async function HomePage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <HomeJsonLd />
       {/* Hero */}
       <Hero />
 
