@@ -19,6 +19,7 @@ export default function Nav() {
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/states/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">States</Link>
             <Link href="/compare/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Compare</Link>
+            <Link href="/submit/" className="text-sm font-sans bg-accent/10 text-accent rounded px-2 py-0.5 hover:bg-accent/20 transition-colors">Submit Price</Link>
             <Link href="/methodology/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Methodology</Link>
           </nav>
 
@@ -45,6 +46,7 @@ export default function Nav() {
           <div className="md:hidden border-t border-border py-3 flex flex-col gap-3">
             <Link href="/states/" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>States</Link>
             <Link href="/compare/" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>Compare</Link>
+            <Link href="/submit/" className="text-sm font-sans bg-accent/10 text-accent rounded px-2 py-0.5 inline-block" onClick={() => setMenuOpen(false)}>Submit Price</Link>
             <Link href="/methodology/" className="text-sm font-sans text-text-secondary px-1" onClick={() => setMenuOpen(false)}>Methodology</Link>
           </div>
         )}

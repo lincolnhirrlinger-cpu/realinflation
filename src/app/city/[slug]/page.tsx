@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { getCityDataServer } from '@/lib/data.server'
 import { CITIES, getAllSlugs } from '@/lib/cities'
 import StatCard from '@/components/StatCard'
+import SourceBadge from '@/components/SourceBadge'
 import GroceryTable from '@/components/GroceryTable'
 import DiningSection from '@/components/DiningSection'
 import AdSlot from '@/components/AdSlot'
@@ -137,54 +138,83 @@ export default async function CityPage({ params }: Props) {
         <section className="mb-8">
           <h2 className="section-title mb-4">Key Numbers</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <StatCard
-              label="Gas (Regular)"
-              value={`$${data.gas.current.toFixed(2)}`}
-              subvalue={`National: $${data.gas.national_current.toFixed(2)}`}
-              change={gasChange}
-              changeLabel="vs. 2022"
-              stripe="red"
-            />
-            <StatCard
-              label="Avg Rent (All)"
-              value={`$${data.rent.avg_all.toLocaleString()}`}
-              subvalue={`National: $${data.rent.national_avg.toLocaleString()}`}
-              change={rentChange}
-              changeLabel="vs. 2022"
-              stripe="blue"
-            />
-            <StatCard
-              label="Grocery Inflation"
-              value={`${groceryYoy}%`}
-              subvalue="Year-over-year"
-              stripe="green"
-            />
-            <StatCard
-              label="Fast Food Avg"
-              value={`$${data.dining.fast_food_avg.toFixed(2)}`}
-              subvalue="Combo meal"
-              change={data.dining.restaurant_inflation_yoy / 100}
-              changeLabel="YoY"
-              stripe="orange"
-            />
-            <StatCard
-              label="Electricity"
-              value={`${data.electricity?.cents_per_kwh ?? '—'}¢/kWh`}
-              subvalue={`~$${data.electricity?.monthly_avg_bill?.toFixed(0) ?? '—'}/mo avg bill`}
-              change={((data.electricity?.cents_per_kwh ?? 16.2) - 16.2) / 16.2}
-              changeLabel="vs national avg"
-              stripe="orange"
-            />
-            <StatCard
-              label="Car Insurance"
-              value={`$${data.car_insurance?.monthly_avg?.toFixed(0) ?? '—'}/mo`}
-              subvalue={`$${data.car_insurance?.annual_avg?.toLocaleString() ?? '—'}/yr state avg`}
-              change={((data.car_insurance?.annual_avg ?? 2150) - 2150) / 2150}
-              changeLabel="vs national avg"
-              stripe="red"
-            />
+            <div>
+              <StatCard
+                label="Gas (Regular)"
+                value={`$${data.gas.current.toFixed(2)}`}
+                subvalue={`National: $${data.gas.national_current.toFixed(2)}`}
+                change={gasChange}
+                changeLabel="vs. 2022"
+                stripe="red"
+              />
+              <div className="mt-1"><SourceBadge source="AAA Gas Prices" /></div>
+            </div>
+            <div>
+              <StatCard
+                label="Avg Rent (All)"
+                value={`$${data.rent.avg_all.toLocaleString()}`}
+                subvalue={`National: $${data.rent.national_avg.toLocaleString()}`}
+                change={rentChange}
+                changeLabel="vs. 2022"
+                stripe="blue"
+              />
+              <div className="mt-1"><SourceBadge source="Est. · Submit receipt →" verified={false} citySlug={params.slug} /></div>
+            </div>
+            <div>
+              <StatCard
+                label="Grocery Inflation"
+                value={`${groceryYoy}%`}
+                subvalue="Year-over-year"
+                stripe="green"
+              />
+              <div className="mt-1"><SourceBadge source="BLS/FRED CPI" /></div>
+            </div>
+            <div>
+              <StatCard
+                label="Fast Food Avg"
+                value={`$${data.dining.fast_food_avg.toFixed(2)}`}
+                subvalue="Combo meal"
+                change={data.dining.restaurant_inflation_yoy / 100}
+                changeLabel="YoY"
+                stripe="orange"
+              />
+              <div className="mt-1"><SourceBadge source="Est. · Submit receipt →" verified={false} citySlug={params.slug} /></div>
+            </div>
+            <div>
+              <StatCard
+                label="Electricity"
+                value={`${data.electricity?.cents_per_kwh ?? '—'}¢/kWh`}
+                subvalue={`~$${data.electricity?.monthly_avg_bill?.toFixed(0) ?? '—'}/mo avg bill`}
+                change={((data.electricity?.cents_per_kwh ?? 16.2) - 16.2) / 16.2}
+                changeLabel="vs national avg"
+                stripe="orange"
+              />
+              <div className="mt-1"><SourceBadge source="EIA Residential" /></div>
+            </div>
+            <div>
+              <StatCard
+                label="Car Insurance"
+                value={`$${data.car_insurance?.monthly_avg?.toFixed(0) ?? '—'}/mo`}
+                subvalue={`$${data.car_insurance?.annual_avg?.toLocaleString() ?? '—'}/yr state avg`}
+                change={((data.car_insurance?.annual_avg ?? 2150) - 2150) / 2150}
+                changeLabel="vs national avg"
+                stripe="red"
+              />
+              <div className="mt-1"><SourceBadge source="Bankrate/NAIC" /></div>
+            </div>
           </div>
         </section>
+
+        {/* Help improve CTA */}
+        <div className="mb-8 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div>
+            <p className="font-sans font-semibold text-amber-900 text-sm">📸 Help make this data more accurate</p>
+            <p className="font-sans text-amber-700 text-xs mt-0.5">Some prices above are regional estimates. Submit a receipt from a local store to help us show what {data.city} residents actually pay.</p>
+          </div>
+          <Link href={`/submit/?city=${params.slug}`} className="shrink-0 bg-accent text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-accent-dark transition-colors">
+            Submit a Receipt
+          </Link>
+        </div>
 
         <AdSlot id="city-ad-1" />
 
