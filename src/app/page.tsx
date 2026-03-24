@@ -226,7 +226,37 @@ export default async function HomePage() {
           <StatCard label="Bread (1 lb)" value="$3.45" change={0.582} changeLabel="national" stripe="red" />
           <StatCard label="Ground Beef (lb)" value="$5.48" change={0.387} changeLabel="national" stripe="red" />
           <StatCard label="Fast Food Meal" value="$13.50" change={0.435} changeLabel="avg combo" stripe="orange" />
-          <StatCard label="Avg US Rent" value="$1,900" change={0.118} changeLabel="since 2022" stripe="blue" />
+          <StatCard label="Avg US Rent" value="$1,895" change={0.118} changeLabel="since 2022" stripe="blue" />
+        </div>
+      </section>
+
+      {/* Trending cities — real ZORI data */}
+      <section className="mb-12">
+        <div className="flex items-baseline justify-between mb-4">
+          <h2 className="section-title">🔥 Trending Right Now</h2>
+          <Link href="/leaderboard/" className="text-sm text-accent hover:underline font-sans">Leaderboard →</Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {[
+            { city: 'Austin, TX', slug: 'austin-tx', trend: 'Rent down -2.4% YoY — one of few cities where rent is falling', emoji: '📉', good: true },
+            { city: 'San Francisco, CA', slug: 'san-francisco-ca', trend: 'Rent up +6.3% YoY — highest increase of any major metro', emoji: '📈', good: false },
+            { city: 'Miami, FL', slug: 'miami-fl', trend: 'Insurance $3,180/yr — highest in the US', emoji: '🚗', good: false },
+            { city: 'Boise, ID', slug: 'boise-id', trend: 'Gas $4.11/gal — above national avg despite cheap electricity', emoji: '⛽', good: false },
+            { city: 'Houston, TX', slug: 'houston-tx', trend: 'No state income tax + rent flat YoY — one of the best value metros', emoji: '💰', good: true },
+            { city: 'New York, NY', slug: 'new-york-ny', trend: 'Avg rent $3,258/mo — 72% above national average', emoji: '🏙️', good: false },
+          ].map(item => (
+            <Link
+              key={item.slug}
+              href={`/city/${item.slug}/`}
+              className="card p-4 hover:border-accent transition-colors group"
+            >
+              <div className="flex items-start gap-2 mb-2">
+                <span className="text-xl">{item.emoji}</span>
+                <span className="font-sans font-semibold text-text-primary text-sm group-hover:text-accent transition-colors">{item.city}</span>
+              </div>
+              <p className="font-sans text-xs text-text-secondary leading-relaxed">{item.trend}</p>
+            </Link>
+          ))}
         </div>
       </section>
 

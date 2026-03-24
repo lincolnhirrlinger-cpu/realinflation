@@ -1,5 +1,7 @@
 'use client'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+const PointsCounter = dynamic(() => import('./PointsCounter'), { ssr: false })
 import { useState } from 'react'
 
 export default function Nav() {
@@ -20,6 +22,7 @@ export default function Nav() {
             <Link href="/states/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">States</Link>
             <Link href="/compare/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Compare</Link>
             <Link href="/leaderboard/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">🏆 Leaderboard</Link>
+            <PointsCounter />
             <Link href="/submit/" className="text-sm font-sans bg-accent/10 text-accent rounded px-2 py-0.5 hover:bg-accent/20 transition-colors">Submit Price</Link>
             <Link href="/methodology/" className="text-sm font-sans text-text-secondary hover:text-text-primary transition-colors">Methodology</Link>
           </nav>

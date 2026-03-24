@@ -11,6 +11,7 @@ import DiningSection from '@/components/DiningSection'
 import AdSlot from '@/components/AdSlot'
 import Newsletter from '@/components/Newsletter'
 import CitySubmissionBadge from '@/components/CitySubmissionBadge'
+import AffiliateCTA from '@/components/AffiliateCTA'
 
 // CityCharts: client component with date range filter — wraps GasChart + RentChart
 const CityCharts = dynamic(() => import('@/components/CityCharts'), {
@@ -227,6 +228,15 @@ export default async function CityPage({ params }: Props) {
               <div className="mt-1"><SourceBadge source="Bankrate/NAIC" /></div>
             </div>
           </div>
+          {/* Insurance affiliate CTA */}
+          <div className="mt-4">
+            <AffiliateCTA
+              type="insurance"
+              city={data.city}
+              state={data.state}
+              value={`$${data.car_insurance?.annual_avg?.toLocaleString() ?? '2,150'}`}
+            />
+          </div>
         </section>
 
         {/* Help improve CTA */}
@@ -250,24 +260,20 @@ export default async function CityPage({ params }: Props) {
             cityName={data.city}
           />
           {/* Gas affiliate CTA */}
-          <div className="mt-3 text-xs text-text-muted font-sans">
-            Spending too much on gas?{' '}
-            <a href="https://creditcards.com/gas/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
-              A gas rewards card can save you 3–5% back on every fill-up →
-            </a>
+          <div className="mt-4">
+            <AffiliateCTA type="gas" city={data.city} state={data.state} />
           </div>
         </section>
+
+        {/* Rent affiliate CTA */}
+        <div className="mb-6">
+          <AffiliateCTA type="rent" city={data.city} state={data.state} value={`$${data.rent.avg_all.toLocaleString()}`} />
+        </div>
 
         {/* Grocery table */}
         <section className="mb-8">
           <h2 className="section-title mb-4">Grocery Prices</h2>
           <GroceryTable items={data.groceries.items} />
-          <div className="mt-3 text-xs text-text-muted font-sans">
-            Save on groceries?{' '}
-            <a href="https://home.ibotta.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
-              Ibotta gives cash back on everyday groceries →
-            </a>
-          </div>
         </section>
 
         <AdSlot id="city-ad-2" />
