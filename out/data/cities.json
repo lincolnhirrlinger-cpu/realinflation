@@ -189,6 +189,51 @@
     "col_index": 84
   },
   {
+    "name": "Meridian",
+    "state": "Idaho",
+    "state_abbr": "ID",
+    "slug": "meridian-id",
+    "population": 130000,
+    "region": "Mountain",
+    "col_index": 108
+  },
+  {
+    "name": "Nampa",
+    "state": "Idaho",
+    "state_abbr": "ID",
+    "slug": "nampa-id",
+    "population": 105000,
+    "region": "Mountain",
+    "col_index": 94
+  },
+  {
+    "name": "Pocatello",
+    "state": "Idaho",
+    "state_abbr": "ID",
+    "slug": "pocatello-id",
+    "population": 57000,
+    "region": "Mountain",
+    "col_index": 87
+  },
+  {
+    "name": "Rexburg",
+    "state": "Idaho",
+    "state_abbr": "ID",
+    "slug": "rexburg-id",
+    "population": 39000,
+    "region": "Mountain",
+    "col_index": 82
+  },
+  {
+    "name": "Twin Falls",
+    "state": "Idaho",
+    "state_abbr": "ID",
+    "slug": "twin-falls-id",
+    "population": 52000,
+    "region": "Mountain",
+    "col_index": 88
+  },
+  {
     "name": "Chicago",
     "state": "Illinois",
     "state_abbr": "IL",

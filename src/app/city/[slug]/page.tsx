@@ -68,6 +68,10 @@ export default async function CityPage({ params }: Props) {
   const data = await getCityDataServer(params.slug)
   if (!data) notFound()
 
+  // Same-state cities only (excluding current city)
+  const stateCities = CITIES.filter(c => c.state_abbr === data.state_abbr && c.slug !== params.slug)
+  const stateSlug = data.state.toLowerCase().replace(/\s+/g, '-')
+
   const gasChange = (data.gas.current - data.gas.history[0].price) / data.gas.history[0].price
   const rentChange = (data.rent.avg_all - data.rent.history[0].avg) / data.rent.history[0].avg
   const groceryYoy = data.groceries.inflation_rate.current_yoy
@@ -106,21 +110,28 @@ export default async function CityPage({ params }: Props) {
           </p>
         </div>
 
-        {/* City switcher */}
-        <div className="flex flex-wrap gap-2 mb-8">
-          {CITIES.map(c => (
-            <Link
-              key={c.slug}
-              href={`/city/${c.slug}`}
-              className={`text-xs font-sans px-3 py-1.5 rounded-full border transition-colors ${
-                c.slug === params.slug
-                  ? 'bg-text-primary text-white border-text-primary'
-                  : 'border-border text-text-secondary hover:border-text-secondary'
-              }`}
-            >
-              {c.name}
-            </Link>
-          ))}
+        {/* State breadcrumb + same-state cities */}
+        <div className="mb-8">
+          <div className="flex items-center gap-2 mb-3 text-sm font-sans text-text-muted">
+            <Link href="/states/" className="hover:text-accent">States</Link>
+            <span>›</span>
+            <Link href={`/state/${stateSlug}/`} className="hover:text-accent">{data.state}</Link>
+            <span>›</span>
+            <span className="text-text-primary">{data.city}</span>
+          </div>
+          {stateCities.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {stateCities.map(c => (
+                <Link
+                  key={c.slug}
+                  href={`/city/${c.slug}/`}
+                  className="text-xs font-sans px-3 py-1.5 rounded-full border border-border text-text-secondary hover:border-accent hover:text-accent transition-colors"
+                >
+                  {c.name}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Stat cards */}

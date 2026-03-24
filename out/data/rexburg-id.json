@@ -10,11 +10,31 @@
     "current": 3.72,
     "national_current": 3.88,
     "history": [
-      { "date": "2022-03", "price": 4.12, "national": 4.29 },
-      { "date": "2023-03", "price": 3.48, "national": 3.43 },
-      { "date": "2024-03", "price": 3.05, "national": 3.45 },
-      { "date": "2025-03", "price": 2.82, "national": 3.02 },
-      { "date": "2026-03", "price": 3.72, "national": 3.88 }
+      {
+        "date": "2022-03",
+        "price": 4.12,
+        "national": 4.29
+      },
+      {
+        "date": "2023-03",
+        "price": 3.48,
+        "national": 3.43
+      },
+      {
+        "date": "2024-03",
+        "price": 3.05,
+        "national": 3.45
+      },
+      {
+        "date": "2025-03",
+        "price": 2.82,
+        "national": 3.02
+      },
+      {
+        "date": "2026-03",
+        "price": 3.72,
+        "national": 3.88
+      }
     ]
   },
   "rent": {
@@ -23,45 +43,230 @@
     "avg_2br": 945,
     "national_avg": 1900,
     "history": [
-      { "date": "2022", "avg": 710, "onebed": 618, "national": 1750 },
-      { "date": "2023", "avg": 724, "onebed": 632, "national": 1730 },
-      { "date": "2024", "avg": 762, "onebed": 668, "national": 1740 },
-      { "date": "2025", "avg": 808, "onebed": 710, "national": 1800 },
-      { "date": "2026", "avg": 845, "onebed": 748, "national": 1900 }
+      {
+        "date": "2022",
+        "avg": 710,
+        "onebed": 618,
+        "national": 1750
+      },
+      {
+        "date": "2023",
+        "avg": 724,
+        "onebed": 632,
+        "national": 1730
+      },
+      {
+        "date": "2024",
+        "avg": 762,
+        "onebed": 668,
+        "national": 1740
+      },
+      {
+        "date": "2025",
+        "avg": 808,
+        "onebed": 710,
+        "national": 1800
+      },
+      {
+        "date": "2026",
+        "avg": 845,
+        "onebed": 748,
+        "national": 1900
+      }
     ]
   },
   "groceries": {
     "items": [
-      { "name": "Eggs (dozen)", "slug": "eggs", "current": 2.22,
-        "history": [{"date":"2022","price":2.58},{"date":"2023","price":2.25},{"date":"2024","price":2.87},{"date":"2025","price":4.52},{"date":"2026","price":2.22}],
-        "change_from_2022": -0.140, "note": "Bird flu volatility" },
-      { "name": "Ground Beef (lb)", "slug": "ground-beef", "current": 4.85,
-        "history": [{"date":"2022","price":3.55},{"date":"2023","price":4.38},{"date":"2024","price":4.58},{"date":"2025","price":4.74},{"date":"2026","price":4.85}],
-        "change_from_2022": 0.366 },
-      { "name": "Milk (gallon)", "slug": "milk", "current": 3.49,
-        "history": [{"date":"2022","price":3.14},{"date":"2023","price":3.37},{"date":"2024","price":3.33},{"date":"2025","price":3.44},{"date":"2026","price":3.49}],
-        "change_from_2022": 0.111 },
-      { "name": "Bread (lb)", "slug": "bread", "current": 3.02,
-        "history": [{"date":"2022","price":1.92},{"date":"2023","price":2.60},{"date":"2024","price":2.82},{"date":"2025","price":2.95},{"date":"2026","price":3.02}],
-        "change_from_2022": 0.573 },
-      { "name": "Chicken Breast (lb)", "slug": "chicken", "current": 3.65,
-        "history": [{"date":"2022","price":3.33},{"date":"2023","price":3.50},{"date":"2024","price":3.59},{"date":"2025","price":3.63},{"date":"2026","price":3.65}],
-        "change_from_2022": 0.096 }
+      {
+        "name": "Eggs (dozen)",
+        "slug": "eggs",
+        "current": 2.22,
+        "history": [
+          {
+            "date": "2022",
+            "price": 2.58
+          },
+          {
+            "date": "2023",
+            "price": 2.25
+          },
+          {
+            "date": "2024",
+            "price": 2.87
+          },
+          {
+            "date": "2025",
+            "price": 4.52
+          },
+          {
+            "date": "2026",
+            "price": 2.22
+          }
+        ],
+        "change_from_2022": -0.14,
+        "note": "Bird flu volatility"
+      },
+      {
+        "name": "Ground Beef (lb)",
+        "slug": "ground-beef",
+        "current": 4.85,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.55
+          },
+          {
+            "date": "2023",
+            "price": 4.38
+          },
+          {
+            "date": "2024",
+            "price": 4.58
+          },
+          {
+            "date": "2025",
+            "price": 4.74
+          },
+          {
+            "date": "2026",
+            "price": 4.85
+          }
+        ],
+        "change_from_2022": 0.366
+      },
+      {
+        "name": "Milk (gallon)",
+        "slug": "milk",
+        "current": 3.49,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.14
+          },
+          {
+            "date": "2023",
+            "price": 3.37
+          },
+          {
+            "date": "2024",
+            "price": 3.33
+          },
+          {
+            "date": "2025",
+            "price": 3.44
+          },
+          {
+            "date": "2026",
+            "price": 3.49
+          }
+        ],
+        "change_from_2022": 0.111
+      },
+      {
+        "name": "Bread (lb)",
+        "slug": "bread",
+        "current": 3.02,
+        "history": [
+          {
+            "date": "2022",
+            "price": 1.92
+          },
+          {
+            "date": "2023",
+            "price": 2.6
+          },
+          {
+            "date": "2024",
+            "price": 2.82
+          },
+          {
+            "date": "2025",
+            "price": 2.95
+          },
+          {
+            "date": "2026",
+            "price": 3.02
+          }
+        ],
+        "change_from_2022": 0.573
+      },
+      {
+        "name": "Chicken Breast (lb)",
+        "slug": "chicken",
+        "current": 3.65,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.33
+          },
+          {
+            "date": "2023",
+            "price": 3.5
+          },
+          {
+            "date": "2024",
+            "price": 3.59
+          },
+          {
+            "date": "2025",
+            "price": 3.63
+          },
+          {
+            "date": "2026",
+            "price": 3.65
+          }
+        ],
+        "change_from_2022": 0.096
+      }
     ],
     "inflation_rate": {
       "current_yoy": 1.7,
-      "history": [{"year":"2022","rate":10.2},{"year":"2023","rate":4.1},{"year":"2024","rate":0.6},{"year":"2025","rate":1.6},{"year":"2026","rate":1.7}]
+      "history": [
+        {
+          "year": "2022",
+          "rate": 10.2
+        },
+        {
+          "year": "2023",
+          "rate": 4.1
+        },
+        {
+          "year": "2024",
+          "rate": 0.6
+        },
+        {
+          "year": "2025",
+          "rate": 1.6
+        },
+        {
+          "year": "2026",
+          "rate": 1.7
+        }
+      ]
     }
   },
   "dining": {
-    "fast_food_avg": 10.50,
+    "fast_food_avg": 10.5,
     "casual_dining_avg": 16.75,
     "monthly_household_spend": 398,
     "restaurant_inflation_yoy": 2.8,
     "chains": [
-      { "name": "McDonalds", "price_2022": 5.60, "price_current": 7.38 },
-      { "name": "Wendys", "price_2022": 8.55, "price_current": 11.85 },
-      { "name": "Five Guys", "price_2022": 16.50, "price_current": 19.50 }
+      {
+        "name": "McDonalds",
+        "price_2022": 5.6,
+        "price_current": 7.38
+      },
+      {
+        "name": "Wendys",
+        "price_2022": 8.55,
+        "price_current": 11.85
+      },
+      {
+        "name": "Five Guys",
+        "price_2022": 16.5,
+        "price_current": 19.5
+      }
     ]
-  }
+  },
+  "state_abbr": "ID"
 }
