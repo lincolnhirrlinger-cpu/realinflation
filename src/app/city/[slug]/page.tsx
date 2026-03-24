@@ -68,8 +68,11 @@ export default async function CityPage({ params }: Props) {
   const stateCities = CITIES.filter(c => c.state_abbr === data.state_abbr && c.slug !== params.slug)
   const stateSlug = data.state.toLowerCase().replace(/\s+/g, '-')
 
-  const gasChange = (data.gas.current - data.gas.history[0].price) / data.gas.history[0].price
-  const rentChange = (data.rent.avg_all - data.rent.history[0].avg) / data.rent.history[0].avg
+  // Find 2022 baseline (Jan 2022) for change calculation
+  const gas2022 = data.gas.history.find(h => h.date === '2022-01') ?? data.gas.history[0]
+  const rent2022 = data.rent.history.find(h => h.date === '2022-01') ?? data.rent.history[0]
+  const gasChange = (data.gas.current - gas2022.price) / gas2022.price
+  const rentChange = (data.rent.avg_all - rent2022.avg) / rent2022.avg
   const groceryYoy = data.groceries.inflation_rate.current_yoy
 
   // SEO paragraph
