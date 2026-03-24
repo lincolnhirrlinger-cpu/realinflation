@@ -10,10 +10,20 @@ interface AirdropModalProps {
 }
 
 export default function AirdropModal({ userUuid, totalPoints, cityName, onClose }: AirdropModalProps) {
-  const [email, setEmail] = useState('')
-  const [wallet, setWallet] = useState('')
+  // Don't show if they already registered
+  if (typeof window !== 'undefined' && localStorage.getItem('ri_email_verified')) {
+    onClose()
+    return null
+  }
+  const [email, setEmail] = useState(() =>
+    typeof window !== 'undefined' ? localStorage.getItem('ri_email') ?? '' : ''
+  )
+  const [wallet, setWallet] = useState(() =>
+    typeof window !== 'undefined' ? localStorage.getItem('ri_wallet') ?? '' : ''
+  )
   const [status, setStatus] = useState<'idle' | 'loading' | 'sent' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
+  const alreadyRegistered = typeof window !== 'undefined' && !!localStorage.getItem('ri_email_verified')
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -51,6 +61,11 @@ export default function AirdropModal({ userUuid, totalPoints, cityName, onClose 
       setErrorMsg(authErr.message)
       return
     }
+
+    // Remember so we don't ask again
+    localStorage.setItem('ri_email', email)
+    if (wallet) localStorage.setItem('ri_wallet', wallet)
+    localStorage.setItem('ri_email_verified', 'pending')
 
     setStatus('sent')
   }
