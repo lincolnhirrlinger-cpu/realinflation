@@ -10,6 +10,7 @@ import GroceryTable from '@/components/GroceryTable'
 import DiningSection from '@/components/DiningSection'
 import AdSlot from '@/components/AdSlot'
 import Newsletter from '@/components/Newsletter'
+import CitySubmissionBadge from '@/components/CitySubmissionBadge'
 
 // CityCharts: client component with date range filter — wraps GasChart + RentChart
 const CityCharts = dynamic(() => import('@/components/CityCharts'), {
@@ -118,11 +119,12 @@ export default async function CityPage({ params }: Props) {
 
         {/* Page header */}
         <div className="mb-8">
-          <div className="flex items-center gap-3 mb-2">
+          <div className="flex items-center gap-3 mb-2 flex-wrap">
             <span className="label-caps">Cost of Living</span>
             <span className="text-xs font-mono bg-accent/10 text-accent px-2 py-0.5 rounded">
               Updated {data.last_updated}
             </span>
+            <CitySubmissionBadge slug={params.slug} />
           </div>
           <h1 className="font-serif text-4xl md:text-5xl text-text-primary mb-3">
             {data.city}, {data.state}
