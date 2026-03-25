@@ -54,16 +54,34 @@ export default async function StatePage({ params }: PageProps) {
     stateCounties = []
   }
 
+    // Fallback state-level data for states with no tracked cities
+  const STATE_GAS_FALLBACK: Record<string,number> = {
+    AL:3.62,AK:3.95,AZ:3.93,AR:3.40,CA:5.79,CO:3.93,CT:3.88,DE:3.79,FL:3.93,
+    GA:3.67,HI:5.23,ID:4.11,IL:3.85,IN:3.55,IA:3.35,KS:3.22,KY:3.49,LA:3.41,
+    ME:3.64,MD:3.73,MA:3.83,MI:3.62,MN:3.39,MS:3.35,MO:3.32,MT:3.72,NE:3.28,
+    NV:4.26,NH:3.36,NJ:3.41,NM:3.51,NY:3.86,NC:3.52,ND:3.25,OH:3.62,OK:3.22,
+    OR:3.97,PA:3.99,RI:3.65,SC:3.52,SD:3.32,TN:3.52,TX:3.62,UT:3.85,VT:3.64,
+    VA:3.59,WA:4.63,WV:3.49,WI:3.49,WY:3.75,DC:4.10,
+  }
+  const STATE_RENT_FALLBACK: Record<string,number> = {
+    AL:1050,AK:1400,AZ:1450,AR:900,CA:2300,CO:1700,CT:1650,DE:1450,FL:1750,
+    GA:1450,HI:2100,ID:1250,IL:1350,IN:1050,IA:950,KS:950,KY:1000,LA:1100,
+    ME:1300,MD:1900,MA:2200,MI:1150,MN:1300,MS:900,MO:1050,MT:1300,NE:1050,
+    NV:1500,NH:1600,NJ:2100,NM:1100,NY:2400,NC:1350,ND:950,OH:1100,OK:950,
+    OR:1650,PA:1400,RI:1600,SC:1300,SD:950,TN:1350,TX:1400,UT:1500,VT:1400,
+    VA:1700,WA:1900,WV:900,WI:1050,WY:1100,DC:2500,
+  }
+
   // Compute state-level averages from available city data
   const available = cityDataList.filter((d): d is CityData => d !== null)
   const avgGas =
     available.length > 0
       ? available.reduce((sum, d) => sum + d.gas.current, 0) / available.length
-      : null
+      : (meta.abbr in STATE_GAS_FALLBACK ? STATE_GAS_FALLBACK[meta.abbr] : null)
   const avgRent =
     available.length > 0
       ? available.reduce((sum, d) => sum + d.rent.avg_all, 0) / available.length
-      : null
+      : (meta.abbr in STATE_RENT_FALLBACK ? STATE_RENT_FALLBACK[meta.abbr] : null)
   const avgCol =
     cities.length > 0
       ? cities.reduce((sum, c) => sum + c.col_index, 0) / cities.length
@@ -136,6 +154,15 @@ export default async function StatePage({ params }: PageProps) {
       {/* City grid */}
       <section className="mb-10">
         <h2 className="section-title mb-4">Cities in {meta.name}</h2>
+        {cities.length === 0 && (
+          <div className="card p-8 text-center">
+            <p className="text-2xl mb-3">🗺️</p>
+            <p className="font-sans font-semibold text-text-primary mb-2">No cities tracked yet in {meta.name}</p>
+            <p className="text-sm text-text-muted font-sans max-w-md mx-auto">
+              We&apos;re expanding our coverage. State-level gas, rent, and income data is available above. City-level data coming soon.
+            </p>
+          </div>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {cities.map((city, i) => {
             const data = cityDataList[i]
