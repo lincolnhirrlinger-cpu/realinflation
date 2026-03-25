@@ -29,18 +29,20 @@ GROCERY_ITEMS = [
     {
         "slug": "eggs",
         "name": "Eggs (dozen)",
-        "query": "eggs grade a large",
-        "terms": ["egg", "eggs"],
+        "query": "large eggs grade a 12 count",
+        "terms": ["large", "grade a", "grade aa"],
         "unit_filter": "dozen",
         "max_price": 8.00,
+        "prefer_conventional": True,
     },
     {
         "slug": "milk",
         "name": "Milk (gallon)",
-        "query": "whole milk gallon",
-        "terms": ["whole milk gallon", "2% milk gallon", "vitamin d milk"],
+        "query": "milk gallon vitamin d",
+        "terms": ["vitamin d", "whole milk", "2% milk", "reduced fat milk"],
         "unit_filter": "gallon",
         "max_price": 7.00,
+        "prefer_conventional": True,  # exclude organic from price selection
     },
     {
         "slug": "bread",
@@ -232,22 +234,44 @@ class KrogerClient:
             return None
 
         candidates = []
+        prefer_conventional = item_def.get("prefer_conventional", False)
+        ORGANIC_WORDS = {"organic", "free range", "grass-fed", "pasture", "dha omega", "hormone free"}
+
+        ORGANIC_WORDS = {"organic", "free range", "grass-fed", "pasture", "cage free",
+                         "dha omega", "horizon", "vital farms", "happy egg"}
+
         for p in products:
             desc = p.get("description", "").lower()
             items_data = p.get("items", [])
+
+            # Skip organic/premium when we want conventional price
+            if prefer_conventional and any(w in desc for w in ORGANIC_WORDS):
+                continue
 
             # Check name matches
             matched = any(t in desc for t in item_def["terms"])
             if not matched:
                 continue
 
+            unit_filter = item_def.get("unit_filter")
             for it in items_data:
+                size = it.get("size", "").lower()
+
+                # Gallon milk: must be exactly 1 gallon
+                if unit_filter == "gallon":
+                    if size not in ("1 gal", "1 gallon", "128 fl oz"):
+                        continue
+
+                # Dozen eggs: must be 12 ct (not 18, 24, 60 ct)
+                if unit_filter == "dozen":
+                    if size not in ("12 ct", "1 dozen", "12ct"):
+                        continue
+
                 price_info = it.get("price", {})
                 regular = price_info.get("regular")
                 promo = price_info.get("promo")
                 price = promo if promo and promo > 0 else regular
                 if price and 0.50 < price < item_def.get("max_price", 20):
-                    size = it.get("size", "").lower()
                     candidates.append({
                         "price": price,
                         "desc": p.get("description", ""),
@@ -257,10 +281,12 @@ class KrogerClient:
         if not candidates:
             return None
 
-        # Prefer median price (avoids outliers)
+        # Use lowest non-outlier price (represents what budget shoppers pay)
         prices = sorted(c["price"] for c in candidates)
-        mid = len(prices) // 2
-        return round(prices[mid], 2)
+        # Remove top 25% outliers, take median of remainder
+        trimmed = prices[:max(1, int(len(prices) * 0.75))]
+        mid = len(trimmed) // 2
+        return round(trimmed[mid], 2)
 
 
 def fetch_city_prices(client: KrogerClient, city_slug: str, zip_code: str, dry_run: bool = False) -> dict:
