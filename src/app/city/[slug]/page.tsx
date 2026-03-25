@@ -267,7 +267,7 @@ export default async function CityPage({ params }: Props) {
 
         {/* Rent affiliate CTA */}
         <div className="mb-6">
-          <AffiliateCTA type="rent" city={data.city} state={data.state} value={`$${data.rent.avg_all.toLocaleString()}`} />
+          <AffiliateCTA type="rent" city={data.city} state={data.state} slug={params.slug} value={`$${data.rent.avg_all.toLocaleString()}`} />
         </div>
 
         {/* Grocery table */}
