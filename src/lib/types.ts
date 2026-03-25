@@ -47,6 +47,9 @@ export interface CityData {
     avg_3br: number
     national_avg: number
     median_home_price: number
+    source?: string
+    yoy_change_pct?: number
+    baseline_2022?: number
     history: { date: string; avg: number; onebed: number; national: number }[]
   }
   groceries: {

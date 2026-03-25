@@ -183,7 +183,7 @@ export default async function CityPage({ params }: Props) {
                 changeLabel="vs. 2022"
                 stripe="blue"
               />
-              <div className="mt-1"><SourceBadge source="Est. · Submit receipt →" verified={false} citySlug={params.slug} /></div>
+              <div className="mt-1"><SourceBadge source={data.rent.source ?? 'Zillow ZORI'} /></div>
             </div>
             <div>
               <StatCard
