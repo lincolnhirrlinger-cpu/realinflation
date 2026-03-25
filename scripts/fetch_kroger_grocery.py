@@ -29,8 +29,8 @@ GROCERY_ITEMS = [
     {
         "slug": "eggs",
         "name": "Eggs (dozen)",
-        "query": "large eggs dozen",
-        "terms": ["large eggs", "dozen eggs", "grade a eggs"],
+        "query": "eggs grade a large",
+        "terms": ["egg", "eggs"],
         "unit_filter": "dozen",
         "max_price": 8.00,
     },
@@ -196,25 +196,34 @@ class KrogerClient:
             print(f"      Store lookup error: {e}")
         return None, None
 
-    def search_product(self, query: str, location_id: str, limit: int = 10) -> list:
-        """Search products at a specific store location"""
+    def search_product(self, query: str, location_id: str, limit: int = 10, retries: int = 3) -> list:
+        """Search products at a specific store location (with retry/backoff)"""
         params = urllib.parse.urlencode({
             "filter.term": query,
             "filter.locationId": location_id,
             "filter.limit": str(limit),
             "filter.fulfillment": "ais",  # available in store
         })
-        req = urllib.request.Request(
-            f"{self.BASE}/products?{params}",
-            headers={"Authorization": f"Bearer {self._token()}"}
-        )
-        try:
-            resp = urllib.request.urlopen(req, timeout=15)
-            d = json.loads(resp.read())
-            return d.get("data", [])
-        except Exception as e:
-            print(f"      Product search error: {e}")
-            return []
+        for attempt in range(retries):
+            req = urllib.request.Request(
+                f"{self.BASE}/products?{params}",
+                headers={"Authorization": f"Bearer {self._token()}"}
+            )
+            try:
+                resp = urllib.request.urlopen(req, timeout=15)
+                d = json.loads(resp.read())
+                return d.get("data", [])
+            except urllib.error.HTTPError as e:
+                if e.code == 503 and attempt < retries - 1:
+                    wait = 2 ** (attempt + 1)
+                    time.sleep(wait)
+                    continue
+                print(f"      Product search error: HTTP {e.code}")
+                return []
+            except Exception as e:
+                print(f"      Product search error: {e}")
+                return []
+        return []
 
     def get_best_price(self, item_def: dict, location_id: str) -> float | None:
         """Find the best matching price for an item at a store"""
@@ -276,7 +285,7 @@ def fetch_city_prices(client: KrogerClient, city_slug: str, zip_code: str, dry_r
             print(f"     {item['name']:25} ${price:.2f}")
         else:
             print(f"     {item['name']:25} not found")
-        time.sleep(0.2)
+        time.sleep(0.5)
 
     return prices
 
@@ -358,7 +367,7 @@ def main():
                     update_city_file(slug, prices)
             else:
                 no_store.append(slug)
-            time.sleep(0.3)
+            time.sleep(1.0)
         except Exception as e:
             print(f"  ERROR {slug}: {e}")
 
