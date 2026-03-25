@@ -81,24 +81,39 @@ const USAMap = dynamic(() => import('@/components/USAMap'), {
 export default async function HomePage() {
   const cities = await getCitiesServer()
 
-  // Build state-level aggregates from city data
+  // Seed all 50 states + DC so no state is missing from the map
+  const ALL_STATES: Array<[string, string]> = [
+    ['Alabama','AL'],['Alaska','AK'],['Arizona','AZ'],['Arkansas','AR'],['California','CA'],
+    ['Colorado','CO'],['Connecticut','CT'],['Delaware','DE'],['Florida','FL'],['Georgia','GA'],
+    ['Hawaii','HI'],['Idaho','ID'],['Illinois','IL'],['Indiana','IN'],['Iowa','IA'],
+    ['Kansas','KS'],['Kentucky','KY'],['Louisiana','LA'],['Maine','ME'],['Maryland','MD'],
+    ['Massachusetts','MA'],['Michigan','MI'],['Minnesota','MN'],['Mississippi','MS'],['Missouri','MO'],
+    ['Montana','MT'],['Nebraska','NE'],['Nevada','NV'],['New Hampshire','NH'],['New Jersey','NJ'],
+    ['New Mexico','NM'],['New York','NY'],['North Carolina','NC'],['North Dakota','ND'],['Ohio','OH'],
+    ['Oklahoma','OK'],['Oregon','OR'],['Pennsylvania','PA'],['Rhode Island','RI'],['South Carolina','SC'],
+    ['South Dakota','SD'],['Tennessee','TN'],['Texas','TX'],['Utah','UT'],['Vermont','VT'],
+    ['Virginia','VA'],['Washington','WA'],['West Virginia','WV'],['Wisconsin','WI'],['Wyoming','WY'],
+    ['District of Columbia','DC'],
+  ]
+
   const stateMap: Record<string, {
     name: string; abbr: string; slug: string;
     gasVals: number[]; rentVals: number[]; groceryVals: number[]; colVals: number[]
   }> = {}
 
+  // Pre-seed every state
+  for (const [name, abbr] of ALL_STATES) {
+    stateMap[abbr] = {
+      name,
+      abbr,
+      slug: name.toLowerCase().replace(/\s+/g, '-'),
+      gasVals: [], rentVals: [], groceryVals: [], colVals: [],
+    }
+  }
+
   for (const c of cities) {
     const abbr = c.state_abbr
-    if (!abbr) continue
-    if (!stateMap[abbr]) {
-      stateMap[abbr] = {
-        name: c.state,
-        abbr,
-        slug: c.state.toLowerCase().replace(/\s+/g, '-'),
-        gasVals: [], rentVals: [], groceryVals: [], colVals: [],
-      }
-    }
-    // Use cities.json col_index; gas + rent from data files would require loading all — use estimates
+    if (!abbr || !stateMap[abbr]) continue
     stateMap[abbr].colVals.push(c.col_index ?? 100)
   }
 
@@ -156,7 +171,7 @@ export default async function HomePage() {
     gas: STATE_GAS[s.abbr] ?? 3.50,
     rent: STATE_RENT[s.abbr] ?? 1200,
     grocery: STATE_GROCERY[s.abbr] ?? 2.5,
-    col: Math.round(s.colVals.reduce((a,b)=>a+b,0) / Math.max(s.colVals.length,1)),
+    col: s.colVals.length > 0 ? Math.round(s.colVals.reduce((a,b)=>a+b,0) / s.colVals.length) : 100,
     income: STATE_INCOME[s.abbr],
     burden: STATE_BURDEN[s.abbr],
   }))

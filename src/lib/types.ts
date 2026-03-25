@@ -91,6 +91,22 @@ export interface CityData {
   }
   electricity?: ElectricityData
   car_insurance?: CarInsuranceData
+  workforce?: {
+    county_fips: string
+    year: number
+    source: string
+    total_employment: number
+    dominant_sector: string
+    median_weekly_wage_all: number
+    top_sectors: Array<{
+      code: string
+      label: string
+      employment: number
+      avg_weekly_wage: number
+      pct_of_total: number
+      trend_5yr_pct?: number
+    }>
+  }
   income?: {
     median_household: number
     county_fips: string

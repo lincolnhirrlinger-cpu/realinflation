@@ -12,6 +12,7 @@ import AdSlot from '@/components/AdSlot'
 import Newsletter from '@/components/Newsletter'
 import CitySubmissionBadge from '@/components/CitySubmissionBadge'
 import AffiliateCTA from '@/components/AffiliateCTA'
+import WorkforceSection from '@/components/WorkforceSection'
 
 // CityCharts: client component with date range filter — wraps GasChart + RentChart
 const CityCharts = dynamic(() => import('@/components/CityCharts'), {
@@ -322,6 +323,15 @@ export default async function CityPage({ params }: Props) {
             Browse {data.city} Apartments →
           </a>
         </section>
+
+        {/* Workforce section — shows when BLS QCEW data is available */}
+        {data.workforce && (
+          <WorkforceSection
+            workforce={data.workforce}
+            cityName={data.city}
+            medianHouseholdIncome={data.income?.median_household}
+          />
+        )}
 
         <Newsletter />
 
