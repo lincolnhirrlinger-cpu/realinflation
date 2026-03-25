@@ -99,45 +99,39 @@ export default function LeaderboardPage() {
             <p className="font-sans text-text-muted">No submissions yet — be the first!</p>
           </div>
         ) : (
-          <table className="w-full">
-            <thead>
-              <tr className="border-b border-border bg-surface2">
-                <th className="text-left label-caps px-4 py-3 w-12">#</th>
-                <th className="text-left label-caps px-4 py-3">Contributor</th>
-                <th className="text-right label-caps px-4 py-3">Submissions</th>
-                <th className="text-right label-caps px-4 py-3">Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              {leaders.map((entry, idx) => {
-                const isMe = entry.user_uuid === myUuid
-                return (
-                  <tr
-                    key={entry.user_uuid}
-                    className={`border-b border-border last:border-0 transition-colors ${
-                      isMe ? 'bg-accent/5' : 'hover:bg-surface2'
-                    }`}
-                  >
-                    <td className="px-4 py-3 font-mono text-sm text-text-muted">
-                      {MEDALS[idx] ?? `#${idx + 1}`}
-                    </td>
-                    <td className="px-4 py-3">
-                      <span className="font-sans text-sm text-text-primary">
-                        {anonymize(entry.user_uuid, entry.email)}
-                        {isMe && <span className="ml-2 text-xs text-accent font-medium">← you</span>}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-right font-mono text-sm text-text-secondary">
-                      {entry.submission_count}
-                    </td>
-                    <td className="px-4 py-3 text-right">
-                      <span className="font-mono font-bold text-accent">{entry.total_points}</span>
-                    </td>
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
+          <div className="divide-y divide-border">
+            {leaders.map((entry, idx) => {
+              const isMe = entry.user_uuid === myUuid
+              return (
+                <div
+                  key={entry.user_uuid}
+                  className={`flex items-center gap-3 px-4 py-3 transition-colors ${
+                    isMe ? 'bg-accent/5' : 'hover:bg-surface2'
+                  }`}
+                >
+                  {/* Rank */}
+                  <div className="w-8 shrink-0 font-mono text-sm text-text-muted text-center">
+                    {MEDALS[idx] ?? `#${idx + 1}`}
+                  </div>
+                  {/* Name + submissions */}
+                  <div className="flex-1 min-w-0">
+                    <span className="font-sans text-sm text-text-primary">
+                      {anonymize(entry.user_uuid, entry.email)}
+                    </span>
+                    {isMe && <span className="ml-2 text-xs text-accent font-medium">← you</span>}
+                    <p className="text-xs text-text-muted font-sans mt-0.5">
+                      {entry.submission_count} submission{entry.submission_count !== 1 ? 's' : ''}
+                    </p>
+                  </div>
+                  {/* Points */}
+                  <div className="shrink-0 text-right">
+                    <span className="font-mono font-bold text-accent text-base">{entry.total_points}</span>
+                    <p className="text-xs text-text-muted font-sans">pts</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
         )}
       </div>
 

@@ -208,8 +208,8 @@ export default async function CityPage({ params }: Props) {
             <div>
               <StatCard
                 label="Electricity"
-                value={`${data.electricity?.cents_per_kwh ?? '—'}¢/kWh`}
-                subvalue={`~$${data.electricity?.avg_monthly_bill ?? data.electricity?.monthly_avg_bill ?? '—'}/mo`}
+                value={`${data.electricity?.cents_per_kwh ?? '—'}¢`}
+                subvalue={`per kWh · ~$${data.electricity?.avg_monthly_bill ?? data.electricity?.monthly_avg_bill ?? '—'}/mo`}
                 change={((data.electricity?.cents_per_kwh ?? 17.38) - (data.electricity?.national_avg_cents ?? 17.38)) / (data.electricity?.national_avg_cents ?? 17.38)}
                 changeLabel="vs US avg"
                 stripe="orange"
