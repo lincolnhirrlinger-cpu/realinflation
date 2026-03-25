@@ -172,15 +172,15 @@ export default async function HomePage() {
             value="$1,900"
             subvalue="All units, national"
             change={0.086}
-            changeLabel="since 2022"
+            changeLabel="since 2000"
             stripe="blue"
           />
           <StatCard
             label="Bread Price"
             value="$3.78"
             subvalue="Per 1 lb loaf"
-            change={0.582}
-            changeLabel="since 2022"
+            change={1.040}
+            changeLabel="since 2000"
             stripe="red"
           />
         </div>
@@ -191,11 +191,11 @@ export default async function HomePage() {
         <div className="max-w-2xl">
           <p className="label-caps mb-3">The Real Story</p>
           <h2 className="font-serif text-2xl md:text-3xl text-text-primary mb-4">
-            CPI says +2.4%. Your grocery bill says otherwise.
+            CPI is up +93% since 2000. Your grocery bill is up more.
           </h2>
           <p className="font-sans text-base text-text-secondary leading-relaxed mb-4">
-            Ground beef is up <strong className="text-accent font-mono">+38.7%</strong> since 2022.
-            Bread is up <strong className="text-accent font-mono">+58.2%</strong>. Fast food has jumped
+            Ground beef is up <strong className="text-accent font-mono">+354%</strong> since 2000.
+            Bread is up <strong className="text-accent font-mono">+104%</strong>. Fast food has jumped
             <strong className="text-accent font-mono"> +33%</strong> since pre-pandemic.
             The headline CPI smooths over what you actually feel at the register.
           </p>
@@ -223,10 +223,10 @@ export default async function HomePage() {
       <section className="mb-12">
         <h2 className="section-title mb-4">Biggest Movers Since 2022</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <StatCard label="Bread (1 lb)" value="$3.45" change={0.582} changeLabel="national" stripe="red" />
-          <StatCard label="Ground Beef (lb)" value="$5.48" change={0.387} changeLabel="national" stripe="red" />
-          <StatCard label="Fast Food Meal" value="$13.50" change={0.435} changeLabel="avg combo" stripe="orange" />
-          <StatCard label="Avg US Rent" value="$1,895" change={0.118} changeLabel="since 2022" stripe="blue" />
+          <StatCard label="Bread (1 lb)" value="$1.85" change={1.040} changeLabel="national" stripe="red" />
+          <StatCard label="Ground Beef (lb)" value="$6.74" change={3.544} changeLabel="national" stripe="red" />
+          <StatCard label="Fast Food Meal" value="$13.50" change={1.50} changeLabel="avg combo" stripe="orange" />
+          <StatCard label="Avg US Rent" value="$1,895" change={0.118} changeLabel="since 2000" stripe="blue" />
         </div>
       </section>
 
