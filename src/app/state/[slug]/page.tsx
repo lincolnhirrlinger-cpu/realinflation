@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation'
 import { getAllStateSlugs, getStateMeta, getStateCities } from '@/lib/states'
 import { getCityDataServer } from '@/lib/data.server'
 import { CityData } from '@/lib/types'
+import { readFileSync } from 'fs'
+import path from 'path'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -33,6 +35,24 @@ export default async function StatePage({ params }: PageProps) {
 
   // Load detailed data for each city
   const cityDataList: (CityData | null)[] = cities.map(c => getCityDataServer(c.slug))
+
+  // Load county income data for this state
+  interface CountyRecord { fips: string; name: string; state_fips: string; median_household_income: number | null }
+  let stateCounties: CountyRecord[] = []
+  try {
+    const countiesPath = path.join(process.cwd(), 'public', 'data', 'counties.json')
+    const countiesRaw = JSON.parse(readFileSync(countiesPath, 'utf8'))
+    // Get state FIPS from first available city data
+    const firstCity = cityDataList.find(d => d?.income?.county_fips)
+    const stateFips = firstCity?.income?.county_fips?.slice(0, 2) ?? ''
+    if (stateFips) {
+      stateCounties = countiesRaw.counties
+        .filter((c: CountyRecord) => c.state_fips === stateFips && c.median_household_income)
+        .sort((a: CountyRecord, b: CountyRecord) => (b.median_household_income ?? 0) - (a.median_household_income ?? 0))
+    }
+  } catch (_) {
+    stateCounties = []
+  }
 
   // Compute state-level averages from available city data
   const available = cityDataList.filter((d): d is CityData => d !== null)
@@ -165,6 +185,50 @@ export default async function StatePage({ params }: PageProps) {
           })}
         </div>
       </section>
+
+      {/* County Income Table */}
+      {stateCounties.length > 0 && (
+        <section className="mb-10">
+          <h2 className="section-title mb-4">Median Household Income by County</h2>
+          <p className="text-xs text-text-muted font-sans mb-4">Source: Census ACS 5-Year 2023 · {stateCounties.length} counties</p>
+          <div className="card overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border bg-cream">
+                    <th className="text-left px-5 py-3 label-caps text-xs">County</th>
+                    <th className="text-right px-5 py-3 label-caps text-xs">Median Income</th>
+                    <th className="text-right px-5 py-3 label-caps text-xs hidden md:table-cell">vs State Avg</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  {stateCounties.map((county, i) => {
+                    const stateAvg = stateCounties.reduce((s, c) => s + (c.median_household_income ?? 0), 0) / stateCounties.length
+                    const diff = ((county.median_household_income ?? 0) - stateAvg) / stateAvg * 100
+                    const shortName = county.name.replace(/, .*$/, '')
+                    return (
+                      <tr key={county.fips} className="hover:bg-cream/60 transition-colors">
+                        <td className="px-5 py-2.5 font-sans text-text-primary text-sm">
+                          <span className="text-text-muted font-mono text-xs mr-2">{i + 1}</span>
+                          {shortName}
+                        </td>
+                        <td className="text-right px-5 py-2.5 font-mono font-semibold text-text-primary">
+                          ${(county.median_household_income ?? 0).toLocaleString()}
+                        </td>
+                        <td className="text-right px-5 py-2.5 hidden md:table-cell">
+                          <span className={`font-mono text-xs px-1.5 py-0.5 rounded ${diff >= 0 ? 'text-green-700 bg-green-50' : 'text-accent bg-red-50'}`}>
+                            {diff >= 0 ? '+' : ''}{diff.toFixed(1)}%
+                          </span>
+                        </td>
+                      </tr>
+                    )
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Back link */}
       <div className="border-t border-border pt-6">

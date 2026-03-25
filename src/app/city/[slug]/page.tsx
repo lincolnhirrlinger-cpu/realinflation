@@ -227,6 +227,19 @@ export default async function CityPage({ params }: Props) {
               />
               <div className="mt-1"><SourceBadge source="Bankrate/NAIC" /></div>
             </div>
+            {data.income?.median_household && data.income.cost_burden && (
+              <div>
+                <StatCard
+                  label="Median Household Income"
+                  value={`$${data.income.median_household.toLocaleString()}`}
+                  subvalue={`${data.income.cost_burden.burden_pct}% goes to essentials`}
+                  change={-(data.income.cost_burden.burden_pct / 100)}
+                  changeLabel="cost burden"
+                  stripe="blue"
+                />
+                <div className="mt-1"><SourceBadge source="Census ACS 2023" /></div>
+              </div>
+            )}
           </div>
           {/* Insurance affiliate CTA */}
           <div className="mt-4">

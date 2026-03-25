@@ -91,6 +91,22 @@ export interface CityData {
   }
   electricity?: ElectricityData
   car_insurance?: CarInsuranceData
+  income?: {
+    median_household: number
+    county_fips: string
+    year: number
+    source: string
+    cost_burden?: {
+      rent_annual: number
+      gas_annual: number
+      grocery_annual: number
+      electricity_annual: number
+      insurance_annual: number
+      total_essential_annual: number
+      burden_pct: number
+      note: string
+    }
+  }
 }
 
 export interface CityMeta {

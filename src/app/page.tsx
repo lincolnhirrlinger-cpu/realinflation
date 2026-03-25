@@ -130,6 +130,25 @@ export default async function HomePage() {
     VA:2.8,WA:3.3,WV:2.1,WI:2.3,WY:2.4,DC:3.8,
   }
 
+  const STATE_INCOME: Record<string, number> = {
+    AR:60374,AZ:76724,CA:115978,CO:89576,DC:106287,DE:81386,FL:70847,GA:80532,
+    HI:90740,IA:79021,ID:73941,IL:77956,IN:66144,KS:64767,KY:67160,LA:59207,
+    MA:93210,MD:89974,ME:79022,MI:61938,MN:88672,MO:71266,MS:53600,MT:74472,
+    NC:92764,ND:79986,NE:75853,NH:107182,NJ:86522,NM:70602,NV:72827,NY:93851,
+    OH:68309,OK:66346,OR:80436,PA:67428,RI:78204,SC:73010,SD:76074,TN:69000,
+    TX:75960,UT:95768,VA:76678,VT:87082,WA:96549,WI:75113,WV:55858,WY:74566,
+    AL:62000,AK:85000,
+  }
+  const STATE_BURDEN: Record<string, number> = {
+    AR:31.8,AZ:34.1,CA:39.6,CO:31.2,DC:36.5,DE:31.6,FL:42.3,GA:35.2,
+    HI:46.8,IA:25.6,ID:32.9,IL:34.0,IN:34.4,KS:31.3,KY:31.8,LA:40.3,
+    MA:42.5,MD:37.2,ME:38.3,MI:38.6,MN:28.2,MO:29.6,MS:40.5,MT:31.6,
+    NC:28.9,ND:25.6,NE:29.1,NH:30.1,NJ:38.3,NM:38.3,NV:38.3,NY:39.0,
+    OH:35.5,OK:33.4,OR:34.5,PA:40.5,RI:38.7,SC:38.1,SD:25.3,TN:36.8,
+    TX:33.4,UT:27.6,VA:36.6,VT:32.8,WA:31.6,WI:34.9,WV:32.4,WY:30.2,
+    AL:36.0,AK:29.0,
+  }
+
   const mapStates = Object.values(stateMap).map(s => ({
     name: s.name,
     abbr: s.abbr,
@@ -138,6 +157,8 @@ export default async function HomePage() {
     rent: STATE_RENT[s.abbr] ?? 1200,
     grocery: STATE_GROCERY[s.abbr] ?? 2.5,
     col: Math.round(s.colVals.reduce((a,b)=>a+b,0) / Math.max(s.colVals.length,1)),
+    income: STATE_INCOME[s.abbr],
+    burden: STATE_BURDEN[s.abbr],
   }))
 
   return (

@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 
 const GEO_URL = 'https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json'
 
-export type MapMetric = 'gas' | 'rent' | 'grocery' | 'col'
+export type MapMetric = 'gas' | 'rent' | 'grocery' | 'col' | 'income' | 'burden'
 
 interface StateData {
   name: string
@@ -15,6 +15,8 @@ interface StateData {
   rent: number
   grocery: number
   col: number
+  income?: number
+  burden?: number
 }
 
 interface Props {
@@ -55,6 +57,20 @@ const METRIC_CONFIG: Record<MapMetric, {
     low: '#f0fdf4',
     high: '#7c3aed',
     getVal: s => s.col,
+  },
+  income: {
+    label: 'Median Income',
+    format: v => `$${Math.round(v).toLocaleString()}/yr`,
+    low: '#fef9c3',
+    high: '#15803d',
+    getVal: s => s.income ?? 0,
+  },
+  burden: {
+    label: 'Cost Burden %',
+    format: v => `${v.toFixed(1)}% of income`,
+    low: '#dcfce7',
+    high: '#c23616',
+    getVal: s => s.burden ?? 0,
   },
 }
 
