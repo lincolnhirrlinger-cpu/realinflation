@@ -7,6 +7,8 @@ interface GroceryItem {
   history: Array<{ date: string; price: number }>
   change_from_2022: number
   note?: string
+  kroger_price?: number
+  kroger_store?: string
 }
 
 interface GroceryTableProps {
@@ -48,7 +50,13 @@ export default function GroceryTable({ items }: GroceryTableProps) {
                   {price2022 ? `$${price2022.toFixed(2)} in 2022` : ''}
                   {price2022 && price2026 ? ' → ' : ''}
                   {price2026 ? <span className="text-text-primary font-semibold">${price2026.toFixed(2)}</span> : ''}
+                  <span className="text-text-muted"> BLS avg</span>
                 </p>
+                {item.kroger_price && (
+                  <p className="text-xs text-blue-700 font-mono mt-0.5">
+                    ${item.kroger_price.toFixed(2)} @ {item.kroger_store ?? 'Kroger'}
+                  </p>
+                )}
               </div>
               <span
                 className={clsx(
