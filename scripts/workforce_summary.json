@@ -1,0 +1,922 @@
+[
+  {
+    "slug": "albany-ny",
+    "county_fips": "36001",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 233390,
+    "median_weekly_wage": 1584,
+    "data_year": 2024
+  },
+  {
+    "slug": "albuquerque-nm",
+    "county_fips": "35001",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 347440,
+    "median_weekly_wage": 1221,
+    "data_year": 2024
+  },
+  {
+    "slug": "annapolis-md",
+    "county_fips": "24003",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 288447,
+    "median_weekly_wage": 1530,
+    "data_year": 2024
+  },
+  {
+    "slug": "atlanta-ga",
+    "county_fips": "13121",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 948157,
+    "median_weekly_wage": 1939,
+    "data_year": 2024
+  },
+  {
+    "slug": "augusta-me",
+    "county_fips": "23011",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 62487,
+    "median_weekly_wage": 1170,
+    "data_year": 2024
+  },
+  {
+    "slug": "austin-tx",
+    "county_fips": "48453",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 903333,
+    "median_weekly_wage": 1851,
+    "data_year": 2024
+  },
+  {
+    "slug": "baltimore-md",
+    "county_fips": "24510",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 348184,
+    "median_weekly_wage": 1593,
+    "data_year": 2024
+  },
+  {
+    "slug": "baton-rouge-la",
+    "county_fips": "22033",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 270603,
+    "median_weekly_wage": 1284,
+    "data_year": 2024
+  },
+  {
+    "slug": "billings-mt",
+    "county_fips": "30111",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 87348,
+    "median_weekly_wage": 1206,
+    "data_year": 2024
+  },
+  {
+    "slug": "biloxi-ms",
+    "county_fips": "28047",
+    "dominant_sector": "Leisure & Hospitality",
+    "total_employment": 89013,
+    "median_weekly_wage": 926,
+    "data_year": 2024
+  },
+  {
+    "slug": "bismarck-nd",
+    "county_fips": "38015",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 58033,
+    "median_weekly_wage": 1220,
+    "data_year": 2024
+  },
+  {
+    "slug": "boise-id",
+    "county_fips": "16001",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 288010,
+    "median_weekly_wage": 1357,
+    "data_year": 2024
+  },
+  {
+    "slug": "boston-ma",
+    "county_fips": "25025",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 713809,
+    "median_weekly_wage": 2525,
+    "data_year": 2024
+  },
+  {
+    "slug": "bridgeport-ct",
+    "county_fips": "09120",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 115460,
+    "median_weekly_wage": 1441,
+    "data_year": 2024
+  },
+  {
+    "slug": "burlington-vt",
+    "county_fips": "50007",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 103301,
+    "median_weekly_wage": 1407,
+    "data_year": 2024
+  },
+  {
+    "slug": "carson-city-nv",
+    "county_fips": "32510",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 31895,
+    "median_weekly_wage": 1329,
+    "data_year": 2024
+  },
+  {
+    "slug": "casper-wy",
+    "county_fips": "56025",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 40029,
+    "median_weekly_wage": 1181,
+    "data_year": 2024
+  },
+  {
+    "slug": "cedar-rapids-ia",
+    "county_fips": "19113",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 125917,
+    "median_weekly_wage": 1300,
+    "data_year": 2024
+  },
+  {
+    "slug": "charleston-sc",
+    "county_fips": "45019",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 278476,
+    "median_weekly_wage": 1313,
+    "data_year": 2024
+  },
+  {
+    "slug": "charleston-wv",
+    "county_fips": "54039",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 97845,
+    "median_weekly_wage": 1192,
+    "data_year": 2024
+  },
+  {
+    "slug": "charlotte-nc",
+    "county_fips": "37119",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 788436,
+    "median_weekly_wage": 1694,
+    "data_year": 2024
+  },
+  {
+    "slug": "cheyenne-wy",
+    "county_fips": "56021",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 48244,
+    "median_weekly_wage": 1172,
+    "data_year": 2024
+  },
+  {
+    "slug": "chicago-il",
+    "county_fips": "17031",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 2565567,
+    "median_weekly_wage": 1672,
+    "data_year": 2024
+  },
+  {
+    "slug": "cleveland-oh",
+    "county_fips": "39035",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 705152,
+    "median_weekly_wage": 1445,
+    "data_year": 2024
+  },
+  {
+    "slug": "coeur-dalene-id",
+    "county_fips": "16055",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 71068,
+    "median_weekly_wage": 1075,
+    "data_year": 2024
+  },
+  {
+    "slug": "colorado-springs-co",
+    "county_fips": "08041",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 309483,
+    "median_weekly_wage": 1298,
+    "data_year": 2024
+  },
+  {
+    "slug": "columbia-sc",
+    "county_fips": "45079",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 227771,
+    "median_weekly_wage": 1207,
+    "data_year": 2024
+  },
+  {
+    "slug": "columbus-oh",
+    "county_fips": "39049",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 779560,
+    "median_weekly_wage": 1407,
+    "data_year": 2024
+  },
+  {
+    "slug": "concord-nh",
+    "county_fips": "33017",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 46517,
+    "median_weekly_wage": 1244,
+    "data_year": 2024
+  },
+  {
+    "slug": "cranston-ri",
+    "county_fips": "44007",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 288107,
+    "median_weekly_wage": 1324,
+    "data_year": 2024
+  },
+  {
+    "slug": "dallas-tx",
+    "county_fips": "48113",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 1826215,
+    "median_weekly_wage": 1717,
+    "data_year": 2024
+  },
+  {
+    "slug": "denver-co",
+    "county_fips": "08031",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 565183,
+    "median_weekly_wage": 1958,
+    "data_year": 2024
+  },
+  {
+    "slug": "des-moines-ia",
+    "county_fips": "19153",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 317845,
+    "median_weekly_wage": 1395,
+    "data_year": 2024
+  },
+  {
+    "slug": "detroit-mi",
+    "county_fips": "26163",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 725504,
+    "median_weekly_wage": 1469,
+    "data_year": 2024
+  },
+  {
+    "slug": "dover-de",
+    "county_fips": "10001",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 71071,
+    "median_weekly_wage": 1105,
+    "data_year": 2024
+  },
+  {
+    "slug": "el-paso-tx",
+    "county_fips": "48141",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 333908,
+    "median_weekly_wage": 966,
+    "data_year": 2024
+  },
+  {
+    "slug": "fargo-nd",
+    "county_fips": "38017",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 128033,
+    "median_weekly_wage": 1285,
+    "data_year": 2024
+  },
+  {
+    "slug": "fort-smith-ar",
+    "county_fips": "05033",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 19290,
+    "median_weekly_wage": 938,
+    "data_year": 2024
+  },
+  {
+    "slug": "fort-wayne-in",
+    "county_fips": "18003",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 197885,
+    "median_weekly_wage": 1156,
+    "data_year": 2024
+  },
+  {
+    "slug": "fort-worth-tx",
+    "county_fips": "48439",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 1010352,
+    "median_weekly_wage": 1398,
+    "data_year": 2024
+  },
+  {
+    "slug": "frankfort-ky",
+    "county_fips": "21073",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 34824,
+    "median_weekly_wage": 1157,
+    "data_year": 2024
+  },
+  {
+    "slug": "harrisburg-pa",
+    "county_fips": "42043",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 190296,
+    "median_weekly_wage": 1308,
+    "data_year": 2024
+  },
+  {
+    "slug": "hartford-ct",
+    "county_fips": "09110",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 522687,
+    "median_weekly_wage": 1594,
+    "data_year": 2024
+  },
+  {
+    "slug": "helena-mt",
+    "county_fips": "30049",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 39957,
+    "median_weekly_wage": 1197,
+    "data_year": 2024
+  },
+  {
+    "slug": "hilo-hi",
+    "county_fips": "15001",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 74029,
+    "median_weekly_wage": 1113,
+    "data_year": 2024
+  },
+  {
+    "slug": "honolulu-hi",
+    "county_fips": "15003",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 453193,
+    "median_weekly_wage": 1343,
+    "data_year": 2024
+  },
+  {
+    "slug": "houston-tx",
+    "county_fips": "48201",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 2445972,
+    "median_weekly_wage": 1703,
+    "data_year": 2024
+  },
+  {
+    "slug": "huntington-wv",
+    "county_fips": "54011",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 52015,
+    "median_weekly_wage": 1112,
+    "data_year": 2024
+  },
+  {
+    "slug": "idaho-falls-id",
+    "county_fips": "16019",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 61259,
+    "median_weekly_wage": 948,
+    "data_year": 2024
+  },
+  {
+    "slug": "indianapolis-in",
+    "county_fips": "18097",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 625533,
+    "median_weekly_wage": 1465,
+    "data_year": 2024
+  },
+  {
+    "slug": "jackson-ms",
+    "county_fips": "28049",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 109172,
+    "median_weekly_wage": 1143,
+    "data_year": 2024
+  },
+  {
+    "slug": "jacksonville-fl",
+    "county_fips": "12031",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 563527,
+    "median_weekly_wage": 1378,
+    "data_year": 2024
+  },
+  {
+    "slug": "jefferson-city-mo",
+    "county_fips": "29151",
+    "dominant_sector": "Construction",
+    "total_employment": 4306,
+    "median_weekly_wage": 973,
+    "data_year": 2024
+  },
+  {
+    "slug": "kansas-city-ks",
+    "county_fips": "20209",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 94304,
+    "median_weekly_wage": 1269,
+    "data_year": 2024
+  },
+  {
+    "slug": "kansas-city-mo",
+    "county_fips": "29095",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 375574,
+    "median_weekly_wage": 1377,
+    "data_year": 2024
+  },
+  {
+    "slug": "lansing-mi",
+    "county_fips": "26065",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 155500,
+    "median_weekly_wage": 1318,
+    "data_year": 2024
+  },
+  {
+    "slug": "las-vegas-nv",
+    "county_fips": "32003",
+    "dominant_sector": "Leisure & Hospitality",
+    "total_employment": 1124772,
+    "median_weekly_wage": 1250,
+    "data_year": 2024
+  },
+  {
+    "slug": "lincoln-ne",
+    "county_fips": "31109",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 175346,
+    "median_weekly_wage": 1141,
+    "data_year": 2024
+  },
+  {
+    "slug": "little-rock-ar",
+    "county_fips": "05119",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 261631,
+    "median_weekly_wage": 1221,
+    "data_year": 2024
+  },
+  {
+    "slug": "los-angeles-ca",
+    "county_fips": "06037",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 4525711,
+    "median_weekly_wage": 1607,
+    "data_year": 2024
+  },
+  {
+    "slug": "louisville-ky",
+    "county_fips": "21111",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 482313,
+    "median_weekly_wage": 1371,
+    "data_year": 2024
+  },
+  {
+    "slug": "madison-wi",
+    "county_fips": "55025",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 359249,
+    "median_weekly_wage": 1432,
+    "data_year": 2024
+  },
+  {
+    "slug": "manchester-nh",
+    "county_fips": "33011",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 201342,
+    "median_weekly_wage": 1532,
+    "data_year": 2024
+  },
+  {
+    "slug": "memphis-tn",
+    "county_fips": "47157",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 482470,
+    "median_weekly_wage": 1375,
+    "data_year": 2024
+  },
+  {
+    "slug": "meridian-id",
+    "county_fips": "16001",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 288010,
+    "median_weekly_wage": 1357,
+    "data_year": 2024
+  },
+  {
+    "slug": "miami-fl",
+    "county_fips": "12086",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 1257569,
+    "median_weekly_wage": 1492,
+    "data_year": 2024
+  },
+  {
+    "slug": "milwaukee-wi",
+    "county_fips": "55079",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 469055,
+    "median_weekly_wage": 1330,
+    "data_year": 2024
+  },
+  {
+    "slug": "minneapolis-mn",
+    "county_fips": "27053",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 917117,
+    "median_weekly_wage": 1734,
+    "data_year": 2024
+  },
+  {
+    "slug": "montpelier-vt",
+    "county_fips": "50023",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 33484,
+    "median_weekly_wage": 1304,
+    "data_year": 2024
+  },
+  {
+    "slug": "nampa-id",
+    "county_fips": "16027",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 88684,
+    "median_weekly_wage": 998,
+    "data_year": 2024
+  },
+  {
+    "slug": "nashville-tn",
+    "county_fips": "47037",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 555405,
+    "median_weekly_wage": 1598,
+    "data_year": 2024
+  },
+  {
+    "slug": "new-orleans-la",
+    "county_fips": "22071",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 188050,
+    "median_weekly_wage": 1300,
+    "data_year": 2024
+  },
+  {
+    "slug": "new-york-ny",
+    "county_fips": "36061",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 2466798,
+    "median_weekly_wage": 3175,
+    "data_year": 2024
+  },
+  {
+    "slug": "newark-nj",
+    "county_fips": "34013",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 349076,
+    "median_weekly_wage": 1699,
+    "data_year": 2024
+  },
+  {
+    "slug": "oklahoma-city-ok",
+    "county_fips": "40109",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 495002,
+    "median_weekly_wage": 1267,
+    "data_year": 2024
+  },
+  {
+    "slug": "olympia-wa",
+    "county_fips": "53067",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 128824,
+    "median_weekly_wage": 1385,
+    "data_year": 2024
+  },
+  {
+    "slug": "omaha-ne",
+    "county_fips": "31055",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 340716,
+    "median_weekly_wage": 1305,
+    "data_year": 2024
+  },
+  {
+    "slug": "orlando-fl",
+    "county_fips": "12095",
+    "dominant_sector": "Leisure & Hospitality",
+    "total_employment": 949918,
+    "median_weekly_wage": 1304,
+    "data_year": 2024
+  },
+  {
+    "slug": "philadelphia-pa",
+    "county_fips": "42101",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 714504,
+    "median_weekly_wage": 1600,
+    "data_year": 2024
+  },
+  {
+    "slug": "phoenix-az",
+    "county_fips": "04013",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 2280645,
+    "median_weekly_wage": 1420,
+    "data_year": 2024
+  },
+  {
+    "slug": "pierre-sd",
+    "county_fips": "46099",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 138556,
+    "median_weekly_wage": 1252,
+    "data_year": 2024
+  },
+  {
+    "slug": "pocatello-id",
+    "county_fips": "16005",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 37594,
+    "median_weekly_wage": 918,
+    "data_year": 2024
+  },
+  {
+    "slug": "portland-me",
+    "county_fips": "23005",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 192475,
+    "median_weekly_wage": 1372,
+    "data_year": 2024
+  },
+  {
+    "slug": "portland-or",
+    "county_fips": "41051",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 498988,
+    "median_weekly_wage": 1553,
+    "data_year": 2024
+  },
+  {
+    "slug": "providence-ri",
+    "county_fips": "44007",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 288107,
+    "median_weekly_wage": 1324,
+    "data_year": 2024
+  },
+  {
+    "slug": "provo-ut",
+    "county_fips": "49049",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 295152,
+    "median_weekly_wage": 1205,
+    "data_year": 2024
+  },
+  {
+    "slug": "raleigh-nc",
+    "county_fips": "37183",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 653153,
+    "median_weekly_wage": 1477,
+    "data_year": 2024
+  },
+  {
+    "slug": "rexburg-id",
+    "county_fips": "16065",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 17397,
+    "median_weekly_wage": 814,
+    "data_year": 2024
+  },
+  {
+    "slug": "richmond-va",
+    "county_fips": "51760",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 165947,
+    "median_weekly_wage": 1604,
+    "data_year": 2024
+  },
+  {
+    "slug": "sacramento-ca",
+    "county_fips": "06067",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 726937,
+    "median_weekly_wage": 1541,
+    "data_year": 2024
+  },
+  {
+    "slug": "saint-paul-mn",
+    "county_fips": "27123",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 325226,
+    "median_weekly_wage": 1498,
+    "data_year": 2024
+  },
+  {
+    "slug": "salem-or",
+    "county_fips": "41047",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 171271,
+    "median_weekly_wage": 1207,
+    "data_year": 2024
+  },
+  {
+    "slug": "salt-lake-city-ut",
+    "county_fips": "49035",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 796203,
+    "median_weekly_wage": 1490,
+    "data_year": 2024
+  },
+  {
+    "slug": "san-antonio-tx",
+    "county_fips": "48029",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 932387,
+    "median_weekly_wage": 1267,
+    "data_year": 2024
+  },
+  {
+    "slug": "san-diego-ca",
+    "county_fips": "06073",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 1536541,
+    "median_weekly_wage": 1593,
+    "data_year": 2024
+  },
+  {
+    "slug": "san-francisco-ca",
+    "county_fips": "06075",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 707646,
+    "median_weekly_wage": 3348,
+    "data_year": 2024
+  },
+  {
+    "slug": "san-jose-ca",
+    "county_fips": "06085",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 1116581,
+    "median_weekly_wage": 3789,
+    "data_year": 2024
+  },
+  {
+    "slug": "santa-fe-nm",
+    "county_fips": "35049",
+    "dominant_sector": "Leisure & Hospitality",
+    "total_employment": 61826,
+    "median_weekly_wage": 1177,
+    "data_year": 2024
+  },
+  {
+    "slug": "savannah-ga",
+    "county_fips": "13051",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 170836,
+    "median_weekly_wage": 1189,
+    "data_year": 2024
+  },
+  {
+    "slug": "seattle-wa",
+    "county_fips": "53033",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 1449785,
+    "median_weekly_wage": 2544,
+    "data_year": 2024
+  },
+  {
+    "slug": "sioux-falls-sd",
+    "county_fips": "46099",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 138556,
+    "median_weekly_wage": 1252,
+    "data_year": 2024
+  },
+  {
+    "slug": "spokane-wa",
+    "county_fips": "53063",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 243161,
+    "median_weekly_wage": 1259,
+    "data_year": 2024
+  },
+  {
+    "slug": "springfield-il",
+    "county_fips": "17167",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 134376,
+    "median_weekly_wage": 1334,
+    "data_year": 2024
+  },
+  {
+    "slug": "tallahassee-fl",
+    "county_fips": "12073",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 163754,
+    "median_weekly_wage": 1191,
+    "data_year": 2024
+  },
+  {
+    "slug": "tampa-fl",
+    "county_fips": "12057",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 789442,
+    "median_weekly_wage": 1447,
+    "data_year": 2024
+  },
+  {
+    "slug": "topeka-ks",
+    "county_fips": "20177",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 99247,
+    "median_weekly_wage": 1156,
+    "data_year": 2024
+  },
+  {
+    "slug": "trenton-nj",
+    "county_fips": "34021",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 264154,
+    "median_weekly_wage": 1740,
+    "data_year": 2024
+  },
+  {
+    "slug": "tucson-az",
+    "county_fips": "04019",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 386312,
+    "median_weekly_wage": 1191,
+    "data_year": 2024
+  },
+  {
+    "slug": "tulsa-ok",
+    "county_fips": "40143",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 368636,
+    "median_weekly_wage": 1222,
+    "data_year": 2024
+  },
+  {
+    "slug": "twin-falls-id",
+    "county_fips": "16083",
+    "dominant_sector": "Trade, Transportation & Utilities",
+    "total_employment": 41812,
+    "median_weekly_wage": 926,
+    "data_year": 2024
+  },
+  {
+    "slug": "virginia-beach-va",
+    "county_fips": "51810",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 179013,
+    "median_weekly_wage": 1115,
+    "data_year": 2024
+  },
+  {
+    "slug": "washington-dc",
+    "county_fips": "11001",
+    "dominant_sector": "Professional & Business Services",
+    "total_employment": 759572,
+    "median_weekly_wage": 2365,
+    "data_year": 2024
+  },
+  {
+    "slug": "wichita-ks",
+    "county_fips": "20173",
+    "dominant_sector": "Construction",
+    "total_employment": 264782,
+    "median_weekly_wage": 1166,
+    "data_year": 2024
+  },
+  {
+    "slug": "wilmington-de",
+    "county_fips": "10003",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 303806,
+    "median_weekly_wage": 1545,
+    "data_year": 2024
+  },
+  {
+    "slug": "worcester-ma",
+    "county_fips": "25027",
+    "dominant_sector": "Education & Health Services",
+    "total_employment": 351476,
+    "median_weekly_wage": 1378,
+    "data_year": 2024
+  }
+]

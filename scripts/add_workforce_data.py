@@ -2,22 +2,23 @@
 """
 Fetch BLS QCEW county-level employment data for all 115 cities.
 Adds a `workforce` block to each city's JSON file.
-Uses BLS QCEW annual flat files (more reliable than API, no rate limits).
+Uses pre-downloaded BLS QCEW annual ZIP files at /tmp/bls_2024_annual.zip and /tmp/bls_2019_annual.zip
 """
 
 import json
 import csv
 import io
-import time
-import urllib.request
-import urllib.error
+import zipfile
 from pathlib import Path
 
 # ── Project paths ────────────────────────────────────────────────────────────
 SCRIPT_DIR = Path(__file__).parent
 DATA_DIR   = SCRIPT_DIR.parent / "public" / "data"
 
-# ── City → County FIPS (from add_county_income.py) ───────────────────────────
+ZIP_2024 = Path("/tmp/bls_2024_annual.zip")
+ZIP_2019 = Path("/tmp/bls_2019_annual.zip")
+
+# ── City → County FIPS ───────────────────────────────────────────────────────
 CITY_FIPS = {
     # Alabama
     "birmingham-al":    "01073",
@@ -225,12 +226,9 @@ CITY_FIPS = {
     "santa-fe-nm":      "35049",
     "albany-ny":        "36001",
     "bismarck-nd":      "38015",
-    "salem-or":         "41047",
     "carson-city-nv":   "32510",
     "pierre-sd":        "46099",
     "casper-wy":        "56025",
-    "charleston-wv":    "54039",
-    "aurora-co":        "08005",
 }
 
 # ── Sector definitions ────────────────────────────────────────────────────────
@@ -252,48 +250,65 @@ SECTOR_CODES = {code for code, _ in SECTORS}
 SECTOR_LABELS = {code: label for code, label in SECTORS}
 
 
-def fetch_county_csv(fips5: str, year: int) -> dict | None:
+def build_fips_index(zip_path: Path) -> dict:
     """
-    Download BLS QCEW annual flat file for a county.
-    Returns dict keyed by industry_code → {employment, avg_wkly_wage}
-    for own_code == '0' (all ownership) rows.
-    Returns None if 404.
+    Build a dict: fips5 → internal zip name (e.g. '16001' → '2024.annual.by_area/2024.annual 16001 Ada County, Idaho.csv')
     """
-    url = f"https://data.bls.gov/cew/data/files/{year}/csv/{fips5}_annual_averages.csv"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 BLS-QCEW-fetcher"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            content = resp.read().decode("utf-8", errors="replace")
-    except urllib.error.HTTPError as e:
-        if e.code == 404:
-            return None
-        print(f"    HTTP {e.code} for {fips5}/{year}")
-        return None
-    except Exception as e:
-        print(f"    Error fetching {fips5}/{year}: {e}")
-        return None
+    index = {}
+    with zipfile.ZipFile(zip_path, "r") as zf:
+        for name in zf.namelist():
+            # Filenames look like: 2024.annual.by_area/2024.annual 16001 Ada County, Idaho.csv
+            # Extract the 5-digit FIPS that appears after "YYYY.annual "
+            parts = name.split(" ")
+            if len(parts) >= 2:
+                # second token after split on space should be the FIPS
+                candidate = parts[1] if len(parts) > 1 else ""
+                if len(candidate) == 5 and candidate.isdigit():
+                    index[candidate] = name
+    return index
 
+
+def parse_county_csv(zip_path: Path, zip_name: str) -> dict:
+    """
+    Parse a county CSV from inside the zip.
+    Returns dict keyed by industry_code → {employment, avg_wkly_wage}
+
+    Ownership strategy:
+    - code '10' (total all): own_code='0' (Total Covered)
+    - code '1028' (Public Admin): own_code='3' (local gov is best proxy)
+    - all other sector codes: own_code='5' (private, has supersector breakout)
+    """
     result = {}
+    with zipfile.ZipFile(zip_path, "r") as zf:
+        with zf.open(zip_name) as f:
+            content = f.read().decode("utf-8", errors="replace")
+
     reader = csv.DictReader(io.StringIO(content))
     for row in reader:
-        # Strip whitespace from keys/values
-        row = {k.strip(): v.strip() for k, v in row.items()}
+        row = {k.strip().strip('"'): v.strip().strip('"') for k, v in row.items()}
         industry_code = row.get("industry_code", "").strip()
         own_code      = row.get("own_code", "").strip()
 
-        # Only all-ownership rows and sectors we care about
-        if own_code != "0":
-            continue
         if industry_code not in SECTOR_CODES:
             continue
 
-        # Skip suppressed
+        # Pick the right ownership layer per sector
+        if industry_code == "10":
+            target_own = "0"   # Total Covered
+        elif industry_code == "1028":
+            target_own = "3"   # Local government (best proxy for public admin)
+        else:
+            target_own = "5"   # Private (has all supersector breakouts)
+
+        if own_code != target_own:
+            continue
+
         disclosure = row.get("disclosure_code", "").strip()
         if disclosure == "N":
             continue
 
         empl_str = row.get("annual_avg_emplvl", "").strip()
-        wage_str = row.get("avg_wkly_wage", "").strip()
+        wage_str = row.get("annual_avg_wkly_wage", "").strip()
 
         try:
             empl = int(empl_str.replace(",", ""))
@@ -308,27 +323,25 @@ def fetch_county_csv(fips5: str, year: int) -> dict | None:
         if empl is not None and empl > 0:
             result[industry_code] = {"employment": empl, "avg_wkly_wage": wage}
 
-    return result if result else None
+    return result
 
 
 def build_workforce_block(slug: str, fips: str, data_2024: dict, data_2019: dict | None) -> dict:
-    """Build the workforce JSON block for a city."""
-    total_row = data_2024.get("10", {})
+    total_row  = data_2024.get("10", {})
     total_empl = total_row.get("employment", 0)
     median_wage = total_row.get("avg_wkly_wage")
 
     top_sectors = []
     for code, label in SECTORS:
         if code == "10":
-            continue  # skip total in top_sectors list
+            continue
         row = data_2024.get(code)
         if not row:
             continue
         empl = row["employment"]
         wage = row["avg_wkly_wage"]
-        pct = round(empl / total_empl * 100, 1) if total_empl else None
+        pct  = round(empl / total_empl * 100, 1) if total_empl else None
 
-        # Trend
         trend = None
         if data_2019:
             row_2019 = data_2019.get(code)
@@ -347,13 +360,11 @@ def build_workforce_block(slug: str, fips: str, data_2024: dict, data_2019: dict
             sector["trend_5yr_pct"] = trend
         top_sectors.append(sector)
 
-    # Sort by employment descending, take top 8
     top_sectors.sort(key=lambda x: x["employment"], reverse=True)
     top_sectors = top_sectors[:8]
-
     dominant = top_sectors[0]["label"] if top_sectors else None
 
-    block = {
+    return {
         "county_fips": fips,
         "year": 2024,
         "source": "BLS QCEW 2024 Annual",
@@ -362,24 +373,35 @@ def build_workforce_block(slug: str, fips: str, data_2024: dict, data_2019: dict
         "dominant_sector": dominant,
         "median_weekly_wage_all": median_wage,
     }
-    return block
 
 
 def main():
     print("=" * 70)
-    print("BLS QCEW Workforce Data Fetch")
+    print("BLS QCEW Workforce Data — using local ZIP files")
     print("=" * 70)
 
-    # Cache to avoid re-downloading same county for multiple cities
+    if not ZIP_2024.exists():
+        print(f"ERROR: {ZIP_2024} not found. Download it first.")
+        return
+    if not ZIP_2019.exists():
+        print(f"ERROR: {ZIP_2019} not found. Download it first.")
+        return
+
+    print("Building FIPS indexes…", flush=True)
+    idx_2024 = build_fips_index(ZIP_2024)
+    idx_2019 = build_fips_index(ZIP_2019)
+    print(f"  2024: {len(idx_2024)} counties")
+    print(f"  2019: {len(idx_2019)} counties")
+
+    # Cache parsed data per FIPS
     cache_2024 = {}
     cache_2019 = {}
+
+    data_files = {f.stem: f for f in DATA_DIR.glob("*.json") if f.stem != "cities"}
 
     summary = []
     updated = 0
     skipped = 0
-
-    # Get all JSON files in data dir to find actual slugs
-    data_files = {f.stem: f for f in DATA_DIR.glob("*.json") if f.stem != "cities"}
 
     for slug, fips in sorted(CITY_FIPS.items()):
         city_file = data_files.get(slug)
@@ -388,41 +410,40 @@ def main():
             skipped += 1
             continue
 
-        print(f"\n  {slug} ({fips})", flush=True)
-
-        # Fetch 2024 data (cached by FIPS)
+        # 2024 data
         if fips not in cache_2024:
-            print(f"    Fetching 2024 flat file…", flush=True)
-            cache_2024[fips] = fetch_county_csv(fips, 2024)
-            time.sleep(0.3)  # polite pause
+            zip_name = idx_2024.get(fips)
+            if not zip_name:
+                cache_2024[fips] = None
+            else:
+                cache_2024[fips] = parse_county_csv(ZIP_2024, zip_name)
 
         data_2024 = cache_2024[fips]
         if not data_2024:
-            print(f"    ✗  No 2024 data — skipping")
+            print(f"  ✗  {slug} ({fips}) — no 2024 data in ZIP")
             skipped += 1
             continue
 
-        # Fetch 2019 data (for trend)
+        # 2019 data
         if fips not in cache_2019:
-            print(f"    Fetching 2019 flat file…", flush=True)
-            cache_2019[fips] = fetch_county_csv(fips, 2019)
-            time.sleep(0.3)
+            zip_name_19 = idx_2019.get(fips)
+            cache_2019[fips] = parse_county_csv(ZIP_2019, zip_name_19) if zip_name_19 else None
 
         data_2019 = cache_2019[fips]
 
-        # Build workforce block
+        # Build block
         wf = build_workforce_block(slug, fips, data_2024, data_2019)
 
-        # Load city JSON and add workforce block
+        # Update JSON
         d = json.loads(city_file.read_text())
         d["workforce"] = wf
         city_file.write_text(json.dumps(d, separators=(",", ":")))
 
         total_empl = wf.get("total_employment", 0)
-        wage = wf.get("median_weekly_wage_all", 0)
-        dominant = wf.get("dominant_sector", "?")
-
-        print(f"    ✓  {dominant} | {total_empl:,} empl | ${wage}/wk", flush=True)
+        wage       = wf.get("median_weekly_wage_all", 0)
+        dominant   = wf.get("dominant_sector", "?")
+        dominant_str = dominant or "Unknown"
+        print(f"  ✓  {slug:<30} {dominant_str:<36} {total_empl:>10,}  ${wage}/wk")
         updated += 1
 
         summary.append({
@@ -438,19 +459,17 @@ def main():
     summary_file = SCRIPT_DIR / "workforce_summary.json"
     summary_file.write_text(json.dumps(summary, indent=2))
     print(f"\n✅ Wrote {summary_file}")
-
-    print(f"\n{'=' * 70}")
-    print(f"Updated: {updated}  Skipped: {skipped}")
-    print(f"{'=' * 70}\n")
+    print(f"\nUpdated: {updated}   Skipped: {skipped}")
 
     # Final summary table
-    header = f"{'City':<28} {'Dominant Sector':<36} {'Empl':>10} {'$/Wk':>7} {'Year':>6}"
-    print(header)
-    print("-" * len(header))
+    print(f"\n{'=' * 90}")
+    print(f"{'City':<30} {'Dominant Sector':<38} {'Empl':>10} {'$/Wk':>7} {'Year':>5}")
+    print("-" * 90)
     for row in sorted(summary, key=lambda x: x["slug"]):
         empl_str = f"{row['total_employment']:,}" if row['total_employment'] else "N/A"
         wage_str = f"${row['median_weekly_wage']}" if row['median_weekly_wage'] else "N/A"
-        print(f"{row['slug']:<28} {row['dominant_sector']:<36} {empl_str:>10} {wage_str:>7} {row['data_year']:>6}")
+        dom = row['dominant_sector'] or "Unknown"
+        print(f"{row['slug']:<30} {dom:<38} {empl_str:>10} {wage_str:>7} {row['data_year']:>5}")
 
     print("\nWORKFORCE DATA COMPLETE")
 
