@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Methodology & Sources — RealInflation',
-  description: 'How RealInflation collects and processes price data for gas, rent, groceries, and dining across Idaho cities.',
+  description: 'How RealInflation collects and processes price data for gas, rent, groceries, electricity, and car insurance across 115 US cities.',
 }
 
 export default function MethodologyPage() {
@@ -111,19 +111,12 @@ export default function MethodologyPage() {
         <section className="bg-accent/5 border border-accent/20 rounded-card p-6">
           <h2 className="font-serif text-xl text-accent mb-3">Important Caveats</h2>
           <ul className="font-sans text-text-secondary space-y-2 text-sm leading-relaxed list-disc list-inside">
-            <li>Smaller Idaho cities (Rexburg, Pocatello) use state-level FRED data with local adjustment factors, not direct city measurements.</li>
-            <li>Rent data for cities outside major Zillow metros uses nearest comparable MSA.</li>
+            <li>Smaller cities without direct metro data use nearest comparable MSA or state-level FRED data with regional adjustment factors.</li>
+            <li>Rent data for cities outside major Zillow metros uses the nearest comparable MSA.</li>
             <li>This site is for informational purposes only. Not financial advice.</li>
-            <li>CPI is a national measure; your personal inflation rate will differ based on spending habits.</li>
+            <li>CPI is a national measure; your personal inflation rate will differ based on spending habits and location.</li>
           </ul>
         </section>
-      </div>
-
-      <div className="mt-10 pt-8 border-t border-border">
-        <p className="font-sans text-sm text-text-secondary">
-          Questions about the data? Open an issue on GitHub or{' '}
-          <a href="mailto:data@realinflation.co" className="text-accent hover:underline">email us</a>.
-        </p>
       </div>
     </div>
   )

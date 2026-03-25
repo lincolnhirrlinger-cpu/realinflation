@@ -31,7 +31,7 @@ function CompareContent() {
         <h1 className="font-serif text-4xl text-text-primary mb-2">
           {cityA?.city ?? '...'} vs. {cityB?.city ?? '...'}
         </h1>
-        <p className="text-text-secondary font-sans">Idaho cost-of-living comparison</p>
+        <p className="text-text-secondary font-sans">Compare cost of living across US cities</p>
       </div>
 
       {/* Picker form */}
