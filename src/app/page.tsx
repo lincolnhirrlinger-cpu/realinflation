@@ -163,21 +163,21 @@ export default async function HomePage() {
             label="Avg Gas Price"
             value="$3.98"
             subvalue="Regular unleaded"
-            change={-0.095}
-            changeLabel="vs. 2022 peak"
+            change={0.66}
+            changeLabel="since 2000"
             stripe="red"
           />
           <StatCard
             label="Avg Rent"
-            value="$1,900"
+            value="$1,895"
             subvalue="All units, national"
-            change={0.086}
+            change={0.45}
             changeLabel="since 2000"
             stripe="blue"
           />
           <StatCard
             label="Bread Price"
-            value="$3.78"
+            value="$1.85"
             subvalue="Per 1 lb loaf"
             change={1.040}
             changeLabel="since 2000"

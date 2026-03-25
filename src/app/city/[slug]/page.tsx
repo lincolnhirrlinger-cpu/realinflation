@@ -94,10 +94,10 @@ export default async function CityPage({ params }: Props) {
   const stateSlug = data.state.toLowerCase().replace(/\s+/g, '-')
 
   // Find 2022 baseline (Jan 2022) for change calculation
-  const gas2022 = data.gas.history.find(h => h.date === '2022-01') ?? data.gas.history[0]
-  const rent2022 = data.rent.history.find(h => h.date === '2022-01') ?? data.rent.history[0]
-  const gasChange = (data.gas.current - gas2022.price) / gas2022.price
-  const rentChange = (data.rent.avg_all - rent2022.avg) / rent2022.avg
+  const gas2000 = data.gas.history.find(h => h.date === '2000-01') ?? data.gas.history.find(h => h.date?.startsWith('2000')) ?? data.gas.history[0]
+  const rent2000 = data.rent.history.find(h => h.date === '2000') ?? data.rent.history.find(h => h.date?.startsWith('2000')) ?? data.rent.history[0]
+  const gasChange = (data.gas.current - gas2000.price) / gas2000.price
+  const rentChange = (data.rent.avg_all - rent2000.avg) / rent2000.avg
   const groceryYoy = data.groceries.inflation_rate.current_yoy
 
   // SEO paragraph
@@ -169,7 +169,7 @@ export default async function CityPage({ params }: Props) {
                 value={`$${data.gas.current.toFixed(2)}`}
                 subvalue={`National: $${data.gas.national_current.toFixed(2)}`}
                 change={gasChange}
-                changeLabel="vs. 2022"
+                changeLabel="since 2000"
                 stripe="red"
               />
               <div className="mt-1"><SourceBadge source="AAA Gas Prices" /></div>
@@ -180,7 +180,7 @@ export default async function CityPage({ params }: Props) {
                 value={`$${data.rent.avg_all.toLocaleString()}`}
                 subvalue={`National: $${data.rent.national_avg.toLocaleString()}`}
                 change={rentChange}
-                changeLabel="vs. 2022"
+                changeLabel="since 2000"
                 stripe="blue"
               />
               <div className="mt-1"><SourceBadge source={data.rent.source ?? 'Zillow ZORI'} /></div>
