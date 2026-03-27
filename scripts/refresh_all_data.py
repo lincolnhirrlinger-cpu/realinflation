@@ -253,7 +253,8 @@ def refresh_electricity() -> dict:
 # ─── Apply to City Files ─────────────────────────────────────────────────────
 
 def apply_updates(grocery_data: dict, rent_lookup: dict, gas_prices: dict, elec_prices: dict = None):
-    city_files = [f for f in sorted(DATA_DIR.glob("*.json")) if f.name != 'cities.json']
+    SKIP_FILES = {'cities.json', 'counties.json'}
+    city_files = [f for f in sorted(DATA_DIR.glob("*.json")) if f.name not in SKIP_FILES]
     national_gas = gas_prices.get('NATIONAL', 3.977)
     updated = 0
 
