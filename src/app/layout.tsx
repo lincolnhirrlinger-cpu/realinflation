@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://realinflation.co'),
@@ -57,6 +58,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
