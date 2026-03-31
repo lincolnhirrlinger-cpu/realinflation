@@ -36,21 +36,27 @@ def scrape_aaa_state_prices():
     """Returns dict: state_abbr -> regular_price"""
     html = fetch_html("https://gasprices.aaa.com/state-gas-price-averages/")
     prices = {}
-    # Parse rows: state name + regular price
+    # Pattern: <a href="...?state=XX"> ... </a> ... <td class="regular"...>$X.XXX
     rows = re.findall(
-        r'state=([A-Z]{2})">\s*([\w\s]+?)\s*</a>.*?class="regular"[^>]*>\s*\$?([\d.]+)',
+        r'\?state=([A-Z]{2})">\s*[\w\s]+?\s*</a>\s*</td>\s*<td\s+class="regular"[^>]*>\s*\$?([\d.]+)',
         html, re.DOTALL
     )
-    for abbr, state_name, price in rows:
+    for abbr, price in rows:
         try:
-            prices[abbr.strip()] = float(price.strip())
+            prices[abbr.strip()] = round(float(price.strip()), 3)
         except ValueError:
             pass
-    # Fallback: simpler pattern
+    # Fallback: try original pattern (in case format reverts)
     if not prices:
-        rows2 = re.findall(r'Idaho.*?\$([\d.]+)', html[:5000])
-        if rows2:
-            print(f"Fallback: Idaho = {rows2[0]}")
+        rows2 = re.findall(
+            r'state=([A-Z]{2})">\s*([\w\s]+?)\s*</a>.*?class="regular"[^>]*>\s*\$?([\d.]+)',
+            html, re.DOTALL
+        )
+        for abbr, state_name, price in rows2:
+            try:
+                prices[abbr.strip()] = round(float(price.strip()), 3)
+            except ValueError:
+                pass
     print(f"Fetched {len(prices)} state gas prices from AAA")
     return prices
 

@@ -1,1 +1,2655 @@
-{"city":"Cape Girardeau","state":"Missouri","state_abbr":"MO","slug":"cape-girardeau-mo","population":100000,"region":"Midwest","col_index":90,"last_updated":"2026-03-30","gas":{"current":3.418,"diesel_current":3.818,"national_current":3.978,"history":[{"date":"2000-01","price":1.109,"national":1.329},{"date":"2000-02","price":1.181,"national":1.415},{"date":"2000-03","price":1.299,"national":1.556},{"date":"2000-04","price":1.257,"national":1.506},{"date":"2000-05","price":1.274,"national":1.526},{"date":"2000-06","price":1.391,"national":1.666},{"date":"2000-07","price":1.328,"national":1.591},{"date":"2000-08","price":1.257,"national":1.506},{"date":"2000-09","price":1.326,"national":1.588},{"date":"2000-10","price":1.311,"national":1.571},{"date":"2000-11","price":1.3,"national":1.557},{"date":"2000-12","price":1.238,"national":1.483},{"date":"2001-01","price":1.241,"national":1.487},{"date":"2001-02","price":1.244,"national":1.49},{"date":"2001-03","price":1.21,"national":1.45},{"date":"2001-04","price":1.328,"national":1.591},{"date":"2001-05","price":1.451,"national":1.738},{"date":"2001-06","price":1.384,"national":1.658},{"date":"2001-07","price":1.224,"national":1.466},{"date":"2001-08","price":1.22,"national":1.461},{"date":"2001-09","price":1.3,"national":1.557},{"date":"2001-10","price":1.133,"national":1.357},{"date":"2001-11","price":1.012,"national":1.212},{"date":"2001-12","price":0.941,"national":1.127},{"date":"2002-01","price":0.958,"national":1.148},{"date":"2002-02","price":0.964,"national":1.155},{"date":"2002-03","price":1.076,"national":1.289},{"date":"2002-04","price":1.201,"national":1.439},{"date":"2002-05","price":1.197,"national":1.434},{"date":"2002-06","price":1.189,"national":1.424},{"date":"2002-07","price":1.2,"national":1.438},{"date":"2002-08","price":1.2,"national":1.438},{"date":"2002-09","price":1.203,"national":1.441},{"date":"2002-10","price":1.241,"national":1.486},{"date":"2002-11","price":1.22,"national":1.461},{"date":"2002-12","price":1.193,"national":1.429},{"date":"2003-01","price":1.252,"national":1.5},{"date":"2003-02","price":1.382,"national":1.655},{"date":"2003-03","price":1.448,"national":1.734},{"date":"2003-04","price":1.363,"national":1.633},{"date":"2003-05","price":1.285,"national":1.539},{"date":"2003-06","price":1.28,"national":1.533},{"date":"2003-07","price":1.297,"national":1.554},{"date":"2003-08","price":1.387,"national":1.661},{"date":"2003-09","price":1.437,"national":1.721},{"date":"2003-10","price":1.341,"national":1.606},{"date":"2003-11","price":1.298,"national":1.555},{"date":"2003-12","price":1.271,"national":1.522},{"date":"2004-01","price":1.347,"national":1.614},{"date":"2004-02","price":1.411,"national":1.69},{"date":"2004-03","price":1.484,"national":1.778},{"date":"2004-04","price":1.535,"national":1.839},{"date":"2004-05","price":1.689,"national":2.023},{"date":"2004-06","price":1.68,"national":2.013},{"date":"2004-07","price":1.631,"national":1.954},{"date":"2004-08","price":1.603,"national":1.92},{"date":"2004-09","price":1.596,"national":1.912},{"date":"2004-10","price":1.705,"national":2.042},{"date":"2004-11","price":1.689,"national":2.023},{"date":"2004-12","price":1.575,"national":1.887},{"date":"2005-01","price":1.565,"national":1.875},{"date":"2005-02","price":1.63,"national":1.953},{"date":"2005-03","price":1.77,"national":2.12},{"date":"2005-04","price":1.908,"national":2.285},{"date":"2005-05","price":1.841,"national":2.205},{"date":"2005-06","price":1.835,"national":2.198},{"date":"2005-07","price":1.948,"national":2.333},{"date":"2005-08","price":2.111,"national":2.529},{"date":"2005-09","price":2.463,"national":2.951},{"date":"2005-10","price":2.308,"national":2.765},{"date":"2005-11","price":1.923,"national":2.303},{"date":"2005-12","price":1.861,"national":2.229},{"date":"2006-01","price":1.97,"national":2.36},{"date":"2006-02","price":1.942,"national":2.326},{"date":"2006-03","price":2.06,"national":2.468},{"date":"2006-04","price":2.327,"national":2.787},{"date":"2006-05","price":2.465,"national":2.953},{"date":"2006-06","price":2.446,"national":2.93},{"date":"2006-07","price":2.525,"national":3.025},{"date":"2006-08","price":2.504,"national":2.999},{"date":"2006-09","price":2.175,"national":2.606},{"date":"2006-10","price":1.914,"national":2.293},{"date":"2006-11","price":1.899,"national":2.275},{"date":"2006-12","price":1.969,"national":2.359},{"date":"2007-01","price":1.911,"national":2.289},{"date":"2007-02","price":1.939,"national":2.323},{"date":"2007-03","price":2.178,"national":2.609},{"date":"2007-04","price":2.413,"national":2.891},{"date":"2007-05","price":2.661,"national":3.187},{"date":"2007-06","price":2.59,"national":3.102},{"date":"2007-07","price":2.514,"national":3.011},{"date":"2007-08","price":2.366,"national":2.834},{"date":"2007-09","price":2.378,"national":2.849},{"date":"2007-10","price":2.382,"national":2.853},{"date":"2007-11","price":2.611,"national":3.128},{"date":"2007-12","price":2.563,"national":3.07},{"date":"2008-01","price":2.584,"national":3.095},{"date":"2008-02","price":2.57,"national":3.078},{"date":"2008-03","price":2.749,"national":3.293},{"date":"2008-04","price":2.928,"national":3.507},{"date":"2008-05","price":3.185,"national":3.815},{"date":"2008-06","price":3.427,"national":4.105},{"date":"2008-07","price":3.434,"national":4.114},{"date":"2008-08","price":3.2,"national":3.833},{"date":"2008-09","price":3.136,"national":3.756},{"date":"2008-10","price":2.598,"national":3.112},{"date":"2008-11","price":1.843,"national":2.208},{"date":"2008-12","price":1.457,"national":1.745},{"date":"2009-01","price":1.536,"national":1.84},{"date":"2009-02","price":1.649,"national":1.975},{"date":"2009-03","price":1.679,"national":2.011},{"date":"2009-04","price":1.755,"national":2.102},{"date":"2009-05","price":1.933,"national":2.316},{"date":"2009-06","price":2.238,"national":2.681},{"date":"2009-07","price":2.155,"national":2.582},{"date":"2009-08","price":2.229,"national":2.67},{"date":"2009-09","price":2.178,"national":2.609},{"date":"2009-10","price":2.175,"national":2.605},{"date":"2009-11","price":2.259,"national":2.706},{"date":"2009-12","price":2.223,"national":2.663},{"date":"2010-01","price":2.312,"national":2.769},{"date":"2010-02","price":2.253,"national":2.699},{"date":"2010-03","price":2.357,"national":2.824},{"date":"2010-04","price":2.421,"national":2.9},{"date":"2010-05","price":2.413,"national":2.89},{"date":"2010-06","price":2.325,"national":2.785},{"date":"2010-07","price":2.322,"national":2.782},{"date":"2010-08","price":2.323,"national":2.783},{"date":"2010-09","price":2.302,"national":2.757},{"date":"2010-10","price":2.382,"national":2.853},{"date":"2010-11","price":2.432,"national":2.913},{"date":"2010-12","price":2.544,"national":3.048},{"date":"2011-01","price":2.628,"national":3.148},{"date":"2011-02","price":2.725,"national":3.264},{"date":"2011-03","price":3.018,"national":3.615},{"date":"2011-04","price":3.216,"national":3.852},{"date":"2011-05","price":3.306,"national":3.96},{"date":"2011-06","price":3.118,"national":3.735},{"date":"2011-07","price":3.093,"national":3.705},{"date":"2011-08","price":3.085,"national":3.696},{"date":"2011-09","price":3.061,"national":3.667},{"date":"2011-10","price":2.927,"national":3.506},{"date":"2011-11","price":2.874,"national":3.443},{"date":"2011-12","price":2.777,"national":3.326},{"date":"2012-01","price":2.872,"national":3.44},{"date":"2012-02","price":3.039,"national":3.64},{"date":"2012-03","price":3.262,"national":3.907},{"date":"2012-04","price":3.304,"national":3.958},{"date":"2012-05","price":3.165,"national":3.791},{"date":"2012-06","price":3.002,"national":3.596},{"date":"2012-07","price":2.92,"national":3.498},{"date":"2012-08","price":3.156,"national":3.78},{"date":"2012-09","price":3.264,"national":3.91},{"date":"2012-10","price":3.182,"national":3.812},{"date":"2012-11","price":2.939,"national":3.521},{"date":"2012-12","price":2.822,"national":3.381},{"date":"2013-01","price":2.831,"national":3.391},{"date":"2013-02","price":3.119,"national":3.736},{"date":"2013-03","price":3.155,"national":3.779},{"date":"2013-04","price":3.037,"national":3.638},{"date":"2013-05","price":3.068,"national":3.675},{"date":"2013-06","price":3.08,"national":3.689},{"date":"2013-07","price":3.056,"national":3.661},{"date":"2013-08","price":3.043,"national":3.645},{"date":"2013-09","price":3.009,"national":3.604},{"date":"2013-10","price":2.855,"national":3.42},{"date":"2013-11","price":2.773,"national":3.322},{"date":"2013-12","price":2.802,"national":3.357},{"date":"2014-01","price":2.832,"national":3.392},{"date":"2014-02","price":2.867,"national":3.434},{"date":"2014-03","price":3.01,"national":3.606},{"date":"2014-04","price":3.118,"national":3.735},{"date":"2014-05","price":3.131,"national":3.75},{"date":"2014-06","price":3.144,"national":3.766},{"date":"2014-07","price":3.079,"national":3.688},{"date":"2014-08","price":2.976,"national":3.565},{"date":"2014-09","price":2.908,"national":3.484},{"date":"2014-10","price":2.717,"national":3.255},{"date":"2014-11","price":2.502,"national":2.997},{"date":"2014-12","price":2.197,"national":2.632},{"date":"2015-01","price":1.843,"national":2.208},{"date":"2015-02","price":1.921,"national":2.301},{"date":"2015-03","price":2.125,"national":2.546},{"date":"2015-04","price":2.133,"national":2.555},{"date":"2015-05","price":2.339,"national":2.802},{"date":"2015-06","price":2.408,"national":2.885},{"date":"2015-07","price":2.404,"national":2.88},{"date":"2015-08","price":2.276,"national":2.726},{"date":"2015-09","price":2.055,"national":2.462},{"date":"2015-10","price":1.993,"national":2.387},{"date":"2015-11","price":1.887,"national":2.26},{"date":"2015-12","price":1.79,"national":2.144},{"date":"2016-01","price":1.717,"national":2.057},{"date":"2016-02","price":1.563,"national":1.872},{"date":"2016-03","price":1.729,"national":2.071},{"date":"2016-04","price":1.85,"national":2.216},{"date":"2016-05","price":1.979,"national":2.371},{"date":"2016-06","price":2.059,"national":2.467},{"date":"2016-07","price":1.958,"national":2.345},{"date":"2016-08","price":1.907,"national":2.284},{"date":"2016-09","price":1.943,"national":2.327},{"date":"2016-10","price":1.969,"national":2.359},{"date":"2016-11","price":1.916,"national":2.295},{"date":"2016-12","price":1.975,"national":2.366},{"date":"2017-01","price":2.052,"national":2.458},{"date":"2017-02","price":2.017,"national":2.416},{"date":"2017-03","price":2.034,"national":2.437},{"date":"2017-04","price":2.11,"national":2.528},{"date":"2017-05","price":2.09,"national":2.503},{"date":"2017-06","price":2.054,"national":2.46},{"date":"2017-07","price":2.015,"national":2.414},{"date":"2017-08","price":2.082,"national":2.494},{"date":"2017-09","price":2.305,"national":2.761},{"date":"2017-10","price":2.188,"national":2.621},{"date":"2017-11","price":2.236,"national":2.678},{"date":"2017-12","price":2.165,"national":2.594},{"date":"2018-01","price":2.23,"national":2.671},{"date":"2018-02","price":2.258,"national":2.705},{"date":"2018-03","price":2.261,"national":2.709},{"date":"2018-04","price":2.398,"national":2.873},{"date":"2018-05","price":2.494,"national":2.987},{"date":"2018-06","price":2.479,"national":2.97},{"date":"2018-07","price":2.444,"national":2.928},{"date":"2018-08","price":2.433,"national":2.914},{"date":"2018-09","price":2.433,"national":2.915},{"date":"2018-10","price":2.457,"national":2.943},{"date":"2018-11","price":2.284,"national":2.736},{"date":"2018-12","price":2.051,"national":2.457},{"date":"2019-01","price":1.952,"national":2.338},{"date":"2019-02","price":1.998,"national":2.393},{"date":"2019-03","price":2.165,"national":2.594},{"date":"2019-04","price":2.405,"national":2.881},{"date":"2019-05","price":2.459,"national":2.946},{"date":"2019-06","price":2.341,"national":2.804},{"date":"2019-07","price":2.357,"national":2.823},{"date":"2019-08","price":2.26,"national":2.707},{"date":"2019-09","price":2.238,"national":2.681},{"date":"2019-10","price":2.274,"national":2.724},{"date":"2019-11","price":2.248,"national":2.693},{"date":"2019-12","price":2.208,"national":2.645},{"date":"2020-01","price":2.201,"national":2.636},{"date":"2020-02","price":2.115,"national":2.533},{"date":"2020-03","price":1.944,"national":2.329},{"date":"2020-04","price":1.618,"national":1.938},{"date":"2020-05","price":1.637,"national":1.961},{"date":"2020-06","price":1.812,"national":2.17},{"date":"2020-07","price":1.897,"national":2.272},{"date":"2020-08","price":1.897,"national":2.272},{"date":"2020-09","price":1.898,"national":2.274},{"date":"2020-10","price":1.877,"national":2.248},{"date":"2020-11","price":1.837,"national":2.2},{"date":"2020-12","price":1.907,"national":2.284},{"date":"2021-01","price":2.02,"national":2.42},{"date":"2021-02","price":2.16,"national":2.587},{"date":"2021-03","price":2.419,"national":2.898},{"date":"2021-04","price":2.461,"national":2.948},{"date":"2021-05","price":2.568,"national":3.076},{"date":"2021-06","price":2.635,"national":3.157},{"date":"2021-07","price":2.697,"national":3.231},{"date":"2021-08","price":2.717,"national":3.255},{"date":"2021-09","price":2.731,"national":3.272},{"date":"2021-10","price":2.825,"national":3.384},{"date":"2021-11","price":2.914,"national":3.491},{"date":"2021-12","price":2.843,"national":3.406},{"date":"2022-01","price":2.849,"national":3.413},{"date":"2022-02","price":3.014,"national":3.611},{"date":"2022-03","price":3.608,"national":4.322},{"date":"2022-04","price":3.517,"national":4.213},{"date":"2022-05","price":3.794,"national":4.545},{"date":"2022-06","price":4.201,"national":5.032},{"date":"2022-07","price":3.897,"national":4.668},{"date":"2022-08","price":3.412,"national":4.087},{"date":"2022-09","price":3.186,"national":3.817},{"date":"2022-10","price":3.285,"national":3.935},{"date":"2022-11","price":3.171,"national":3.799},{"date":"2022-12","price":2.775,"national":3.324},{"date":"2023-01","price":2.876,"national":3.445},{"date":"2023-02","price":2.923,"national":3.501},{"date":"2023-03","price":2.951,"national":3.535},{"date":"2023-04","price":3.098,"national":3.711},{"date":"2023-05","price":3.06,"national":3.666},{"date":"2023-06","price":3.075,"national":3.684},{"date":"2023-07","price":3.099,"national":3.712},{"date":"2023-08","price":3.301,"national":3.954},{"date":"2023-09","price":3.304,"national":3.958},{"date":"2023-10","price":3.124,"national":3.742},{"date":"2023-11","price":2.874,"national":3.443},{"date":"2023-12","price":2.719,"national":3.257},{"date":"2024-01","price":2.669,"national":3.197},{"date":"2024-02","price":2.778,"national":3.328},{"date":"2024-03","price":2.957,"national":3.542},{"date":"2024-04","price":3.116,"national":3.733},{"date":"2024-05","price":3.11,"national":3.725},{"date":"2024-06","price":2.985,"national":3.576},{"date":"2024-07","price":3.005,"national":3.6},{"date":"2024-08","price":2.928,"national":3.507},{"date":"2024-09","price":2.787,"national":3.338},{"date":"2024-10","price":2.722,"national":3.261},{"date":"2024-11","price":2.65,"national":3.175},{"date":"2024-12","price":2.62,"national":3.139},{"date":"2025-01","price":2.668,"national":3.196},{"date":"2025-02","price":2.711,"national":3.247},{"date":"2025-03","price":2.691,"national":3.223},{"date":"2025-04","price":2.754,"national":3.299},{"date":"2025-05","price":2.736,"national":3.278},{"date":"2025-06","price":2.735,"national":3.276},{"date":"2025-07","price":2.713,"national":3.25},{"date":"2025-08","price":2.72,"national":3.258},{"date":"2025-09","price":2.749,"national":3.293},{"date":"2025-10","price":2.663,"national":3.19},{"date":"2025-11","price":2.654,"national":3.179},{"date":"2025-12","price":2.524,"national":3.024},{"date":"2026-01","price":2.451,"national":2.936},{"date":"2026-02","price":2.537,"national":3.039},{"date":"2026-03","price":3.32,"national":3.977}]},"rent":{"avg_all":1012,"avg_1br":830,"avg_2br":1194,"avg_3br":1366,"national_avg":1895,"median_home_price":null,"history":[{"date":"2022-05-31","avg":814,"onebed":692,"national":1895},{"date":"2022-06-30","avg":818,"onebed":695,"national":1895},{"date":"2022-08-31","avg":848,"onebed":721,"national":1895},{"date":"2022-09-30","avg":863,"onebed":734,"national":1895},{"date":"2022-10-31","avg":868,"onebed":738,"national":1895},{"date":"2022-11-30","avg":875,"onebed":744,"national":1895},{"date":"2022-12-31","avg":876,"onebed":745,"national":1895},{"date":"2023-01-31","avg":864,"onebed":734,"national":1895},{"date":"2023-02-28","avg":872,"onebed":741,"national":1895},{"date":"2023-03-31","avg":890,"onebed":756,"national":1895},{"date":"2023-04-30","avg":890,"onebed":756,"national":1895},{"date":"2023-05-31","avg":891,"onebed":757,"national":1895},{"date":"2023-06-30","avg":877,"onebed":745,"national":1895},{"date":"2023-07-31","avg":896,"onebed":762,"national":1895},{"date":"2023-08-31","avg":908,"onebed":772,"national":1895},{"date":"2023-09-30","avg":911,"onebed":774,"national":1895},{"date":"2023-10-31","avg":911,"onebed":774,"national":1895},{"date":"2023-11-30","avg":906,"onebed":770,"national":1895},{"date":"2023-12-31","avg":920,"onebed":782,"national":1895},{"date":"2024-01-31","avg":926,"onebed":787,"national":1895},{"date":"2024-02-29","avg":936,"onebed":796,"national":1895},{"date":"2024-03-31","avg":931,"onebed":791,"national":1895},{"date":"2024-04-30","avg":930,"onebed":790,"national":1895},{"date":"2024-05-31","avg":923,"onebed":785,"national":1895},{"date":"2024-06-30","avg":937,"onebed":796,"national":1895},{"date":"2024-07-31","avg":941,"onebed":800,"national":1895},{"date":"2024-08-31","avg":953,"onebed":810,"national":1895},{"date":"2024-09-30","avg":961,"onebed":817,"national":1895},{"date":"2024-10-31","avg":969,"onebed":824,"national":1895},{"date":"2024-11-30","avg":960,"onebed":816,"national":1895},{"date":"2024-12-31","avg":957,"onebed":813,"national":1895},{"date":"2025-01-31","avg":963,"onebed":819,"national":1895},{"date":"2025-02-28","avg":982,"onebed":835,"national":1895},{"date":"2025-03-31","avg":979,"onebed":832,"national":1895},{"date":"2025-04-30","avg":975,"onebed":829,"national":1895},{"date":"2025-05-31","avg":978,"onebed":831,"national":1895},{"date":"2025-06-30","avg":992,"onebed":843,"national":1895},{"date":"2025-07-31","avg":1002,"onebed":852,"national":1895},{"date":"2025-08-31","avg":999,"onebed":849,"national":1895},{"date":"2025-09-30","avg":996,"onebed":847,"national":1895},{"date":"2025-10-31","avg":1000,"onebed":850,"national":1895},{"date":"2025-11-30","avg":1003,"onebed":853,"national":1895},{"date":"2025-12-31","avg":1012,"onebed":860,"national":1895},{"date":"2026-01-31","avg":1009,"onebed":858,"national":1895},{"date":"2026-02-28","avg":1012,"onebed":860,"national":1895}],"baseline_2022":814,"yoy_change_pct":3.1,"source":"Zillow ZORI Metro (2026-02)"},"groceries":{"items":[{"name":"Eggs (dozen)","slug":"eggs","unit":"dozen","current":2.5,"history":[{"date":"2021","price":1.625},{"date":"2022","price":1.929},{"date":"2023","price":4.823},{"date":"2024","price":2.522},{"date":"2025","price":4.953},{"date":"2026","price":2.577}],"change_from_2022":29.6,"note":"Bird flu volatility","source":"BLS/FRED APU0000708111","price_2022":1.929,"current_price":2.5,"kroger_price":1.29,"kroger_store":"Fred Meyer - Boise Franklin (FRED)","kroger_date":"2026-03-24","baseline_2000":0.975,"price_2000":0.975,"change_from_2000":156.4,"baseline_2022":1.929,"change_from_baseline":156.4,"baseline_year":2000},{"name":"Milk (gallon)","slug":"milk","unit":"gallon","current":4.026,"history":[{"date":"2021","price":3.348},{"date":"2022","price":3.787},{"date":"2023","price":4.204},{"date":"2024","price":3.958},{"date":"2025","price":4.025},{"date":"2026","price":4.1}],"change_from_2022":6.3,"source":"BLS/FRED APU0000709112","price_2022":3.787,"current_price":4.026,"kroger_price":2.69,"kroger_store":"Fred Meyer - Boise Franklin (FRED)","kroger_date":"2026-03-24","baseline_2000":2.785,"price_2000":2.785,"change_from_2000":44.6,"baseline_2022":3.787,"change_from_baseline":44.6,"baseline_year":2000},{"name":"Ground Beef (lb)","slug":"ground-beef","unit":"lb","current":6.739,"history":[{"date":"2021","price":4.042},{"date":"2022","price":4.554},{"date":"2023","price":4.791},{"date":"2024","price":5.03},{"date":"2025","price":5.545},{"date":"2026","price":6.752}],"change_from_2022":48.0,"current_price":6.739,"price_2022":4.554,"source":"BLS/FRED APU0000703112","baseline_2000":1.483,"price_2000":1.483,"change_from_2000":354.4,"baseline_2022":4.554,"change_from_baseline":354.4,"baseline_year":2000},{"name":"Bread (loaf)","slug":"bread","unit":"loaf","current":1.85,"history":[{"date":"2021","price":1.526},{"date":"2022","price":1.555},{"date":"2023","price":1.888},{"date":"2024","price":2.033},{"date":"2025","price":1.925},{"date":"2026","price":1.843}],"change_from_2022":19.0,"source":"BLS/FRED APU0000702111","price_2022":1.555,"current_price":1.85,"kroger_price":2.49,"kroger_store":"Fred Meyer - Boise Franklin (FRED)","kroger_date":"2026-03-24","baseline_2000":0.907,"price_2000":0.907,"change_from_2000":104.0,"baseline_2022":1.555,"change_from_baseline":104.0,"baseline_year":2000},{"name":"Chicken Breast (lb)","slug":"chicken","unit":"lb","current":2.049,"history":[{"date":"2021","price":1.543},{"date":"2022","price":1.622},{"date":"2023","price":1.855},{"date":"2024","price":1.987},{"date":"2025","price":2.061},{"date":"2026","price":2.041}],"change_from_2022":26.3,"source":"BLS/FRED APU0000706111","price_2022":1.622,"current_price":2.049,"kroger_price":4.99,"kroger_store":"Fred Meyer - Boise Franklin (FRED)","kroger_date":"2026-03-24","baseline_2000":1.059,"price_2000":1.059,"change_from_2000":93.5,"baseline_2022":1.622,"change_from_baseline":93.5,"baseline_year":2000},{"name":"Butter (lb)","slug":"butter","unit":"lb","current":5.48,"history":[{"date":"2022","price":4.23},{"date":"2023","price":4.83},{"date":"2024","price":5.12},{"date":"2025","price":5.27},{"date":"2026","price":5.48}],"change_from_2022":0.296,"kroger_price":6.99,"kroger_store":"Fred Meyer - Boise Franklin (FRED)","kroger_date":"2026-03-24"},{"name":"Bacon (lb)","slug":"bacon","unit":"lb","current":8.12,"history":[{"date":"2022","price":6.62},{"date":"2023","price":7.08},{"date":"2024","price":7.58},{"date":"2025","price":7.96},{"date":"2026","price":8.12}],"change_from_2022":0.227},{"name":"Cheddar Cheese (lb)","slug":"cheddar-cheese","unit":"lb","current":6.47,"history":[{"date":"2022","price":5.67},{"date":"2023","price":6.17},{"date":"2024","price":6.35},{"date":"2025","price":6.41},{"date":"2026","price":6.47}],"change_from_2022":0.141},{"name":"Pasta (lb)","slug":"pasta","unit":"lb","current":1.96,"history":[{"date":"2022","price":1.48},{"date":"2023","price":1.81},{"date":"2024","price":1.88},{"date":"2025","price":1.96},{"date":"2026","price":1.96}],"change_from_2022":0.324},{"name":"Rice (5 lb)","slug":"rice","unit":"5 lb bag","current":5.26,"history":[{"date":"2022","price":4.15},{"date":"2023","price":4.82},{"date":"2024","price":5.11},{"date":"2025","price":5.26},{"date":"2026","price":5.26}],"change_from_2022":0.267},{"name":"Coffee (12 oz)","slug":"coffee","unit":"12 oz","current":13.25,"history":[{"date":"2022","price":8.91},{"date":"2023","price":10.8},{"date":"2024","price":11.9},{"date":"2025","price":12.74},{"date":"2026","price":13.25}],"change_from_2022":0.487},{"name":"Orange Juice (64 oz)","slug":"orange-juice","unit":"64 oz","current":5.42,"history":[{"date":"2022","price":3.72},{"date":"2023","price":4.43},{"date":"2024","price":4.82},{"date":"2025","price":5.16},{"date":"2026","price":5.42}],"change_from_2022":0.457,"note":"Citrus shortage"},{"name":"Potatoes (5 lb)","slug":"potatoes","unit":"5 lb bag","current":4.77,"history":[{"date":"2022","price":4.11},{"date":"2023","price":4.4},{"date":"2024","price":4.58},{"date":"2025","price":4.72},{"date":"2026","price":4.77}],"change_from_2022":0.161},{"name":"Apples (3 lb)","slug":"apples","unit":"3 lb bag","current":5.2,"history":[{"date":"2022","price":4.49},{"date":"2023","price":4.71},{"date":"2024","price":4.95},{"date":"2025","price":5.2},{"date":"2026","price":5.2}],"change_from_2022":0.158},{"name":"Tomatoes (lb)","slug":"tomatoes","unit":"lb","current":2.91,"history":[{"date":"2022","price":2.22},{"date":"2023","price":2.46},{"date":"2024","price":2.66},{"date":"2025","price":2.77},{"date":"2026","price":2.91}],"change_from_2022":0.311},{"name":"Lettuce (head)","slug":"lettuce","unit":"head","current":2.34,"history":[{"date":"2022","price":1.8},{"date":"2023","price":1.94},{"date":"2024","price":2.12},{"date":"2025","price":2.25},{"date":"2026","price":2.34}],"change_from_2022":0.3},{"name":"Cooking Oil (48 oz)","slug":"cooking-oil","unit":"48 oz","current":7.76,"history":[{"date":"2022","price":5.54},{"date":"2023","price":6.99},{"date":"2024","price":7.47},{"date":"2025","price":7.61},{"date":"2026","price":7.76}],"change_from_2022":0.401},{"name":"Yogurt (32 oz)","slug":"yogurt","unit":"32 oz","current":4.94,"history":[{"date":"2022","price":4.15},{"date":"2023","price":4.48},{"date":"2024","price":4.66},{"date":"2025","price":4.8},{"date":"2026","price":4.94}],"change_from_2022":0.19},{"name":"Cereal (family size)","slug":"cereal","unit":"box","current":6.2,"history":[{"date":"2022","price":4.79},{"date":"2023","price":5.51},{"date":"2024","price":5.9},{"date":"2025","price":6.14},{"date":"2026","price":6.2}],"change_from_2022":0.294},{"name":"Frozen Pizza","slug":"frozen-pizza","unit":"each","current":8.65,"history":[{"date":"2022","price":6.31},{"date":"2023","price":7.42},{"date":"2024","price":7.85},{"date":"2025","price":8.4},{"date":"2026","price":8.65}],"change_from_2022":0.371}],"inflation_rate":{"current_yoy":5.27,"history":[{"year":"2022","rate":12.57},{"year":"2023","rate":5.1},{"year":"2024","rate":0.8},{"year":"2025","rate":3.14},{"year":"2026","rate":2.3}],"source":"BLS CPI Food at Home (CUSR0000SAF11)"},"baseline_year":2000},"dining":{"fast_food_avg":12.99,"casual_dining_avg":24.18,"coffee_avg":6.21,"monthly_household_spend":431.46,"restaurant_inflation_yoy":5.41,"chains":[{"name":"McDonald's","price_2022":8.36,"price_current":13.49},{"name":"Wendy's","price_2022":9.44,"price_current":14.57},{"name":"Chipotle","price_2022":10.12,"price_current":15.11},{"name":"Starbucks","price_2022":4.58,"price_current":6.36}]},"utilities":{"electricity_kwh":0.138,"natural_gas_therm":1.11,"internet_monthly":65,"phone_monthly":77.81,"national_electricity":0.16},"transportation":{"car_insurance_monthly":151.75,"used_car_avg":24235.2,"gas_per_month_avg":143.58},"healthcare":{"doctor_visit":183.6,"prescription_generic":16.95,"dental_cleaning":152.34},"personal":{"haircut_mens":23.99,"gym_membership":45.84,"movie_ticket":15.3},"data_sources":{"groceries":"BLS/FRED APU series \u2014 national avg prices","gas":"AAA Gas Prices \u2014 state-level avg"},"electricity":{"cents_per_kwh":11.8,"monthly_avg_bill":106.2,"national_avg_cents":17.38,"national_avg_bill":156.4,"source":"EIA Residential (2026-03)","avg_monthly_kwh_rate":11.8,"national_avg_rate":17.38,"avg_monthly_bill":106},"car_insurance":{"annual_avg":1821,"monthly_avg":151.75,"national_avg_annual":2150,"source":"Bankrate/NAIC state avg full coverage (2025)"},"income":{"median_household":66478,"county_fips":null,"year":2023,"source":"Census ACS 5-Year 2023 (state median)","cost_burden":{"rent_annual":12144,"gas_annual":1723,"grocery_annual":893,"electricity_annual":1490,"insurance_annual":1821,"total_essential_annual":18071,"burden_pct":27.2,"note":"Essential costs as % of median household income (rent+gas+groceries+electricity+insurance)"}}}
+{
+  "city": "Cape Girardeau",
+  "state": "Missouri",
+  "state_abbr": "MO",
+  "slug": "cape-girardeau-mo",
+  "population": 100000,
+  "region": "Midwest",
+  "col_index": 90,
+  "last_updated": "2026-03-31",
+  "gas": {
+    "current": 3.438,
+    "diesel_current": 3.818,
+    "national_current": 4.018,
+    "history": [
+      {
+        "date": "2000-01",
+        "price": 1.109,
+        "national": 1.329
+      },
+      {
+        "date": "2000-02",
+        "price": 1.181,
+        "national": 1.415
+      },
+      {
+        "date": "2000-03",
+        "price": 1.299,
+        "national": 1.556
+      },
+      {
+        "date": "2000-04",
+        "price": 1.257,
+        "national": 1.506
+      },
+      {
+        "date": "2000-05",
+        "price": 1.274,
+        "national": 1.526
+      },
+      {
+        "date": "2000-06",
+        "price": 1.391,
+        "national": 1.666
+      },
+      {
+        "date": "2000-07",
+        "price": 1.328,
+        "national": 1.591
+      },
+      {
+        "date": "2000-08",
+        "price": 1.257,
+        "national": 1.506
+      },
+      {
+        "date": "2000-09",
+        "price": 1.326,
+        "national": 1.588
+      },
+      {
+        "date": "2000-10",
+        "price": 1.311,
+        "national": 1.571
+      },
+      {
+        "date": "2000-11",
+        "price": 1.3,
+        "national": 1.557
+      },
+      {
+        "date": "2000-12",
+        "price": 1.238,
+        "national": 1.483
+      },
+      {
+        "date": "2001-01",
+        "price": 1.241,
+        "national": 1.487
+      },
+      {
+        "date": "2001-02",
+        "price": 1.244,
+        "national": 1.49
+      },
+      {
+        "date": "2001-03",
+        "price": 1.21,
+        "national": 1.45
+      },
+      {
+        "date": "2001-04",
+        "price": 1.328,
+        "national": 1.591
+      },
+      {
+        "date": "2001-05",
+        "price": 1.451,
+        "national": 1.738
+      },
+      {
+        "date": "2001-06",
+        "price": 1.384,
+        "national": 1.658
+      },
+      {
+        "date": "2001-07",
+        "price": 1.224,
+        "national": 1.466
+      },
+      {
+        "date": "2001-08",
+        "price": 1.22,
+        "national": 1.461
+      },
+      {
+        "date": "2001-09",
+        "price": 1.3,
+        "national": 1.557
+      },
+      {
+        "date": "2001-10",
+        "price": 1.133,
+        "national": 1.357
+      },
+      {
+        "date": "2001-11",
+        "price": 1.012,
+        "national": 1.212
+      },
+      {
+        "date": "2001-12",
+        "price": 0.941,
+        "national": 1.127
+      },
+      {
+        "date": "2002-01",
+        "price": 0.958,
+        "national": 1.148
+      },
+      {
+        "date": "2002-02",
+        "price": 0.964,
+        "national": 1.155
+      },
+      {
+        "date": "2002-03",
+        "price": 1.076,
+        "national": 1.289
+      },
+      {
+        "date": "2002-04",
+        "price": 1.201,
+        "national": 1.439
+      },
+      {
+        "date": "2002-05",
+        "price": 1.197,
+        "national": 1.434
+      },
+      {
+        "date": "2002-06",
+        "price": 1.189,
+        "national": 1.424
+      },
+      {
+        "date": "2002-07",
+        "price": 1.2,
+        "national": 1.438
+      },
+      {
+        "date": "2002-08",
+        "price": 1.2,
+        "national": 1.438
+      },
+      {
+        "date": "2002-09",
+        "price": 1.203,
+        "national": 1.441
+      },
+      {
+        "date": "2002-10",
+        "price": 1.241,
+        "national": 1.486
+      },
+      {
+        "date": "2002-11",
+        "price": 1.22,
+        "national": 1.461
+      },
+      {
+        "date": "2002-12",
+        "price": 1.193,
+        "national": 1.429
+      },
+      {
+        "date": "2003-01",
+        "price": 1.252,
+        "national": 1.5
+      },
+      {
+        "date": "2003-02",
+        "price": 1.382,
+        "national": 1.655
+      },
+      {
+        "date": "2003-03",
+        "price": 1.448,
+        "national": 1.734
+      },
+      {
+        "date": "2003-04",
+        "price": 1.363,
+        "national": 1.633
+      },
+      {
+        "date": "2003-05",
+        "price": 1.285,
+        "national": 1.539
+      },
+      {
+        "date": "2003-06",
+        "price": 1.28,
+        "national": 1.533
+      },
+      {
+        "date": "2003-07",
+        "price": 1.297,
+        "national": 1.554
+      },
+      {
+        "date": "2003-08",
+        "price": 1.387,
+        "national": 1.661
+      },
+      {
+        "date": "2003-09",
+        "price": 1.437,
+        "national": 1.721
+      },
+      {
+        "date": "2003-10",
+        "price": 1.341,
+        "national": 1.606
+      },
+      {
+        "date": "2003-11",
+        "price": 1.298,
+        "national": 1.555
+      },
+      {
+        "date": "2003-12",
+        "price": 1.271,
+        "national": 1.522
+      },
+      {
+        "date": "2004-01",
+        "price": 1.347,
+        "national": 1.614
+      },
+      {
+        "date": "2004-02",
+        "price": 1.411,
+        "national": 1.69
+      },
+      {
+        "date": "2004-03",
+        "price": 1.484,
+        "national": 1.778
+      },
+      {
+        "date": "2004-04",
+        "price": 1.535,
+        "national": 1.839
+      },
+      {
+        "date": "2004-05",
+        "price": 1.689,
+        "national": 2.023
+      },
+      {
+        "date": "2004-06",
+        "price": 1.68,
+        "national": 2.013
+      },
+      {
+        "date": "2004-07",
+        "price": 1.631,
+        "national": 1.954
+      },
+      {
+        "date": "2004-08",
+        "price": 1.603,
+        "national": 1.92
+      },
+      {
+        "date": "2004-09",
+        "price": 1.596,
+        "national": 1.912
+      },
+      {
+        "date": "2004-10",
+        "price": 1.705,
+        "national": 2.042
+      },
+      {
+        "date": "2004-11",
+        "price": 1.689,
+        "national": 2.023
+      },
+      {
+        "date": "2004-12",
+        "price": 1.575,
+        "national": 1.887
+      },
+      {
+        "date": "2005-01",
+        "price": 1.565,
+        "national": 1.875
+      },
+      {
+        "date": "2005-02",
+        "price": 1.63,
+        "national": 1.953
+      },
+      {
+        "date": "2005-03",
+        "price": 1.77,
+        "national": 2.12
+      },
+      {
+        "date": "2005-04",
+        "price": 1.908,
+        "national": 2.285
+      },
+      {
+        "date": "2005-05",
+        "price": 1.841,
+        "national": 2.205
+      },
+      {
+        "date": "2005-06",
+        "price": 1.835,
+        "national": 2.198
+      },
+      {
+        "date": "2005-07",
+        "price": 1.948,
+        "national": 2.333
+      },
+      {
+        "date": "2005-08",
+        "price": 2.111,
+        "national": 2.529
+      },
+      {
+        "date": "2005-09",
+        "price": 2.463,
+        "national": 2.951
+      },
+      {
+        "date": "2005-10",
+        "price": 2.308,
+        "national": 2.765
+      },
+      {
+        "date": "2005-11",
+        "price": 1.923,
+        "national": 2.303
+      },
+      {
+        "date": "2005-12",
+        "price": 1.861,
+        "national": 2.229
+      },
+      {
+        "date": "2006-01",
+        "price": 1.97,
+        "national": 2.36
+      },
+      {
+        "date": "2006-02",
+        "price": 1.942,
+        "national": 2.326
+      },
+      {
+        "date": "2006-03",
+        "price": 2.06,
+        "national": 2.468
+      },
+      {
+        "date": "2006-04",
+        "price": 2.327,
+        "national": 2.787
+      },
+      {
+        "date": "2006-05",
+        "price": 2.465,
+        "national": 2.953
+      },
+      {
+        "date": "2006-06",
+        "price": 2.446,
+        "national": 2.93
+      },
+      {
+        "date": "2006-07",
+        "price": 2.525,
+        "national": 3.025
+      },
+      {
+        "date": "2006-08",
+        "price": 2.504,
+        "national": 2.999
+      },
+      {
+        "date": "2006-09",
+        "price": 2.175,
+        "national": 2.606
+      },
+      {
+        "date": "2006-10",
+        "price": 1.914,
+        "national": 2.293
+      },
+      {
+        "date": "2006-11",
+        "price": 1.899,
+        "national": 2.275
+      },
+      {
+        "date": "2006-12",
+        "price": 1.969,
+        "national": 2.359
+      },
+      {
+        "date": "2007-01",
+        "price": 1.911,
+        "national": 2.289
+      },
+      {
+        "date": "2007-02",
+        "price": 1.939,
+        "national": 2.323
+      },
+      {
+        "date": "2007-03",
+        "price": 2.178,
+        "national": 2.609
+      },
+      {
+        "date": "2007-04",
+        "price": 2.413,
+        "national": 2.891
+      },
+      {
+        "date": "2007-05",
+        "price": 2.661,
+        "national": 3.187
+      },
+      {
+        "date": "2007-06",
+        "price": 2.59,
+        "national": 3.102
+      },
+      {
+        "date": "2007-07",
+        "price": 2.514,
+        "national": 3.011
+      },
+      {
+        "date": "2007-08",
+        "price": 2.366,
+        "national": 2.834
+      },
+      {
+        "date": "2007-09",
+        "price": 2.378,
+        "national": 2.849
+      },
+      {
+        "date": "2007-10",
+        "price": 2.382,
+        "national": 2.853
+      },
+      {
+        "date": "2007-11",
+        "price": 2.611,
+        "national": 3.128
+      },
+      {
+        "date": "2007-12",
+        "price": 2.563,
+        "national": 3.07
+      },
+      {
+        "date": "2008-01",
+        "price": 2.584,
+        "national": 3.095
+      },
+      {
+        "date": "2008-02",
+        "price": 2.57,
+        "national": 3.078
+      },
+      {
+        "date": "2008-03",
+        "price": 2.749,
+        "national": 3.293
+      },
+      {
+        "date": "2008-04",
+        "price": 2.928,
+        "national": 3.507
+      },
+      {
+        "date": "2008-05",
+        "price": 3.185,
+        "national": 3.815
+      },
+      {
+        "date": "2008-06",
+        "price": 3.427,
+        "national": 4.105
+      },
+      {
+        "date": "2008-07",
+        "price": 3.434,
+        "national": 4.114
+      },
+      {
+        "date": "2008-08",
+        "price": 3.2,
+        "national": 3.833
+      },
+      {
+        "date": "2008-09",
+        "price": 3.136,
+        "national": 3.756
+      },
+      {
+        "date": "2008-10",
+        "price": 2.598,
+        "national": 3.112
+      },
+      {
+        "date": "2008-11",
+        "price": 1.843,
+        "national": 2.208
+      },
+      {
+        "date": "2008-12",
+        "price": 1.457,
+        "national": 1.745
+      },
+      {
+        "date": "2009-01",
+        "price": 1.536,
+        "national": 1.84
+      },
+      {
+        "date": "2009-02",
+        "price": 1.649,
+        "national": 1.975
+      },
+      {
+        "date": "2009-03",
+        "price": 1.679,
+        "national": 2.011
+      },
+      {
+        "date": "2009-04",
+        "price": 1.755,
+        "national": 2.102
+      },
+      {
+        "date": "2009-05",
+        "price": 1.933,
+        "national": 2.316
+      },
+      {
+        "date": "2009-06",
+        "price": 2.238,
+        "national": 2.681
+      },
+      {
+        "date": "2009-07",
+        "price": 2.155,
+        "national": 2.582
+      },
+      {
+        "date": "2009-08",
+        "price": 2.229,
+        "national": 2.67
+      },
+      {
+        "date": "2009-09",
+        "price": 2.178,
+        "national": 2.609
+      },
+      {
+        "date": "2009-10",
+        "price": 2.175,
+        "national": 2.605
+      },
+      {
+        "date": "2009-11",
+        "price": 2.259,
+        "national": 2.706
+      },
+      {
+        "date": "2009-12",
+        "price": 2.223,
+        "national": 2.663
+      },
+      {
+        "date": "2010-01",
+        "price": 2.312,
+        "national": 2.769
+      },
+      {
+        "date": "2010-02",
+        "price": 2.253,
+        "national": 2.699
+      },
+      {
+        "date": "2010-03",
+        "price": 2.357,
+        "national": 2.824
+      },
+      {
+        "date": "2010-04",
+        "price": 2.421,
+        "national": 2.9
+      },
+      {
+        "date": "2010-05",
+        "price": 2.413,
+        "national": 2.89
+      },
+      {
+        "date": "2010-06",
+        "price": 2.325,
+        "national": 2.785
+      },
+      {
+        "date": "2010-07",
+        "price": 2.322,
+        "national": 2.782
+      },
+      {
+        "date": "2010-08",
+        "price": 2.323,
+        "national": 2.783
+      },
+      {
+        "date": "2010-09",
+        "price": 2.302,
+        "national": 2.757
+      },
+      {
+        "date": "2010-10",
+        "price": 2.382,
+        "national": 2.853
+      },
+      {
+        "date": "2010-11",
+        "price": 2.432,
+        "national": 2.913
+      },
+      {
+        "date": "2010-12",
+        "price": 2.544,
+        "national": 3.048
+      },
+      {
+        "date": "2011-01",
+        "price": 2.628,
+        "national": 3.148
+      },
+      {
+        "date": "2011-02",
+        "price": 2.725,
+        "national": 3.264
+      },
+      {
+        "date": "2011-03",
+        "price": 3.018,
+        "national": 3.615
+      },
+      {
+        "date": "2011-04",
+        "price": 3.216,
+        "national": 3.852
+      },
+      {
+        "date": "2011-05",
+        "price": 3.306,
+        "national": 3.96
+      },
+      {
+        "date": "2011-06",
+        "price": 3.118,
+        "national": 3.735
+      },
+      {
+        "date": "2011-07",
+        "price": 3.093,
+        "national": 3.705
+      },
+      {
+        "date": "2011-08",
+        "price": 3.085,
+        "national": 3.696
+      },
+      {
+        "date": "2011-09",
+        "price": 3.061,
+        "national": 3.667
+      },
+      {
+        "date": "2011-10",
+        "price": 2.927,
+        "national": 3.506
+      },
+      {
+        "date": "2011-11",
+        "price": 2.874,
+        "national": 3.443
+      },
+      {
+        "date": "2011-12",
+        "price": 2.777,
+        "national": 3.326
+      },
+      {
+        "date": "2012-01",
+        "price": 2.872,
+        "national": 3.44
+      },
+      {
+        "date": "2012-02",
+        "price": 3.039,
+        "national": 3.64
+      },
+      {
+        "date": "2012-03",
+        "price": 3.262,
+        "national": 3.907
+      },
+      {
+        "date": "2012-04",
+        "price": 3.304,
+        "national": 3.958
+      },
+      {
+        "date": "2012-05",
+        "price": 3.165,
+        "national": 3.791
+      },
+      {
+        "date": "2012-06",
+        "price": 3.002,
+        "national": 3.596
+      },
+      {
+        "date": "2012-07",
+        "price": 2.92,
+        "national": 3.498
+      },
+      {
+        "date": "2012-08",
+        "price": 3.156,
+        "national": 3.78
+      },
+      {
+        "date": "2012-09",
+        "price": 3.264,
+        "national": 3.91
+      },
+      {
+        "date": "2012-10",
+        "price": 3.182,
+        "national": 3.812
+      },
+      {
+        "date": "2012-11",
+        "price": 2.939,
+        "national": 3.521
+      },
+      {
+        "date": "2012-12",
+        "price": 2.822,
+        "national": 3.381
+      },
+      {
+        "date": "2013-01",
+        "price": 2.831,
+        "national": 3.391
+      },
+      {
+        "date": "2013-02",
+        "price": 3.119,
+        "national": 3.736
+      },
+      {
+        "date": "2013-03",
+        "price": 3.155,
+        "national": 3.779
+      },
+      {
+        "date": "2013-04",
+        "price": 3.037,
+        "national": 3.638
+      },
+      {
+        "date": "2013-05",
+        "price": 3.068,
+        "national": 3.675
+      },
+      {
+        "date": "2013-06",
+        "price": 3.08,
+        "national": 3.689
+      },
+      {
+        "date": "2013-07",
+        "price": 3.056,
+        "national": 3.661
+      },
+      {
+        "date": "2013-08",
+        "price": 3.043,
+        "national": 3.645
+      },
+      {
+        "date": "2013-09",
+        "price": 3.009,
+        "national": 3.604
+      },
+      {
+        "date": "2013-10",
+        "price": 2.855,
+        "national": 3.42
+      },
+      {
+        "date": "2013-11",
+        "price": 2.773,
+        "national": 3.322
+      },
+      {
+        "date": "2013-12",
+        "price": 2.802,
+        "national": 3.357
+      },
+      {
+        "date": "2014-01",
+        "price": 2.832,
+        "national": 3.392
+      },
+      {
+        "date": "2014-02",
+        "price": 2.867,
+        "national": 3.434
+      },
+      {
+        "date": "2014-03",
+        "price": 3.01,
+        "national": 3.606
+      },
+      {
+        "date": "2014-04",
+        "price": 3.118,
+        "national": 3.735
+      },
+      {
+        "date": "2014-05",
+        "price": 3.131,
+        "national": 3.75
+      },
+      {
+        "date": "2014-06",
+        "price": 3.144,
+        "national": 3.766
+      },
+      {
+        "date": "2014-07",
+        "price": 3.079,
+        "national": 3.688
+      },
+      {
+        "date": "2014-08",
+        "price": 2.976,
+        "national": 3.565
+      },
+      {
+        "date": "2014-09",
+        "price": 2.908,
+        "national": 3.484
+      },
+      {
+        "date": "2014-10",
+        "price": 2.717,
+        "national": 3.255
+      },
+      {
+        "date": "2014-11",
+        "price": 2.502,
+        "national": 2.997
+      },
+      {
+        "date": "2014-12",
+        "price": 2.197,
+        "national": 2.632
+      },
+      {
+        "date": "2015-01",
+        "price": 1.843,
+        "national": 2.208
+      },
+      {
+        "date": "2015-02",
+        "price": 1.921,
+        "national": 2.301
+      },
+      {
+        "date": "2015-03",
+        "price": 2.125,
+        "national": 2.546
+      },
+      {
+        "date": "2015-04",
+        "price": 2.133,
+        "national": 2.555
+      },
+      {
+        "date": "2015-05",
+        "price": 2.339,
+        "national": 2.802
+      },
+      {
+        "date": "2015-06",
+        "price": 2.408,
+        "national": 2.885
+      },
+      {
+        "date": "2015-07",
+        "price": 2.404,
+        "national": 2.88
+      },
+      {
+        "date": "2015-08",
+        "price": 2.276,
+        "national": 2.726
+      },
+      {
+        "date": "2015-09",
+        "price": 2.055,
+        "national": 2.462
+      },
+      {
+        "date": "2015-10",
+        "price": 1.993,
+        "national": 2.387
+      },
+      {
+        "date": "2015-11",
+        "price": 1.887,
+        "national": 2.26
+      },
+      {
+        "date": "2015-12",
+        "price": 1.79,
+        "national": 2.144
+      },
+      {
+        "date": "2016-01",
+        "price": 1.717,
+        "national": 2.057
+      },
+      {
+        "date": "2016-02",
+        "price": 1.563,
+        "national": 1.872
+      },
+      {
+        "date": "2016-03",
+        "price": 1.729,
+        "national": 2.071
+      },
+      {
+        "date": "2016-04",
+        "price": 1.85,
+        "national": 2.216
+      },
+      {
+        "date": "2016-05",
+        "price": 1.979,
+        "national": 2.371
+      },
+      {
+        "date": "2016-06",
+        "price": 2.059,
+        "national": 2.467
+      },
+      {
+        "date": "2016-07",
+        "price": 1.958,
+        "national": 2.345
+      },
+      {
+        "date": "2016-08",
+        "price": 1.907,
+        "national": 2.284
+      },
+      {
+        "date": "2016-09",
+        "price": 1.943,
+        "national": 2.327
+      },
+      {
+        "date": "2016-10",
+        "price": 1.969,
+        "national": 2.359
+      },
+      {
+        "date": "2016-11",
+        "price": 1.916,
+        "national": 2.295
+      },
+      {
+        "date": "2016-12",
+        "price": 1.975,
+        "national": 2.366
+      },
+      {
+        "date": "2017-01",
+        "price": 2.052,
+        "national": 2.458
+      },
+      {
+        "date": "2017-02",
+        "price": 2.017,
+        "national": 2.416
+      },
+      {
+        "date": "2017-03",
+        "price": 2.034,
+        "national": 2.437
+      },
+      {
+        "date": "2017-04",
+        "price": 2.11,
+        "national": 2.528
+      },
+      {
+        "date": "2017-05",
+        "price": 2.09,
+        "national": 2.503
+      },
+      {
+        "date": "2017-06",
+        "price": 2.054,
+        "national": 2.46
+      },
+      {
+        "date": "2017-07",
+        "price": 2.015,
+        "national": 2.414
+      },
+      {
+        "date": "2017-08",
+        "price": 2.082,
+        "national": 2.494
+      },
+      {
+        "date": "2017-09",
+        "price": 2.305,
+        "national": 2.761
+      },
+      {
+        "date": "2017-10",
+        "price": 2.188,
+        "national": 2.621
+      },
+      {
+        "date": "2017-11",
+        "price": 2.236,
+        "national": 2.678
+      },
+      {
+        "date": "2017-12",
+        "price": 2.165,
+        "national": 2.594
+      },
+      {
+        "date": "2018-01",
+        "price": 2.23,
+        "national": 2.671
+      },
+      {
+        "date": "2018-02",
+        "price": 2.258,
+        "national": 2.705
+      },
+      {
+        "date": "2018-03",
+        "price": 2.261,
+        "national": 2.709
+      },
+      {
+        "date": "2018-04",
+        "price": 2.398,
+        "national": 2.873
+      },
+      {
+        "date": "2018-05",
+        "price": 2.494,
+        "national": 2.987
+      },
+      {
+        "date": "2018-06",
+        "price": 2.479,
+        "national": 2.97
+      },
+      {
+        "date": "2018-07",
+        "price": 2.444,
+        "national": 2.928
+      },
+      {
+        "date": "2018-08",
+        "price": 2.433,
+        "national": 2.914
+      },
+      {
+        "date": "2018-09",
+        "price": 2.433,
+        "national": 2.915
+      },
+      {
+        "date": "2018-10",
+        "price": 2.457,
+        "national": 2.943
+      },
+      {
+        "date": "2018-11",
+        "price": 2.284,
+        "national": 2.736
+      },
+      {
+        "date": "2018-12",
+        "price": 2.051,
+        "national": 2.457
+      },
+      {
+        "date": "2019-01",
+        "price": 1.952,
+        "national": 2.338
+      },
+      {
+        "date": "2019-02",
+        "price": 1.998,
+        "national": 2.393
+      },
+      {
+        "date": "2019-03",
+        "price": 2.165,
+        "national": 2.594
+      },
+      {
+        "date": "2019-04",
+        "price": 2.405,
+        "national": 2.881
+      },
+      {
+        "date": "2019-05",
+        "price": 2.459,
+        "national": 2.946
+      },
+      {
+        "date": "2019-06",
+        "price": 2.341,
+        "national": 2.804
+      },
+      {
+        "date": "2019-07",
+        "price": 2.357,
+        "national": 2.823
+      },
+      {
+        "date": "2019-08",
+        "price": 2.26,
+        "national": 2.707
+      },
+      {
+        "date": "2019-09",
+        "price": 2.238,
+        "national": 2.681
+      },
+      {
+        "date": "2019-10",
+        "price": 2.274,
+        "national": 2.724
+      },
+      {
+        "date": "2019-11",
+        "price": 2.248,
+        "national": 2.693
+      },
+      {
+        "date": "2019-12",
+        "price": 2.208,
+        "national": 2.645
+      },
+      {
+        "date": "2020-01",
+        "price": 2.201,
+        "national": 2.636
+      },
+      {
+        "date": "2020-02",
+        "price": 2.115,
+        "national": 2.533
+      },
+      {
+        "date": "2020-03",
+        "price": 1.944,
+        "national": 2.329
+      },
+      {
+        "date": "2020-04",
+        "price": 1.618,
+        "national": 1.938
+      },
+      {
+        "date": "2020-05",
+        "price": 1.637,
+        "national": 1.961
+      },
+      {
+        "date": "2020-06",
+        "price": 1.812,
+        "national": 2.17
+      },
+      {
+        "date": "2020-07",
+        "price": 1.897,
+        "national": 2.272
+      },
+      {
+        "date": "2020-08",
+        "price": 1.897,
+        "national": 2.272
+      },
+      {
+        "date": "2020-09",
+        "price": 1.898,
+        "national": 2.274
+      },
+      {
+        "date": "2020-10",
+        "price": 1.877,
+        "national": 2.248
+      },
+      {
+        "date": "2020-11",
+        "price": 1.837,
+        "national": 2.2
+      },
+      {
+        "date": "2020-12",
+        "price": 1.907,
+        "national": 2.284
+      },
+      {
+        "date": "2021-01",
+        "price": 2.02,
+        "national": 2.42
+      },
+      {
+        "date": "2021-02",
+        "price": 2.16,
+        "national": 2.587
+      },
+      {
+        "date": "2021-03",
+        "price": 2.419,
+        "national": 2.898
+      },
+      {
+        "date": "2021-04",
+        "price": 2.461,
+        "national": 2.948
+      },
+      {
+        "date": "2021-05",
+        "price": 2.568,
+        "national": 3.076
+      },
+      {
+        "date": "2021-06",
+        "price": 2.635,
+        "national": 3.157
+      },
+      {
+        "date": "2021-07",
+        "price": 2.697,
+        "national": 3.231
+      },
+      {
+        "date": "2021-08",
+        "price": 2.717,
+        "national": 3.255
+      },
+      {
+        "date": "2021-09",
+        "price": 2.731,
+        "national": 3.272
+      },
+      {
+        "date": "2021-10",
+        "price": 2.825,
+        "national": 3.384
+      },
+      {
+        "date": "2021-11",
+        "price": 2.914,
+        "national": 3.491
+      },
+      {
+        "date": "2021-12",
+        "price": 2.843,
+        "national": 3.406
+      },
+      {
+        "date": "2022-01",
+        "price": 2.849,
+        "national": 3.413
+      },
+      {
+        "date": "2022-02",
+        "price": 3.014,
+        "national": 3.611
+      },
+      {
+        "date": "2022-03",
+        "price": 3.608,
+        "national": 4.322
+      },
+      {
+        "date": "2022-04",
+        "price": 3.517,
+        "national": 4.213
+      },
+      {
+        "date": "2022-05",
+        "price": 3.794,
+        "national": 4.545
+      },
+      {
+        "date": "2022-06",
+        "price": 4.201,
+        "national": 5.032
+      },
+      {
+        "date": "2022-07",
+        "price": 3.897,
+        "national": 4.668
+      },
+      {
+        "date": "2022-08",
+        "price": 3.412,
+        "national": 4.087
+      },
+      {
+        "date": "2022-09",
+        "price": 3.186,
+        "national": 3.817
+      },
+      {
+        "date": "2022-10",
+        "price": 3.285,
+        "national": 3.935
+      },
+      {
+        "date": "2022-11",
+        "price": 3.171,
+        "national": 3.799
+      },
+      {
+        "date": "2022-12",
+        "price": 2.775,
+        "national": 3.324
+      },
+      {
+        "date": "2023-01",
+        "price": 2.876,
+        "national": 3.445
+      },
+      {
+        "date": "2023-02",
+        "price": 2.923,
+        "national": 3.501
+      },
+      {
+        "date": "2023-03",
+        "price": 2.951,
+        "national": 3.535
+      },
+      {
+        "date": "2023-04",
+        "price": 3.098,
+        "national": 3.711
+      },
+      {
+        "date": "2023-05",
+        "price": 3.06,
+        "national": 3.666
+      },
+      {
+        "date": "2023-06",
+        "price": 3.075,
+        "national": 3.684
+      },
+      {
+        "date": "2023-07",
+        "price": 3.099,
+        "national": 3.712
+      },
+      {
+        "date": "2023-08",
+        "price": 3.301,
+        "national": 3.954
+      },
+      {
+        "date": "2023-09",
+        "price": 3.304,
+        "national": 3.958
+      },
+      {
+        "date": "2023-10",
+        "price": 3.124,
+        "national": 3.742
+      },
+      {
+        "date": "2023-11",
+        "price": 2.874,
+        "national": 3.443
+      },
+      {
+        "date": "2023-12",
+        "price": 2.719,
+        "national": 3.257
+      },
+      {
+        "date": "2024-01",
+        "price": 2.669,
+        "national": 3.197
+      },
+      {
+        "date": "2024-02",
+        "price": 2.778,
+        "national": 3.328
+      },
+      {
+        "date": "2024-03",
+        "price": 2.957,
+        "national": 3.542
+      },
+      {
+        "date": "2024-04",
+        "price": 3.116,
+        "national": 3.733
+      },
+      {
+        "date": "2024-05",
+        "price": 3.11,
+        "national": 3.725
+      },
+      {
+        "date": "2024-06",
+        "price": 2.985,
+        "national": 3.576
+      },
+      {
+        "date": "2024-07",
+        "price": 3.005,
+        "national": 3.6
+      },
+      {
+        "date": "2024-08",
+        "price": 2.928,
+        "national": 3.507
+      },
+      {
+        "date": "2024-09",
+        "price": 2.787,
+        "national": 3.338
+      },
+      {
+        "date": "2024-10",
+        "price": 2.722,
+        "national": 3.261
+      },
+      {
+        "date": "2024-11",
+        "price": 2.65,
+        "national": 3.175
+      },
+      {
+        "date": "2024-12",
+        "price": 2.62,
+        "national": 3.139
+      },
+      {
+        "date": "2025-01",
+        "price": 2.668,
+        "national": 3.196
+      },
+      {
+        "date": "2025-02",
+        "price": 2.711,
+        "national": 3.247
+      },
+      {
+        "date": "2025-03",
+        "price": 2.691,
+        "national": 3.223
+      },
+      {
+        "date": "2025-04",
+        "price": 2.754,
+        "national": 3.299
+      },
+      {
+        "date": "2025-05",
+        "price": 2.736,
+        "national": 3.278
+      },
+      {
+        "date": "2025-06",
+        "price": 2.735,
+        "national": 3.276
+      },
+      {
+        "date": "2025-07",
+        "price": 2.713,
+        "national": 3.25
+      },
+      {
+        "date": "2025-08",
+        "price": 2.72,
+        "national": 3.258
+      },
+      {
+        "date": "2025-09",
+        "price": 2.749,
+        "national": 3.293
+      },
+      {
+        "date": "2025-10",
+        "price": 2.663,
+        "national": 3.19
+      },
+      {
+        "date": "2025-11",
+        "price": 2.654,
+        "national": 3.179
+      },
+      {
+        "date": "2025-12",
+        "price": 2.524,
+        "national": 3.024
+      },
+      {
+        "date": "2026-01",
+        "price": 2.451,
+        "national": 2.936
+      },
+      {
+        "date": "2026-02",
+        "price": 2.537,
+        "national": 3.039
+      },
+      {
+        "date": "2026-03",
+        "price": 3.32,
+        "national": 3.977
+      }
+    ]
+  },
+  "rent": {
+    "avg_all": 1012,
+    "avg_1br": 830,
+    "avg_2br": 1194,
+    "avg_3br": 1366,
+    "national_avg": 1895,
+    "median_home_price": null,
+    "history": [
+      {
+        "date": "2022-05-31",
+        "avg": 814,
+        "onebed": 692,
+        "national": 1895
+      },
+      {
+        "date": "2022-06-30",
+        "avg": 818,
+        "onebed": 695,
+        "national": 1895
+      },
+      {
+        "date": "2022-08-31",
+        "avg": 848,
+        "onebed": 721,
+        "national": 1895
+      },
+      {
+        "date": "2022-09-30",
+        "avg": 863,
+        "onebed": 734,
+        "national": 1895
+      },
+      {
+        "date": "2022-10-31",
+        "avg": 868,
+        "onebed": 738,
+        "national": 1895
+      },
+      {
+        "date": "2022-11-30",
+        "avg": 875,
+        "onebed": 744,
+        "national": 1895
+      },
+      {
+        "date": "2022-12-31",
+        "avg": 876,
+        "onebed": 745,
+        "national": 1895
+      },
+      {
+        "date": "2023-01-31",
+        "avg": 864,
+        "onebed": 734,
+        "national": 1895
+      },
+      {
+        "date": "2023-02-28",
+        "avg": 872,
+        "onebed": 741,
+        "national": 1895
+      },
+      {
+        "date": "2023-03-31",
+        "avg": 890,
+        "onebed": 756,
+        "national": 1895
+      },
+      {
+        "date": "2023-04-30",
+        "avg": 890,
+        "onebed": 756,
+        "national": 1895
+      },
+      {
+        "date": "2023-05-31",
+        "avg": 891,
+        "onebed": 757,
+        "national": 1895
+      },
+      {
+        "date": "2023-06-30",
+        "avg": 877,
+        "onebed": 745,
+        "national": 1895
+      },
+      {
+        "date": "2023-07-31",
+        "avg": 896,
+        "onebed": 762,
+        "national": 1895
+      },
+      {
+        "date": "2023-08-31",
+        "avg": 908,
+        "onebed": 772,
+        "national": 1895
+      },
+      {
+        "date": "2023-09-30",
+        "avg": 911,
+        "onebed": 774,
+        "national": 1895
+      },
+      {
+        "date": "2023-10-31",
+        "avg": 911,
+        "onebed": 774,
+        "national": 1895
+      },
+      {
+        "date": "2023-11-30",
+        "avg": 906,
+        "onebed": 770,
+        "national": 1895
+      },
+      {
+        "date": "2023-12-31",
+        "avg": 920,
+        "onebed": 782,
+        "national": 1895
+      },
+      {
+        "date": "2024-01-31",
+        "avg": 926,
+        "onebed": 787,
+        "national": 1895
+      },
+      {
+        "date": "2024-02-29",
+        "avg": 936,
+        "onebed": 796,
+        "national": 1895
+      },
+      {
+        "date": "2024-03-31",
+        "avg": 931,
+        "onebed": 791,
+        "national": 1895
+      },
+      {
+        "date": "2024-04-30",
+        "avg": 930,
+        "onebed": 790,
+        "national": 1895
+      },
+      {
+        "date": "2024-05-31",
+        "avg": 923,
+        "onebed": 785,
+        "national": 1895
+      },
+      {
+        "date": "2024-06-30",
+        "avg": 937,
+        "onebed": 796,
+        "national": 1895
+      },
+      {
+        "date": "2024-07-31",
+        "avg": 941,
+        "onebed": 800,
+        "national": 1895
+      },
+      {
+        "date": "2024-08-31",
+        "avg": 953,
+        "onebed": 810,
+        "national": 1895
+      },
+      {
+        "date": "2024-09-30",
+        "avg": 961,
+        "onebed": 817,
+        "national": 1895
+      },
+      {
+        "date": "2024-10-31",
+        "avg": 969,
+        "onebed": 824,
+        "national": 1895
+      },
+      {
+        "date": "2024-11-30",
+        "avg": 960,
+        "onebed": 816,
+        "national": 1895
+      },
+      {
+        "date": "2024-12-31",
+        "avg": 957,
+        "onebed": 813,
+        "national": 1895
+      },
+      {
+        "date": "2025-01-31",
+        "avg": 963,
+        "onebed": 819,
+        "national": 1895
+      },
+      {
+        "date": "2025-02-28",
+        "avg": 982,
+        "onebed": 835,
+        "national": 1895
+      },
+      {
+        "date": "2025-03-31",
+        "avg": 979,
+        "onebed": 832,
+        "national": 1895
+      },
+      {
+        "date": "2025-04-30",
+        "avg": 975,
+        "onebed": 829,
+        "national": 1895
+      },
+      {
+        "date": "2025-05-31",
+        "avg": 978,
+        "onebed": 831,
+        "national": 1895
+      },
+      {
+        "date": "2025-06-30",
+        "avg": 992,
+        "onebed": 843,
+        "national": 1895
+      },
+      {
+        "date": "2025-07-31",
+        "avg": 1002,
+        "onebed": 852,
+        "national": 1895
+      },
+      {
+        "date": "2025-08-31",
+        "avg": 999,
+        "onebed": 849,
+        "national": 1895
+      },
+      {
+        "date": "2025-09-30",
+        "avg": 996,
+        "onebed": 847,
+        "national": 1895
+      },
+      {
+        "date": "2025-10-31",
+        "avg": 1000,
+        "onebed": 850,
+        "national": 1895
+      },
+      {
+        "date": "2025-11-30",
+        "avg": 1003,
+        "onebed": 853,
+        "national": 1895
+      },
+      {
+        "date": "2025-12-31",
+        "avg": 1012,
+        "onebed": 860,
+        "national": 1895
+      },
+      {
+        "date": "2026-01-31",
+        "avg": 1009,
+        "onebed": 858,
+        "national": 1895
+      },
+      {
+        "date": "2026-02-28",
+        "avg": 1012,
+        "onebed": 860,
+        "national": 1895
+      }
+    ],
+    "baseline_2022": 814,
+    "yoy_change_pct": 3.1,
+    "source": "Zillow ZORI Metro (2026-02)"
+  },
+  "groceries": {
+    "items": [
+      {
+        "name": "Eggs (dozen)",
+        "slug": "eggs",
+        "unit": "dozen",
+        "current": 2.5,
+        "history": [
+          {
+            "date": "2021",
+            "price": 1.625
+          },
+          {
+            "date": "2022",
+            "price": 1.929
+          },
+          {
+            "date": "2023",
+            "price": 4.823
+          },
+          {
+            "date": "2024",
+            "price": 2.522
+          },
+          {
+            "date": "2025",
+            "price": 4.953
+          },
+          {
+            "date": "2026",
+            "price": 2.577
+          }
+        ],
+        "change_from_2022": 29.6,
+        "note": "Bird flu volatility",
+        "source": "BLS/FRED APU0000708111",
+        "price_2022": 1.929,
+        "current_price": 2.5,
+        "kroger_price": 1.29,
+        "kroger_store": "Fred Meyer - Boise Franklin (FRED)",
+        "kroger_date": "2026-03-24",
+        "baseline_2000": 0.975,
+        "price_2000": 0.975,
+        "change_from_2000": 156.4,
+        "baseline_2022": 1.929,
+        "change_from_baseline": 156.4,
+        "baseline_year": 2000
+      },
+      {
+        "name": "Milk (gallon)",
+        "slug": "milk",
+        "unit": "gallon",
+        "current": 4.026,
+        "history": [
+          {
+            "date": "2021",
+            "price": 3.348
+          },
+          {
+            "date": "2022",
+            "price": 3.787
+          },
+          {
+            "date": "2023",
+            "price": 4.204
+          },
+          {
+            "date": "2024",
+            "price": 3.958
+          },
+          {
+            "date": "2025",
+            "price": 4.025
+          },
+          {
+            "date": "2026",
+            "price": 4.1
+          }
+        ],
+        "change_from_2022": 6.3,
+        "source": "BLS/FRED APU0000709112",
+        "price_2022": 3.787,
+        "current_price": 4.026,
+        "kroger_price": 2.69,
+        "kroger_store": "Fred Meyer - Boise Franklin (FRED)",
+        "kroger_date": "2026-03-24",
+        "baseline_2000": 2.785,
+        "price_2000": 2.785,
+        "change_from_2000": 44.6,
+        "baseline_2022": 3.787,
+        "change_from_baseline": 44.6,
+        "baseline_year": 2000
+      },
+      {
+        "name": "Ground Beef (lb)",
+        "slug": "ground-beef",
+        "unit": "lb",
+        "current": 6.739,
+        "history": [
+          {
+            "date": "2021",
+            "price": 4.042
+          },
+          {
+            "date": "2022",
+            "price": 4.554
+          },
+          {
+            "date": "2023",
+            "price": 4.791
+          },
+          {
+            "date": "2024",
+            "price": 5.03
+          },
+          {
+            "date": "2025",
+            "price": 5.545
+          },
+          {
+            "date": "2026",
+            "price": 6.752
+          }
+        ],
+        "change_from_2022": 48.0,
+        "current_price": 6.739,
+        "price_2022": 4.554,
+        "source": "BLS/FRED APU0000703112",
+        "baseline_2000": 1.483,
+        "price_2000": 1.483,
+        "change_from_2000": 354.4,
+        "baseline_2022": 4.554,
+        "change_from_baseline": 354.4,
+        "baseline_year": 2000
+      },
+      {
+        "name": "Bread (loaf)",
+        "slug": "bread",
+        "unit": "loaf",
+        "current": 1.85,
+        "history": [
+          {
+            "date": "2021",
+            "price": 1.526
+          },
+          {
+            "date": "2022",
+            "price": 1.555
+          },
+          {
+            "date": "2023",
+            "price": 1.888
+          },
+          {
+            "date": "2024",
+            "price": 2.033
+          },
+          {
+            "date": "2025",
+            "price": 1.925
+          },
+          {
+            "date": "2026",
+            "price": 1.843
+          }
+        ],
+        "change_from_2022": 19.0,
+        "source": "BLS/FRED APU0000702111",
+        "price_2022": 1.555,
+        "current_price": 1.85,
+        "kroger_price": 2.49,
+        "kroger_store": "Fred Meyer - Boise Franklin (FRED)",
+        "kroger_date": "2026-03-24",
+        "baseline_2000": 0.907,
+        "price_2000": 0.907,
+        "change_from_2000": 104.0,
+        "baseline_2022": 1.555,
+        "change_from_baseline": 104.0,
+        "baseline_year": 2000
+      },
+      {
+        "name": "Chicken Breast (lb)",
+        "slug": "chicken",
+        "unit": "lb",
+        "current": 2.049,
+        "history": [
+          {
+            "date": "2021",
+            "price": 1.543
+          },
+          {
+            "date": "2022",
+            "price": 1.622
+          },
+          {
+            "date": "2023",
+            "price": 1.855
+          },
+          {
+            "date": "2024",
+            "price": 1.987
+          },
+          {
+            "date": "2025",
+            "price": 2.061
+          },
+          {
+            "date": "2026",
+            "price": 2.041
+          }
+        ],
+        "change_from_2022": 26.3,
+        "source": "BLS/FRED APU0000706111",
+        "price_2022": 1.622,
+        "current_price": 2.049,
+        "kroger_price": 4.99,
+        "kroger_store": "Fred Meyer - Boise Franklin (FRED)",
+        "kroger_date": "2026-03-24",
+        "baseline_2000": 1.059,
+        "price_2000": 1.059,
+        "change_from_2000": 93.5,
+        "baseline_2022": 1.622,
+        "change_from_baseline": 93.5,
+        "baseline_year": 2000
+      },
+      {
+        "name": "Butter (lb)",
+        "slug": "butter",
+        "unit": "lb",
+        "current": 5.48,
+        "history": [
+          {
+            "date": "2022",
+            "price": 4.23
+          },
+          {
+            "date": "2023",
+            "price": 4.83
+          },
+          {
+            "date": "2024",
+            "price": 5.12
+          },
+          {
+            "date": "2025",
+            "price": 5.27
+          },
+          {
+            "date": "2026",
+            "price": 5.48
+          }
+        ],
+        "change_from_2022": 0.296,
+        "kroger_price": 6.99,
+        "kroger_store": "Fred Meyer - Boise Franklin (FRED)",
+        "kroger_date": "2026-03-24"
+      },
+      {
+        "name": "Bacon (lb)",
+        "slug": "bacon",
+        "unit": "lb",
+        "current": 8.12,
+        "history": [
+          {
+            "date": "2022",
+            "price": 6.62
+          },
+          {
+            "date": "2023",
+            "price": 7.08
+          },
+          {
+            "date": "2024",
+            "price": 7.58
+          },
+          {
+            "date": "2025",
+            "price": 7.96
+          },
+          {
+            "date": "2026",
+            "price": 8.12
+          }
+        ],
+        "change_from_2022": 0.227
+      },
+      {
+        "name": "Cheddar Cheese (lb)",
+        "slug": "cheddar-cheese",
+        "unit": "lb",
+        "current": 6.47,
+        "history": [
+          {
+            "date": "2022",
+            "price": 5.67
+          },
+          {
+            "date": "2023",
+            "price": 6.17
+          },
+          {
+            "date": "2024",
+            "price": 6.35
+          },
+          {
+            "date": "2025",
+            "price": 6.41
+          },
+          {
+            "date": "2026",
+            "price": 6.47
+          }
+        ],
+        "change_from_2022": 0.141
+      },
+      {
+        "name": "Pasta (lb)",
+        "slug": "pasta",
+        "unit": "lb",
+        "current": 1.96,
+        "history": [
+          {
+            "date": "2022",
+            "price": 1.48
+          },
+          {
+            "date": "2023",
+            "price": 1.81
+          },
+          {
+            "date": "2024",
+            "price": 1.88
+          },
+          {
+            "date": "2025",
+            "price": 1.96
+          },
+          {
+            "date": "2026",
+            "price": 1.96
+          }
+        ],
+        "change_from_2022": 0.324
+      },
+      {
+        "name": "Rice (5 lb)",
+        "slug": "rice",
+        "unit": "5 lb bag",
+        "current": 5.26,
+        "history": [
+          {
+            "date": "2022",
+            "price": 4.15
+          },
+          {
+            "date": "2023",
+            "price": 4.82
+          },
+          {
+            "date": "2024",
+            "price": 5.11
+          },
+          {
+            "date": "2025",
+            "price": 5.26
+          },
+          {
+            "date": "2026",
+            "price": 5.26
+          }
+        ],
+        "change_from_2022": 0.267
+      },
+      {
+        "name": "Coffee (12 oz)",
+        "slug": "coffee",
+        "unit": "12 oz",
+        "current": 13.25,
+        "history": [
+          {
+            "date": "2022",
+            "price": 8.91
+          },
+          {
+            "date": "2023",
+            "price": 10.8
+          },
+          {
+            "date": "2024",
+            "price": 11.9
+          },
+          {
+            "date": "2025",
+            "price": 12.74
+          },
+          {
+            "date": "2026",
+            "price": 13.25
+          }
+        ],
+        "change_from_2022": 0.487
+      },
+      {
+        "name": "Orange Juice (64 oz)",
+        "slug": "orange-juice",
+        "unit": "64 oz",
+        "current": 5.42,
+        "history": [
+          {
+            "date": "2022",
+            "price": 3.72
+          },
+          {
+            "date": "2023",
+            "price": 4.43
+          },
+          {
+            "date": "2024",
+            "price": 4.82
+          },
+          {
+            "date": "2025",
+            "price": 5.16
+          },
+          {
+            "date": "2026",
+            "price": 5.42
+          }
+        ],
+        "change_from_2022": 0.457,
+        "note": "Citrus shortage"
+      },
+      {
+        "name": "Potatoes (5 lb)",
+        "slug": "potatoes",
+        "unit": "5 lb bag",
+        "current": 4.77,
+        "history": [
+          {
+            "date": "2022",
+            "price": 4.11
+          },
+          {
+            "date": "2023",
+            "price": 4.4
+          },
+          {
+            "date": "2024",
+            "price": 4.58
+          },
+          {
+            "date": "2025",
+            "price": 4.72
+          },
+          {
+            "date": "2026",
+            "price": 4.77
+          }
+        ],
+        "change_from_2022": 0.161
+      },
+      {
+        "name": "Apples (3 lb)",
+        "slug": "apples",
+        "unit": "3 lb bag",
+        "current": 5.2,
+        "history": [
+          {
+            "date": "2022",
+            "price": 4.49
+          },
+          {
+            "date": "2023",
+            "price": 4.71
+          },
+          {
+            "date": "2024",
+            "price": 4.95
+          },
+          {
+            "date": "2025",
+            "price": 5.2
+          },
+          {
+            "date": "2026",
+            "price": 5.2
+          }
+        ],
+        "change_from_2022": 0.158
+      },
+      {
+        "name": "Tomatoes (lb)",
+        "slug": "tomatoes",
+        "unit": "lb",
+        "current": 2.91,
+        "history": [
+          {
+            "date": "2022",
+            "price": 2.22
+          },
+          {
+            "date": "2023",
+            "price": 2.46
+          },
+          {
+            "date": "2024",
+            "price": 2.66
+          },
+          {
+            "date": "2025",
+            "price": 2.77
+          },
+          {
+            "date": "2026",
+            "price": 2.91
+          }
+        ],
+        "change_from_2022": 0.311
+      },
+      {
+        "name": "Lettuce (head)",
+        "slug": "lettuce",
+        "unit": "head",
+        "current": 2.34,
+        "history": [
+          {
+            "date": "2022",
+            "price": 1.8
+          },
+          {
+            "date": "2023",
+            "price": 1.94
+          },
+          {
+            "date": "2024",
+            "price": 2.12
+          },
+          {
+            "date": "2025",
+            "price": 2.25
+          },
+          {
+            "date": "2026",
+            "price": 2.34
+          }
+        ],
+        "change_from_2022": 0.3
+      },
+      {
+        "name": "Cooking Oil (48 oz)",
+        "slug": "cooking-oil",
+        "unit": "48 oz",
+        "current": 7.76,
+        "history": [
+          {
+            "date": "2022",
+            "price": 5.54
+          },
+          {
+            "date": "2023",
+            "price": 6.99
+          },
+          {
+            "date": "2024",
+            "price": 7.47
+          },
+          {
+            "date": "2025",
+            "price": 7.61
+          },
+          {
+            "date": "2026",
+            "price": 7.76
+          }
+        ],
+        "change_from_2022": 0.401
+      },
+      {
+        "name": "Yogurt (32 oz)",
+        "slug": "yogurt",
+        "unit": "32 oz",
+        "current": 4.94,
+        "history": [
+          {
+            "date": "2022",
+            "price": 4.15
+          },
+          {
+            "date": "2023",
+            "price": 4.48
+          },
+          {
+            "date": "2024",
+            "price": 4.66
+          },
+          {
+            "date": "2025",
+            "price": 4.8
+          },
+          {
+            "date": "2026",
+            "price": 4.94
+          }
+        ],
+        "change_from_2022": 0.19
+      },
+      {
+        "name": "Cereal (family size)",
+        "slug": "cereal",
+        "unit": "box",
+        "current": 6.2,
+        "history": [
+          {
+            "date": "2022",
+            "price": 4.79
+          },
+          {
+            "date": "2023",
+            "price": 5.51
+          },
+          {
+            "date": "2024",
+            "price": 5.9
+          },
+          {
+            "date": "2025",
+            "price": 6.14
+          },
+          {
+            "date": "2026",
+            "price": 6.2
+          }
+        ],
+        "change_from_2022": 0.294
+      },
+      {
+        "name": "Frozen Pizza",
+        "slug": "frozen-pizza",
+        "unit": "each",
+        "current": 8.65,
+        "history": [
+          {
+            "date": "2022",
+            "price": 6.31
+          },
+          {
+            "date": "2023",
+            "price": 7.42
+          },
+          {
+            "date": "2024",
+            "price": 7.85
+          },
+          {
+            "date": "2025",
+            "price": 8.4
+          },
+          {
+            "date": "2026",
+            "price": 8.65
+          }
+        ],
+        "change_from_2022": 0.371
+      }
+    ],
+    "inflation_rate": {
+      "current_yoy": 5.27,
+      "history": [
+        {
+          "year": "2022",
+          "rate": 12.57
+        },
+        {
+          "year": "2023",
+          "rate": 5.1
+        },
+        {
+          "year": "2024",
+          "rate": 0.8
+        },
+        {
+          "year": "2025",
+          "rate": 3.14
+        },
+        {
+          "year": "2026",
+          "rate": 2.3
+        }
+      ],
+      "source": "BLS CPI Food at Home (CUSR0000SAF11)"
+    },
+    "baseline_year": 2000
+  },
+  "dining": {
+    "fast_food_avg": 12.99,
+    "casual_dining_avg": 24.18,
+    "coffee_avg": 6.21,
+    "monthly_household_spend": 431.46,
+    "restaurant_inflation_yoy": 5.41,
+    "chains": [
+      {
+        "name": "McDonald's",
+        "price_2022": 8.36,
+        "price_current": 13.49
+      },
+      {
+        "name": "Wendy's",
+        "price_2022": 9.44,
+        "price_current": 14.57
+      },
+      {
+        "name": "Chipotle",
+        "price_2022": 10.12,
+        "price_current": 15.11
+      },
+      {
+        "name": "Starbucks",
+        "price_2022": 4.58,
+        "price_current": 6.36
+      }
+    ]
+  },
+  "utilities": {
+    "electricity_kwh": 0.138,
+    "natural_gas_therm": 1.11,
+    "internet_monthly": 65,
+    "phone_monthly": 77.81,
+    "national_electricity": 0.16
+  },
+  "transportation": {
+    "car_insurance_monthly": 151.75,
+    "used_car_avg": 24235.2,
+    "gas_per_month_avg": 143.58
+  },
+  "healthcare": {
+    "doctor_visit": 183.6,
+    "prescription_generic": 16.95,
+    "dental_cleaning": 152.34
+  },
+  "personal": {
+    "haircut_mens": 23.99,
+    "gym_membership": 45.84,
+    "movie_ticket": 15.3
+  },
+  "data_sources": {
+    "groceries": "BLS/FRED APU series \u2014 national avg prices",
+    "gas": "AAA Gas Prices \u2014 state-level avg"
+  },
+  "electricity": {
+    "cents_per_kwh": 11.8,
+    "monthly_avg_bill": 106.2,
+    "national_avg_cents": 17.38,
+    "national_avg_bill": 156.4,
+    "source": "EIA Residential (2026-03)",
+    "avg_monthly_kwh_rate": 11.8,
+    "national_avg_rate": 17.38,
+    "avg_monthly_bill": 106
+  },
+  "car_insurance": {
+    "annual_avg": 1821,
+    "monthly_avg": 151.75,
+    "national_avg_annual": 2150,
+    "source": "Bankrate/NAIC state avg full coverage (2025)"
+  },
+  "income": {
+    "median_household": 66478,
+    "county_fips": null,
+    "year": 2023,
+    "source": "Census ACS 5-Year 2023 (state median)",
+    "cost_burden": {
+      "rent_annual": 12144,
+      "gas_annual": 1723,
+      "grocery_annual": 893,
+      "electricity_annual": 1490,
+      "insurance_annual": 1821,
+      "total_essential_annual": 18071,
+      "burden_pct": 27.2,
+      "note": "Essential costs as % of median household income (rent+gas+groceries+electricity+insurance)"
+    }
+  }
+}
