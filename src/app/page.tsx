@@ -45,7 +45,7 @@ function HomeJsonLd() {
         {
           '@type': 'Question',
           name: 'How much is gas in the US right now?',
-          acceptedAnswer: { '@type': 'Answer', text: 'The national average gas price is around $3.98/gallon in 2026, but varies significantly by city. California cities like San Francisco pay $5.82, while Midwest cities like Kansas City pay closer to $2.90.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'The national average gas price is around $4.02/gallon in 2026, but varies significantly by city. California cities like San Francisco pay $5.89, while Midwest cities like Kansas City pay closer to $3.44.' },
         },
         {
           '@type': 'Question',
@@ -121,12 +121,12 @@ export default async function HomePage() {
   // We'll use col_index from cities.json as the primary state metric
   // For gas/rent/grocery we use reasonable regional estimates per state
   const STATE_GAS: Record<string, number> = {
-    AL:3.62,AK:3.95,AZ:3.93,AR:3.40,CA:5.79,CO:3.93,CT:3.88,DE:3.79,FL:3.93,
-    GA:3.67,HI:5.23,ID:4.11,IL:3.85,IN:3.55,IA:3.35,KS:3.22,KY:3.49,LA:3.41,
-    ME:3.64,MD:3.73,MA:3.83,MI:3.62,MN:3.39,MS:3.35,MO:3.32,MT:3.72,NE:3.28,
-    NV:4.26,NH:3.36,NJ:3.41,NM:3.51,NY:3.86,NC:3.52,ND:3.25,OH:3.62,OK:3.22,
-    OR:3.97,PA:3.99,RI:3.65,SC:3.52,SD:3.32,TN:3.52,TX:3.62,UT:3.85,VT:3.64,
-    VA:3.59,WA:4.63,WV:3.49,WI:3.49,WY:3.75,DC:4.10,
+    AK:4.590,AL:3.676,AR:3.444,AZ:4.682,CA:5.887,CO:3.874,CT:3.953,DC:4.191,DE:3.876,
+    FL:4.124,GA:3.625,HI:5.452,IA:3.282,ID:4.267,IL:4.203,IN:3.975,KS:3.288,KY:3.784,
+    LA:3.630,MA:3.818,MD:4.014,ME:3.863,MI:3.915,MN:3.416,MO:3.438,MS:3.608,MT:3.711,
+    NC:3.839,ND:3.433,NE:3.369,NH:3.801,NJ:3.927,NM:3.850,NV:4.931,NY:3.949,OH:3.794,
+    OK:3.272,OR:4.933,PA:3.976,RI:3.862,SC:3.701,SD:3.397,TN:3.724,TX:3.678,UT:4.199,
+    VA:3.932,VT:3.931,WA:5.346,WI:3.615,WV:3.864,WY:3.846,
   }
   const STATE_RENT: Record<string, number> = {
     AL:1050,AK:1400,AZ:1450,AR:900,CA:2300,CO:1700,CT:1650,DE:1450,FL:1750,
@@ -176,6 +176,11 @@ export default async function HomePage() {
     burden: STATE_BURDEN[s.abbr],
   }))
 
+  // Compute national avg gas price from STATE_GAS (population-weighted approximation via simple avg)
+  const nationalGasVals = Object.values(STATE_GAS)
+  const nationalGasAvg = (nationalGasVals.reduce((a, b) => a + b, 0) / nationalGasVals.length)
+  const nationalGasDisplay = `$${nationalGasAvg.toFixed(2)}`
+
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       <HomeJsonLd />
@@ -197,7 +202,7 @@ export default async function HomePage() {
           />
           <StatCard
             label="Avg Gas Price"
-            value="$3.98"
+            value={nationalGasDisplay}
             subvalue="Regular unleaded"
             change={0.66}
             changeLabel="since 2000"
